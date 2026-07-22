@@ -31,7 +31,7 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 
-    fetch('database.json')
+    fetch('assets/database.json')
         .then(res => res.json())
         .then(data => {
             const chapter = data.chapters[0];
