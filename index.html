@@ -1,1 +1,68 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>AETHERIS | Manga Officiel</title>
+    
+    <meta name="theme-color" content="#0a0a0c">
+    <link rel="manifest" href="manifest.json">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Rajdhani:wght@500;600;700&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="css/style.css?v=10">
+    
+    <style>
+        .view { display: none !important; }
+        .view.active { display: block !important; }
+    </style>
+</head>
+<body>
+    <div id="loader" class="active">
+        <div class="spinner"></div>
+    </div>
 
+    <nav id="main-nav">
+        <div class="nav-brand" data-target="home">AETHERIS</div>
+        <div class="hamburger">
+            <span></span><span></span><span></span>
+        </div>
+        <div class="nav-links">
+            <a href="#" data-target="home" class="active">ACCUEIL</a>
+            <a href="#" data-target="reader" class="highlight">LIRE LE MANGA</a>
+            <a href="#" data-target="characters">PERSONNAGES</a>
+            <a href="#" data-target="universe">UNIVERS</a>
+            <a href="#" data-target="news">ACTUALITÉS</a>
+        </div>
+    </nav>
+
+    <main id="app-content">
+        <section id="home" class="view active">
+            <div class="hero-bg"></div>
+            <div class="hero-particles"></div>
+            
+            <div class="hero-content">
+                <img src="assets/images/logo.png" alt="AETHERIS" class="hero-logo">
+                <p class="subtitle">LE DESTIN S'ÉCRIT DANS L'AÉTHER.</p>
+                <button class="btn-epic" data-target="reader">
+                    <span class="btn-text">COMMENCER L'AVENTURE</span>
+                    <span class="btn-glow"></span>
+                </button>
+            </div>
+        </section>
+
+        <section id="reader" class="view">
+            <div class="reader-header">
+                <button class="btn-icon" data-target="home">← Retour</button>
+                <h2 id="current-chapter-title">Chargement...</h2>
+            </div>
+            
+            <div id="manga-container"></div>
+        </section>
+    </main>
+
+    <script src="js/app.js?v=10"></script>
+</body>
+</html>
