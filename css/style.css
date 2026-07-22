@@ -348,4 +348,8 @@ body {
     color: #aaa;
     font-size: 0.95rem;
 }
+
+    .hero-content {
+    padding-top: 40px;
+}
 }
