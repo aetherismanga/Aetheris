@@ -30,4 +30,23 @@ document.addEventListener('DOMContentLoaded', () => {
             window.scrollTo(0, 0);
         });
     });
+
+    fetch('database.json')
+        .then(res => res.json())
+        .then(data => {
+            const chapter = data.chapters[0];
+            const container = document.getElementById('manga-container');
+            const title = document.getElementById('current-chapter-title');
+            
+            if (title) title.textContent = chapter.title;
+            if (container) {
+                container.innerHTML = '';
+                chapter.pages.forEach(page => {
+                    const img = document.createElement('img');
+                    img.src = `${chapter.path}${page}`;
+                    container.appendChild(img);
+                });
+            }
+        })
+        .catch(err => console.error("Erreur de chargement :", err));
 });
