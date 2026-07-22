@@ -311,4 +311,41 @@ body {
     height: auto;
     margin-bottom: 20px;
     box-shadow: 0 10px 30px rgba(0,0,0,0.8);
+    /* SECTION PERSONNAGES */
+.characters-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+    padding: 40px 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.char-card {
+    background: #121216;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 8px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.5);
+}
+
+.char-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 4px;
+    margin-bottom: 15px;
+}
+
+.char-card h3 {
+    color: #fff;
+    font-family: 'Rajdhani', sans-serif;
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.char-card p {
+    color: #aaa;
+    font-size: 0.95rem;
+}
 }
