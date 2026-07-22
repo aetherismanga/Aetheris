@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>AETHERIS | Manga Officiel</title>
+    
+    <!-- PWA Meta Tags -->
+    <meta name="theme-color" content="#0a0a0c">
+    <link rel="manifest" href="manifest.json">
+    <link rel="apple-touch-icon" href="assets/icons/icon-192x192.png">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Rajdhani:wght@500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Overlay de transition (chargement) -->
+    <div id="loader" class="active">
+        <div class="spinner"></div>
+    </div>
+
+    <!-- Navigation Glassmorphism -->
+    <nav id="main-nav">
+        <div class="nav-brand" data-target="home">AETHERIS</div>
+        <div class="hamburger">
+            <span></span><span></span><span></span>
+        </div>
+        <ul class="nav-links">
+            <li><a href="#" data-target="home" class="active">Accueil</a></li>
+            <li><a href="#" data-target="reader">Lire le manga</a></li>
+            <li><a href="#" data-target="characters">Personnages</a></li>
+            <li><a href="#" data-target="universe">Univers</a></li>
+            <li><a href="#" data-target="news">Actualités</a></li>
+        </ul>
+    </nav>
+
+    <!-- Conteneur Principal (SPA) -->
+    <main id="app">
+        
+        <!-- SECTION : ACCUEIL -->
+        <section id="home" class="view active">
+            <!-- Background Parallax -->
+            <div class="hero-bg"></div>
+            <!-- Particules/Lumières -->
+            <div class="hero-particles"></div>
+            
+            <div class="hero-content">
+                <h1 class="glitch-title" data-text="AETHERIS">AETHERIS</h1>
+                <p class="subtitle">Le destin s'écrit dans l'Aéther.</p>
+                <button class="btn-epic" data-target="reader">
+                    <span class="btn-text">COMMENCER L'AVENTURE</span>
+                    <span class="btn-glow"></span>
+                </button>
+            </div>
+        </section>
+
+        <!-- SECTION : LECTEUR (Structure préparée pour la V2) -->
+        <section id="reader" class="view">
+            <div class="reader-header">
+                <button class="btn-icon" data-target="home">← Retour</button>
+                <h2 id="current-chapter-title">Chapitre 1 : L'Éveil</h2>
+                <div class="reader-settings">⚙️</div>
+            </div>
+            
+            <div id="manga-container">
+                <!-- Les images seront injectées ici par app.js -->
+                <div class="placeholder-text">Le lecteur haute performance sera implémenté dans la Version 2.</div>
+            </div>
+            
+            <div class="reader-controls">
+                <button id="btn-prev" class="btn-secondary">Chapitre Précédent</button>
+                <span id="reading-progress">1 / 24</span>
+                <button id="btn-next" class="btn-primary">Chapitre Suivant</button>
+            </div>
+        </section>
+
+        <!-- Autres sections (Personnages, Univers...) -->
+        <section id="characters" class="view"><div class="temp-content"><h2>Personnages</h2><p>Interface des héros (V3)</p></div></section>
+        <section id="universe" class="view"><div class="temp-content"><h2>Univers</h2><p>Encyclopédie interactive (V3)</p></div></section>
+        <section id="news" class="view"><div class="temp-content"><h2>Actualités</h2><p>Flux d'annonces</p></div></section>
+
+    </main>
+
+    <script src="js/app.js"></script>
+</body>
+</html>
