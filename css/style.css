@@ -24,7 +24,6 @@ body {
     -webkit-font-smoothing: antialiased;
 }
 
-
 /* --- LOADER --- */
 #loader {
     position: fixed;
@@ -106,11 +105,28 @@ body {
 }
 .nav-links a.active::after, .nav-links a:hover::after { width: 100%; }
 
+/* Menu Burger Mobile */
+.hamburger {
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 21px;
+    cursor: pointer;
+}
+.hamburger span {
+    display: block;
+    width: 100%;
+    height: 3px;
+    background-color: #fff;
+    border-radius: 2px;
+}
+
 /* --- SPA VIEWS --- */
 .view {
     display: none;
     min-height: 100vh;
-    padding-top: 80px; /* Offset nav */
+    padding-top: 80px;
     animation: fadeIn 0.6s ease;
 }
 .view.active { display: block; }
@@ -124,51 +140,48 @@ body {
     justify-content: center;
     align-items: center;
     overflow: hidden;
+    min-height: 100vh;
 }
 
 .hero-bg {
     position: absolute;
     top: -5%; left: -5%; width: 110%; height: 110%;
-    /* Utilise une image d'un manga épique ou unsplash temporaire */
-    /* Correction du chemin vers ton image hero-bg.jpg locale */
     background: url('../assets/images/hero-bg.jpg') center/cover;
     filter: brightness(0.95) contrast(1.05);
     z-index: -2;
-    transition: transform 0.1s ease-out; /* Pour le Parallax JS */
-}
-
-.hero-particles {
-    position: absolute;
-    top: 0; left: 0; width: 100%; height: 100%;
-    background: radial-gradient(circle at center, transparent 0%, var(--bg-dark) 100%);
-    z-index: -1;
 }
 
 .hero-content {
     text-align: center;
     z-index: 10;
+    padding: 0 20px;
 }
 
-.glitch-title {
-    font-family: var(--font-heading);
-    font-size: 8vw;
-    font-weight: 700;
-    letter-spacing: 10px;
-    color: var(--text-main);
-    text-transform: uppercase;
-    text-shadow: 0 0 20px rgba(255,255,255,0.2);
-    margin-bottom: 10px;
+.hero-logo {
+    max-width: 90%;
+    width: 600px;
+    height: auto;
+    margin-bottom: 20px;
+    filter: drop-shadow(0 0 15px rgba(212, 175, 55, 0.4));
+    animation: floatLogo 4s ease-in-out infinite;
+}
+
+@keyframes floatLogo {
+    0% { transform: translateY(0px); }
+    50% { transform: translateY(-10px); }
+    100% { transform: translateY(0px); }
 }
 
 .subtitle {
     font-size: 20px;
     color: var(--accent-gold);
     letter-spacing: 4px;
-    margin-bottom: 50px;
+    margin-bottom: 40px;
     text-transform: uppercase;
+    font-family: var(--font-heading);
 }
 
-/* --- BOUTON AAA --- */
+/* --- BOUTON ÉPIQUE --- */
 .btn-epic {
     position: relative;
     padding: 18px 40px;
@@ -200,37 +213,9 @@ body {
 
 .btn-epic:hover::before { left: 100%; transition: 0.7s; }
 
-/* --- RESPONSIVE MOBILE --- */
-@media (max-width: 768px) {
-    #main-nav { padding: 15px 20px; }
-    .nav-links { display: none; /* Menu burger logique à faire en JS */ }
-    .glitch-title { font-size: 12vw; }
-}
-
-
-/* --- STYLE DU NOUVEAU LOGO IMAGE --- */
-.hero-logo {
-    max-width: 90%;
-    width: 600px; /* Taille max sur PC */
-    height: auto;
-    margin-bottom: 20px;
-    filter: drop-shadow(0 0 15px rgba(212, 175, 55, 0.4)); /* Léger halo doré */
-    animation: floatLogo 4s ease-in-out infinite; /* Petite animation de lévitation */
-}
-
-@keyframes floatLogo {
-    0% { transform: translateY(0px); }
-    50% { transform: translateY(-10px); }
-    100% { transform: translateY(0px); }
-}
-
-@media (max-width: 768px) {
-    .hero-logo { width: 300px; /* Taille adaptée pour mobile */ }
-
-    /* --- STYLE DU LECTEUR DE MANGA --- */
+/* --- STYLE DU LECTEUR DE MANGA --- */
 #reader {
-    background-color: #000; /* Fond totalement noir pour lire */
-    padding-top: 80px;
+    background-color: #000;
 }
 
 .reader-header {
@@ -268,40 +253,11 @@ body {
     color: #000;
 }
 
-/* Le conteneur des images */
 #manga-container {
     display: flex;
     flex-direction: column;
     align-items: center;
     width: 100%;
-    margin-top: 0;
-}
-
-/* Les images du manga */
-.manga-page {
-    width: 100%;
-    max-width: 800px; /* Taille max sur PC, s'adapte sur mobile */
-    height: auto;
-    display: block; /* Enlève les espaces blancs sous les images */
-    margin: 0;
-    padding: 0;
-}
-
-.reader-controls {
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-    padding: 40px 20px;
-    background: #000;
-}
-}
-/* Temp styles pour autres vues */
-.temp-content { text-align: center; padding: 100px 20px; }
-
-#manga-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
     padding: 40px 0;
 }
 
@@ -310,134 +266,81 @@ body {
     width: 100%;
     height: auto;
     margin-bottom: 20px;
-    box-shadow: 0 10px 30px rgba(0,0,0,0.8);
-    /* SECTION PERSONNAGES */
-.characters-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-    gap: 30px;
-    padding: 40px 20px;
-    max-width: 1200px;
-    margin: 0 auto;
-}
-
-.char-card {
-    background: #121216;
-    border: 1px solid rgba(255, 255, 255, 0.1);
-    border-radius: 8px;
-    padding: 20px;
-    text-align: center;
-    box-shadow: 0 5px 15px rgba(0,0,0,0.5);
-}
-
-.char-card img {
-    width: 100%;
-    height: auto;
-    border-radius: 4px;
-    margin-bottom: 15px;
-}
-
-.char-card h3 {
-    color: #fff;
-    font-family: 'Rajdhani', sans-serif;
-    font-size: 1.5rem;
-    margin-bottom: 10px;
-}
-
-.char-card p {
-    color: #aaa;
-    font-size: 0.95rem;
-}
-
-    .hero-content {
-    padding-top: 40px;
-}
-}
-
-.characters-grid {
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 20px;
-    padding: 20px;
-}
-@media (min-width: 768px) {
-    .characters-grid {
-        grid-template-columns: repeat(2, 1fr);
-    }
-}
-
-.hamburger {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    width: 30px;
-    height: 21px;
-    cursor: pointer;
-}
-.hamburger span {
     display: block;
-    width: 100%;
-    height: 3px;
-    background-color: #fff;
-    border-radius: 2px;
-}
-.nav-links {
-    display: none;
-    flex-direction: column;
-    position: absolute;
-    top: 60px;
-    left: 0;
-    width: 100%;
-    background: rgba(0, 0, 0, 0.95);
-    padding: 20px;
-    box-sizing: border-box;
-}
-.nav-links.active {
-    display: flex;
-}
-@media (min-width: 768px) {
-    .hamburger {
-        display: none;
-    }
-    .nav-links {
-        display: flex;
-        position: static;
-        flex-direction: row;
-        background: transparent;
-        padding: 0;
-    }
+    box-shadow: 0 10px 30px rgba(0,0,0,0.8);
 }
 
-.char-card {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-.char-card img {
-    width: 100%;
-    height: auto;
-    margin-bottom: 15px;
-}
-
+/* --- SECTION PERSONNAGES (Aligné verticalement et centré) --- */
 .characters-grid {
     display: flex;
     flex-direction: column;
     align-items: center;
     max-width: 800px;
     margin: 0 auto;
-    padding: 20px;
+    padding: 40px 20px;
 }
+
 .char-card {
     display: flex;
     flex-direction: column;
     align-items: center;
     width: 100%;
+    background: #121216;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 8px;
+    padding: 20px;
     margin-bottom: 40px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.5);
+    text-align: center;
 }
+
 .char-card img {
     width: 100%;
     max-width: 100%;
     height: auto;
+    border-radius: 4px;
     margin-bottom: 15px;
     display: block;
+}
+
+.char-card h3 {
+    color: #fff;
+    font-family: var(--font-heading);
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.char-card p {
+    color: var(--text-muted);
+    font-size: 0.95rem;
+}
+
+/* --- RESPONSIVE MOBILE --- */
+@media (max-width: 768px) {
+    #main-nav { padding: 15px 20px; }
+    
+    .hamburger {
+        display: flex;
+    }
+
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 70px;
+        left: 0;
+        width: 100%;
+        background: rgba(0, 0, 0, 0.95);
+        padding: 20px;
+        box-sizing: border-box;
+        border-bottom: 1px solid rgba(255,255,255,0.1);
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+
+    .hero-logo { 
+        width: 300px; 
+    }
 }
