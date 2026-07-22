@@ -59,26 +59,16 @@
             </div>
         </section>
 
-        <!-- SECTION : LECTEUR (Structure préparée pour la V2) -->
-        <section id="reader" class="view">
-            <div class="reader-header">
-                <button class="btn-icon" data-target="home">← Retour</button>
-                <h2 id="current-chapter-title">Chapitre 1 : L'Éveil</h2>
-                <div class="reader-settings">⚙️</div>
-            </div>
-            
-            <div id="manga-container">
-                <!-- Les images seront injectées ici par app.js -->
-                <div class="placeholder-text">Le lecteur haute performance sera implémenté dans la Version 2.</div>
-            </div>
-            
-            <div class="reader-controls">
-                <button id="btn-prev" class="btn-secondary">Chapitre Précédent</button>
-                <span id="reading-progress">1 / 24</span>
-                <button id="btn-next" class="btn-primary">Chapitre Suivant</button>
-            </div>
-        </section>
-
+        <!-- --- LECTEUR DE MANGA --- -->
+    <section id="reader" class="view">
+        <div class="reader-header">
+            <button class="btn-icon" data-target="home">← Retour à l'accueil</button>
+            <h2 id="current-chapter-title">Chargement...</h2>
+        </div>
+        <div id="manga-container">
+            <!-- Les images apparaîtront ici automatiquement -->
+        </div>
+    </section>
         <!-- Autres sections (Personnages, Univers...) -->
         <section id="characters" class="view"><div class="temp-content"><h2>Personnages</h2><p>Interface des héros (V3)</p></div></section>
         <section id="universe" class="view"><div class="temp-content"><h2>Univers</h2><p>Encyclopédie interactive (V3)</p></div></section>
