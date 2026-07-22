@@ -31,7 +31,7 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 
-    fetch('assets/database.json')
+    fetch('assets/data/database.json')
         .then(res => res.json())
         .then(data => {
             if (data && data.chapters && data.chapters.length > 0) {
