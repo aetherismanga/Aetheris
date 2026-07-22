@@ -1,62 +1,90 @@
-document.addEventListener('DOMContentLoaded', () => {
-    // Masquer le loader pour enlever l'écran noir
-    const loader = document.getElementById('loader');
-    if (loader) {
-        loader.classList.remove('active');
-    }
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AETHERIS | Manga Officiel</title>
+    <link rel="stylesheet" href="css/style.css?v=10">
+</head>
+<body>
+    <div id="loader" class="active">
+        <div class="spinner"></div>
+    </div>
 
-    // Menu Burger
-    const hamburger = document.querySelector('.hamburger');
-    const navLinks = document.querySelector('.nav-links');
-    if (hamburger && navLinks) {
-        hamburger.addEventListener('click', () => {
-            navLinks.classList.toggle('active');
-        });
-    }
+    <nav id="main-nav">
+        <div class="nav-brand" data-target="home">AETHERIS</div>
+        <div class="hamburger">
+            <span></span><span></span><span></span>
+        </div>
+        <div class="nav-links">
+            <a href="#" data-target="home" class="active">ACCUEIL</a>
+            <a href="#" data-target="reader">LIRE LE MANGA</a>
+            <a href="#" data-target="characters">PERSONNAGES</a>
+            <a href="#" data-target="universe">UNIVERS</a>
+            <a href="#" data-target="news">ACTUALITÉS</a>
+        </div>
+    </nav>
 
-    // Navigation entre les pages
-    const triggers = document.querySelectorAll('[data-target]');
-    const views = document.querySelectorAll('.view');
+    <main id="app-content">
+        <section id="home" class="view active">
+            <div class="hero-bg"></div>
+            <div class="hero-content">
+                <img src="assets/images/logo.png" alt="AETHERIS" class="hero-logo">
+                <p class="subtitle">LE DESTIN S'ÉCRIT DANS L'AETHER.</p>
+                <button class="btn-epic" data-target="reader">
+                    <span class="btn-text">COMMENCER L'AVENTURE</span>
+                </button>
+            </div>
+        </section>
 
-    triggers.forEach(trigger => {
-        trigger.addEventListener('click', (e) => {
-            e.preventDefault();
-            const targetId = trigger.getAttribute('data-target');
-            
-            views.forEach(view => {
-                view.classList.remove('active');
-                if (view.id === targetId) {
-                    view.classList.add('active');
-                }
-            });
+        <section id="characters" class="view">
+            <div class="reader-header">
+                <button class="btn-icon" data-target="home">← Retour</button>
+                <h2>PERSONNAGES</h2>
+            </div>
+            <div class="characters-grid">
+                <div class="char-card">
+                    <img src="personnages/kael.jpeg" alt="Kael">
+                    <img src="personnages/kael2.jpeg" alt="Kael Design">
+                    <h3>Kael</h3>
+                    <p>Le personnage principal de l'aventure.</p>
+                </div>
+                <div class="char-card">
+                    <img src="personnages/lyssara.jpeg" alt="Lyssara">
+                    <img src="personnages/lyssara2.jpeg" alt="Lyssara Design">
+                    <h3>Lyssara</h3>
+                    <p>Celle qui l'accompagnera dans l'aventure.</p>
+                </div>
+                <div class="char-card">
+                    <img src="personnages/aldren.jpeg" alt="Aldren">
+                    <img src="personnages/aldren2.jpeg" alt="Aldren Design">
+                    <h3>Aldren</h3>
+                    <p>Le vieux pêcheur de Port-Lys.</p>
+                </div>
+                <div class="char-card">
+                    <img src="personnages/vaiana.jpeg" alt="Vaiana">
+                    <img src="personnages/vaiana2.jpeg" alt="Vaiana Design">
+                    <h3>Vaiana</h3>
+                    <p>Personnage clé de l'univers.</p>
+                </div>
+                <div class="char-card">
+                    <img src="personnages/draven.jpeg" alt="Draven">
+                    <img src="personnages/draven2.jpeg" alt="Draven Design">
+                    <h3>Draven</h3>
+                    <p>L'animal de Lyssara.</p>
+                </div>
+            </div>
+        </section>
 
-            if (navLinks) {
-                navLinks.classList.remove('active');
-            }
+        <section id="reader" class="view">
+            <div class="reader-header">
+                <button class="btn-icon" data-target="home">← Retour</button>
+                <h2 id="current-chapter-title">Chargement...</h2>
+            </div>
+            <div id="manga-container"></div>
+        </section>
+    </main>
 
-            window.scrollTo(0, 0);
-        });
-    });
-
-    // Chargement du manga
-    fetch('assets/database.json')
-        .then(res => res.json())
-        .then(data => {
-            if (data && data.chapters && data.chapters.length > 0) {
-                const chapter = data.chapters[0];
-                const container = document.getElementById('manga-container');
-                const title = document.getElementById('current-chapter-title');
-                
-                if (title) title.textContent = chapter.title;
-                if (container && chapter.pages) {
-                    container.innerHTML = '';
-                    chapter.pages.forEach(page => {
-                        const img = document.createElement('img');
-                        img.src = `${chapter.path}${page}`;
-                        container.appendChild(img);
-                    });
-                }
-            }
-        })
-        .catch(err => console.error("Erreur de chargement :", err));
-});
+    <script src="js/app.js?v=10"></script>
+</body>
+</html>
