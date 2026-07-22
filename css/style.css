@@ -365,3 +365,45 @@ body {
         grid-template-columns: repeat(2, 1fr);
     }
 }
+
+.hamburger {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 21px;
+    cursor: pointer;
+}
+.hamburger span {
+    display: block;
+    width: 100%;
+    height: 3px;
+    background-color: #fff;
+    border-radius: 2px;
+}
+.nav-links {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.95);
+    padding: 20px;
+    box-sizing: border-box;
+}
+.nav-links.active {
+    display: flex;
+}
+@media (min-width: 768px) {
+    .hamburger {
+        display: none;
+    }
+    .nav-links {
+        display: flex;
+        position: static;
+        flex-direction: row;
+        background: transparent;
+        padding: 0;
+    }
+}
