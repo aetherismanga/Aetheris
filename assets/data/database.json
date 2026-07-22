@@ -1,0 +1,16 @@
+{
+  "manga": {
+    "title": "AETHERIS",
+    "author": "Ton Nom",
+    "status": "En cours"
+  },
+  "chapters": [
+    {
+      "id": "chapitre-01",
+      "title": "Le Commencement",
+      "date": "2026-07-22",
+      "pages": 3,
+      "path": "assets/chapters/chapitre-01/"
+    }
+  ]
+}
