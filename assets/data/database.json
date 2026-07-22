@@ -9,7 +9,11 @@
       "id": "chapitre-01",
       "title": "Le Commencement",
       "date": "2026-07-22",
-      "pages": 3,
+      "pages": [
+        "01.jpg",
+        "02.jpg",
+        "03.jpg"
+      ],
       "path": "chapters/chapitre-01/"
     }
   ]
