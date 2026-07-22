@@ -132,7 +132,7 @@ body {
     /* Utilise une image d'un manga épique ou unsplash temporaire */
     /* Correction du chemin vers ton image hero-bg.jpg locale */
     background: url('../assets/images/hero-bg.jpg') center/cover;
-    filter: brightness(0.4) contrast(1.2);
+    filter: brightness(0.95) contrast(1.05);
     z-index: -2;
     transition: transform 0.1s ease-out; /* Pour le Parallax JS */
 }
