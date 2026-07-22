@@ -205,5 +205,25 @@ body {
     .glitch-title { font-size: 12vw; }
 }
 
+
+/* --- STYLE DU NOUVEAU LOGO IMAGE --- */
+.hero-logo {
+    max-width: 90%;
+    width: 600px; /* Taille max sur PC */
+    height: auto;
+    margin-bottom: 20px;
+    filter: drop-shadow(0 0 15px rgba(212, 175, 55, 0.4)); /* Léger halo doré */
+    animation: floatLogo 4s ease-in-out infinite; /* Petite animation de lévitation */
+}
+
+@keyframes floatLogo {
+    0% { transform: translateY(0px); }
+    50% { transform: translateY(-10px); }
+    100% { transform: translateY(0px); }
+}
+
+@media (max-width: 768px) {
+    .hero-logo { width: 300px; /* Taille adaptée pour mobile */ }
+}
 /* Temp styles pour autres vues */
 .temp-content { text-align: center; padding: 100px 20px; }
