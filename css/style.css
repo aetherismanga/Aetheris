@@ -152,17 +152,21 @@ body {
 }
 
 .hero-content {
-    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
     z-index: 10;
     padding: 0 20px;
-    margin-top: -100px;
 }
 
 .hero-logo {
+    width: 450px;
     max-width: 90%;
-    width: 600px;
     height: auto;
-    margin-bottom: 20px;
+    margin-top: -60px;
+    margin-bottom: 10px;
     filter: drop-shadow(0 0 15px rgba(212, 175, 55, 0.4));
     animation: floatLogo 4s ease-in-out infinite;
 }
@@ -174,12 +178,13 @@ body {
 }
 
 .subtitle {
-    font-size: 20px;
+    font-size: 16px;
     color: var(--accent-gold);
-    letter-spacing: 4px;
-    margin-bottom: 40px;
+    letter-spacing: 3px;
+    margin-bottom: 180px;
     text-transform: uppercase;
     font-family: var(--font-heading);
+    text-align: center;
 }
 
 /* --- BOUTON ÉPIQUE --- */
@@ -196,6 +201,7 @@ body {
     cursor: pointer;
     overflow: hidden;
     transition: var(--transition-smooth);
+    margin-top: 10px;
 }
 
 .btn-epic::before {
@@ -342,6 +348,12 @@ body {
     }
 
     .hero-logo { 
-        width: 300px; 
+        width: 280px; 
+        margin-top: -30px;
+    }
+
+    .subtitle {
+        font-size: 12px;
+        margin-bottom: 140px;
     }
 }
