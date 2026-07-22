@@ -225,6 +225,74 @@ body {
 
 @media (max-width: 768px) {
     .hero-logo { width: 300px; /* Taille adaptée pour mobile */ }
+
+    /* --- STYLE DU LECTEUR DE MANGA --- */
+#reader {
+    background-color: #000; /* Fond totalement noir pour lire */
+    padding-top: 80px;
+}
+
+.reader-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 5%;
+    background: var(--bg-panel);
+    border-bottom: 1px solid rgba(255,255,255,0.1);
+    position: sticky;
+    top: 80px;
+    z-index: 100;
+}
+
+.reader-header h2 {
+    font-family: var(--font-heading);
+    color: var(--accent-gold);
+    font-size: 20px;
+    letter-spacing: 2px;
+}
+
+.btn-icon {
+    background: transparent;
+    border: 1px solid var(--accent-glow);
+    color: var(--accent-glow);
+    padding: 8px 15px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-family: var(--font-heading);
+    transition: var(--transition-smooth);
+}
+
+.btn-icon:hover {
+    background: var(--accent-glow);
+    color: #000;
+}
+
+/* Le conteneur des images */
+#manga-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    margin-top: 0;
+}
+
+/* Les images du manga */
+.manga-page {
+    width: 100%;
+    max-width: 800px; /* Taille max sur PC, s'adapte sur mobile */
+    height: auto;
+    display: block; /* Enlève les espaces blancs sous les images */
+    margin: 0;
+    padding: 0;
+}
+
+.reader-controls {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 40px 20px;
+    background: #000;
+}
 }
 /* Temp styles pour autres vues */
 .temp-content { text-align: center; padding: 100px 20px; }
