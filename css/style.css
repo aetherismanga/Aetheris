@@ -129,7 +129,8 @@ body {
     position: absolute;
     top: -5%; left: -5%; width: 110%; height: 110%;
     /* Utilise une image d'un manga épique ou unsplash temporaire */
-    background: url('https://images.unsplash.com/photo-1605806616949-1e87b487cb2a?q=80&w=2000&auto=format&fit=crop') center/cover;
+    /* Correction du chemin vers ton image hero-bg.jpg locale */
+    background: url('../assets/images/hero-bg.jpg') center/cover;
     filter: brightness(0.4) contrast(1.2);
     z-index: -2;
     transition: transform 0.1s ease-out; /* Pour le Parallax JS */
