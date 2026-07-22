@@ -1,0 +1,209 @@
+:root {
+    --bg-dark: #050507;
+    --bg-panel: rgba(15, 15, 20, 0.7);
+    --text-main: #f0f0f5;
+    --text-muted: #8a8a9e;
+    --accent-glow: #00e5ff; /* Cyan magique */
+    --accent-gold: #d4af37; /* Or épique */
+    --font-heading: 'Rajdhani', sans-serif;
+    --font-body: 'Inter', sans-serif;
+    --transition-smooth: 0.4s cubic-bezier(0.25, 1, 0.5, 1);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--bg-dark);
+    color: var(--text-main);
+    font-family: var(--font-body);
+    overflow-x: hidden;
+    -webkit-font-smoothing: antialiased;
+}
+
+/* --- LOADER --- */
+#loader {
+    position: fixed;
+    top: 0; left: 0; width: 100%; height: 100vh;
+    background: var(--bg-dark);
+    z-index: 9999;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: opacity 0.5s ease;
+}
+#loader:not(.active) {
+    opacity: 0;
+    pointer-events: none;
+}
+.spinner {
+    width: 50px; height: 50px;
+    border: 3px solid transparent;
+    border-top-color: var(--accent-glow);
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+}
+@keyframes spin { 100% { transform: rotate(360deg); } }
+
+/* --- NAVIGATION --- */
+#main-nav {
+    position: fixed;
+    top: 0; width: 100%;
+    padding: 20px 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: var(--bg-panel);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border-bottom: 1px solid rgba(255,255,255,0.05);
+    z-index: 1000;
+}
+
+.nav-brand {
+    font-family: var(--font-heading);
+    font-size: 28px;
+    font-weight: 700;
+    letter-spacing: 3px;
+    color: var(--text-main);
+    cursor: pointer;
+    text-shadow: 0 0 10px rgba(0, 229, 255, 0.3);
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+}
+
+.nav-links a {
+    color: var(--text-muted);
+    text-decoration: none;
+    font-family: var(--font-heading);
+    font-size: 16px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: var(--transition-smooth);
+    position: relative;
+}
+
+.nav-links a:hover, .nav-links a.active {
+    color: var(--text-main);
+}
+
+.nav-links a::after {
+    content: '';
+    position: absolute;
+    bottom: -5px; left: 0; width: 0%; height: 2px;
+    background: var(--accent-glow);
+    transition: var(--transition-smooth);
+    box-shadow: 0 0 8px var(--accent-glow);
+}
+.nav-links a.active::after, .nav-links a:hover::after { width: 100%; }
+
+/* --- SPA VIEWS --- */
+.view {
+    display: none;
+    min-height: 100vh;
+    padding-top: 80px; /* Offset nav */
+    animation: fadeIn 0.6s ease;
+}
+.view.active { display: block; }
+@keyframes fadeIn { from { opacity: 0; transform: translateY(20px); } to { opacity: 1; transform: translateY(0); } }
+
+/* --- HERO SECTION (Accueil) --- */
+#home {
+    padding-top: 0;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.hero-bg {
+    position: absolute;
+    top: -5%; left: -5%; width: 110%; height: 110%;
+    /* Utilise une image d'un manga épique ou unsplash temporaire */
+    background: url('https://images.unsplash.com/photo-1605806616949-1e87b487cb2a?q=80&w=2000&auto=format&fit=crop') center/cover;
+    filter: brightness(0.4) contrast(1.2);
+    z-index: -2;
+    transition: transform 0.1s ease-out; /* Pour le Parallax JS */
+}
+
+.hero-particles {
+    position: absolute;
+    top: 0; left: 0; width: 100%; height: 100%;
+    background: radial-gradient(circle at center, transparent 0%, var(--bg-dark) 100%);
+    z-index: -1;
+}
+
+.hero-content {
+    text-align: center;
+    z-index: 10;
+}
+
+.glitch-title {
+    font-family: var(--font-heading);
+    font-size: 8vw;
+    font-weight: 700;
+    letter-spacing: 10px;
+    color: var(--text-main);
+    text-transform: uppercase;
+    text-shadow: 0 0 20px rgba(255,255,255,0.2);
+    margin-bottom: 10px;
+}
+
+.subtitle {
+    font-size: 20px;
+    color: var(--accent-gold);
+    letter-spacing: 4px;
+    margin-bottom: 50px;
+    text-transform: uppercase;
+}
+
+/* --- BOUTON AAA --- */
+.btn-epic {
+    position: relative;
+    padding: 18px 40px;
+    background: transparent;
+    border: 1px solid rgba(255,255,255,0.2);
+    color: var(--text-main);
+    font-family: var(--font-heading);
+    font-size: 18px;
+    font-weight: 600;
+    letter-spacing: 2px;
+    cursor: pointer;
+    overflow: hidden;
+    transition: var(--transition-smooth);
+}
+
+.btn-epic::before {
+    content: '';
+    position: absolute;
+    top: 0; left: -100%; width: 100%; height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(0, 229, 255, 0.4), transparent);
+    transition: var(--transition-smooth);
+}
+
+.btn-epic:hover {
+    border-color: var(--accent-glow);
+    box-shadow: 0 0 20px rgba(0, 229, 255, 0.3);
+    transform: scale(1.05);
+}
+
+.btn-epic:hover::before { left: 100%; transition: 0.7s; }
+
+/* --- RESPONSIVE MOBILE --- */
+@media (max-width: 768px) {
+    #main-nav { padding: 15px 20px; }
+    .nav-links { display: none; /* Menu burger logique à faire en JS */ }
+    .glitch-title { font-size: 12vw; }
+}
+
+/* Temp styles pour autres vues */
+.temp-content { text-align: center; padding: 100px 20px; }
