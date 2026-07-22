@@ -1,4 +1,4 @@
-const CACHE_NAME = 'aetheris-core-v1';
+const CACHE_NAME = 'aetheris-core-v2';
 const ASSETS_TO_CACHE = [
     './',
     './index.html',
