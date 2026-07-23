@@ -250,7 +250,7 @@ body {
 
 .reader-controls {
     display: flex;
-    gap: 12px;
+    gap: 10px;
     align-items: center;
 }
 
@@ -575,30 +575,30 @@ body.fullscreen-mode #floating-exit-fullscreen {
         align-items: center;
         padding: 8px 10px;
         top: 70px;
-        gap: 5px;
+        gap: 4px;
     }
     
     .reader-header h2 {
-        font-size: 14px;
-        letter-spacing: 1px;
+        font-size: 13px;
+        letter-spacing: 0.5px;
     }
 
     .reader-controls {
-        gap: 6px;
+        gap: 4px;
     }
 
     .btn-icon, .icon-only-btn {
-        padding: 4px 8px;
-        font-size: 12px;
+        padding: 4px 6px;
+        font-size: 11px;
     }
 
     .icon-only-btn {
         padding: 4px 6px;
-        font-size: 14px;
+        font-size: 13px;
     }
 
     #page-indicator {
-        font-size: 13px !important;
+        font-size: 12px !important;
     }
 
     #manga-container {
