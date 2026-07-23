@@ -118,7 +118,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
         if (isWebtoonMode) {
             if (prevPageBtn) prevPageBtn.style.display = "none";
-            if (nextPageBtn) nextPageBtn.style.display = "none";
+            if (nextPageBtn) prevPageBtn.style.display = "none";
             if (pageIndicator) pageIndicator.style.display = "none";
             if (modeToggleBtn) modeToggleBtn.textContent = "📜 Webtoon";
 
