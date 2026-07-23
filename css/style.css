@@ -157,6 +157,29 @@ body {
     z-index: -2;
 }
 
+/* Particules magiques d'arrière-plan */
+#particles {
+    position: absolute;
+    top: 0; left: 0; width: 100%; height: 100%;
+    overflow: hidden;
+    pointer-events: none;
+    z-index: 1;
+}
+.particle {
+    position: absolute;
+    background: var(--accent-glow);
+    border-radius: 50%;
+    opacity: 0.6;
+    box-shadow: 0 0 6px var(--accent-glow);
+    animation: floatParticle linear infinite;
+}
+@keyframes floatParticle {
+    0% { transform: translateY(105vh) scale(0.4); opacity: 0; }
+    30% { opacity: 0.8; }
+    70% { opacity: 0.8; }
+    100% { transform: translateY(-10vh) scale(1.2); opacity: 0; }
+}
+
 .hero-content {
     display: flex;
     flex-direction: column;
