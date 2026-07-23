@@ -34,7 +34,7 @@ document.addEventListener('DOMContentLoaded', () => {
     // --- SYSTÈME DE LECTURE PAGE PAR PAGE (60 pages) ---
     const totalPages = 60;
     let currentPage = 0; 
-    const chapterPath = 'chapitre1/'; // Dossier contenant tes images de 1.jpg à 60.jpg
+    const chapterPath = 'chapters/chapitre-01/'; // Chemin exact sur GitHub
 
     const container = document.getElementById('manga-container');
     const indicator = document.getElementById('page-indicator');
@@ -48,7 +48,9 @@ document.addEventListener('DOMContentLoaded', () => {
         if (container) {
             container.innerHTML = '';
             const img = document.createElement('img');
-            img.src = `${chapterPath}${currentPage + 1}.jpg`;
+            // Formate automatiquement avec un zéro devant (01.jpg, 02.jpg...)
+            const pageNum = String(currentPage + 1).padStart(2, '0');
+            img.src = `${chapterPath}${pageNum}.jpg`;
             img.alt = `Page ${currentPage + 1}`;
             container.appendChild(img);
         }
