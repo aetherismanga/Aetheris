@@ -7,7 +7,7 @@ document.addEventListener("DOMContentLoaded", () => {
         }, 500);
     }
 
-    // --- NAVIGATION SPA & MOBILE ---
+    // --- NAVIGATION SPA & MOBILE BURGER ---
     const navLinks = document.querySelectorAll(".nav-links a, .nav-brand, [data-target]");
     const views = document.querySelectorAll(".view");
     const hamburger = document.querySelector(".hamburger");
@@ -69,51 +69,6 @@ document.addEventListener("DOMContentLoaded", () => {
             }
         });
     }
-
-    const triggerElements = document.querySelectorAll('[data-target="reader"]');
-    triggerElements.forEach(element => {
-        element.addEventListener("click", () => {
-            if (audio && audio.paused) {
-                audio.play().catch(error => {
-                    console.log("Lecture audio bloquée par le navigateur : ", error);
-                });
-            }
-        });
-    });
-
-    // --- MODE PLEIN ÉCRAN IMMERSIF ---
-    const fullscreenBtn = document.getElementById("fullscreen-btn");
-    const floatingExitBtn = document.getElementById("floating-exit-fullscreen");
-
-    function toggleFullscreen() {
-        document.body.classList.toggle("fullscreen-mode");
-        
-        if (document.body.classList.contains("fullscreen-mode")) {
-            if (document.documentElement.requestFullscreen) {
-                document.documentElement.requestFullscreen().catch(err => console.log(err));
-            }
-            if (fullscreenBtn) fullscreenBtn.textContent = "🗗";
-        } else {
-            if (document.fullscreenElement) {
-                document.exitFullscreen().catch(err => console.log(err));
-            }
-            if (fullscreenBtn) fullscreenBtn.textContent = "⛶";
-        }
-    }
-
-    if (fullscreenBtn) {
-        fullscreenBtn.addEventListener("click", toggleFullscreen);
-    }
-    if (floatingExitBtn) {
-        floatingExitBtn.addEventListener("click", toggleFullscreen);
-    }
-
-    document.addEventListener("fullscreenchange", () => {
-        if (!document.fullscreenElement) {
-            document.body.classList.remove("fullscreen-mode");
-            if (fullscreenBtn) fullscreenBtn.textContent = "⛶";
-        }
-    });
 
     // --- LECTEUR MANGA : MODE PAGE PAR PAGE & MODE WEBTOON ---
     const mangaContainer = document.getElementById("manga-container");
@@ -184,6 +139,54 @@ document.addEventListener("DOMContentLoaded", () => {
             renderPage(currentPage);
         }
     }
+
+    // Chaque clic menant au lecteur remet à la page 1 et lance la musique si besoin
+    const triggerElements = document.querySelectorAll('[data-target="reader"]');
+    triggerElements.forEach(element => {
+        element.addEventListener("click", () => {
+            currentPage = 1;
+            updateReaderMode();
+            if (audio && audio.paused) {
+                audio.play().catch(error => {
+                    console.log("Lecture audio bloquée par le navigateur : ", error);
+                });
+            }
+        });
+    });
+
+    // --- MODE PLEIN ÉCRAN IMMERSIF ---
+    const fullscreenBtn = document.getElementById("fullscreen-btn");
+    const floatingExitBtn = document.getElementById("floating-exit-fullscreen");
+
+    function toggleFullscreen() {
+        document.body.classList.toggle("fullscreen-mode");
+        
+        if (document.body.classList.contains("fullscreen-mode")) {
+            if (document.documentElement.requestFullscreen) {
+                document.documentElement.requestFullscreen().catch(err => console.log(err));
+            }
+            if (fullscreenBtn) fullscreenBtn.textContent = "🗗";
+        } else {
+            if (document.fullscreenElement) {
+                document.exitFullscreen().catch(err => console.log(err));
+            }
+            if (fullscreenBtn) fullscreenBtn.textContent = "⛶";
+        }
+    }
+
+    if (fullscreenBtn) {
+        fullscreenBtn.addEventListener("click", toggleFullscreen);
+    }
+    if (floatingExitBtn) {
+        floatingExitBtn.addEventListener("click", toggleFullscreen);
+    }
+
+    document.addEventListener("fullscreenchange", () => {
+        if (!document.fullscreenElement) {
+            document.body.classList.remove("fullscreen-mode");
+            if (fullscreenBtn) fullscreenBtn.textContent = "⛶";
+        }
+    });
 
     if (modeToggleBtn) {
         modeToggleBtn.addEventListener("click", () => {
