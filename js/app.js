@@ -89,24 +89,42 @@ document.addEventListener("DOMContentLoaded", () => {
         });
     }
 
-    // --- LECTEUR MANGA : MODE PAGE PAR PAGE & MODE WEBTOON (Jusqu'à 100 pages) ---
+    // --- LECTEUR MANGA : MODE PAGE PAR PAGE & WEBTOON + SÉLECTEUR RAPIDE ---
     const mangaContainer = document.getElementById("manga-container");
     const prevPageBtn = document.getElementById("prev-page");
     const nextPageBtn = document.getElementById("next-page");
-    const pageIndicator = document.getElementById("page-indicator");
+    const pageSelector = document.getElementById("page-selector");
     const modeToggleBtn = document.getElementById("mode-toggle-btn");
 
     let currentPage = 1;
-    const totalPages = 100; // Mis à jour à 100 pages
+    const totalPages = 100;
     let isWebtoonMode = false;
 
-    // Fonction intelligente pour gérer 01.jpg jusqu'à 99.jpg et 100.jpg
+    // Remplir dynamiquement le sélecteur de pages (1 à 100)
+    if (pageSelector) {
+        pageSelector.innerHTML = "";
+        for (let i = 1; i <= totalPages; i++) {
+            const opt = document.createElement("option");
+            opt.value = i;
+            opt.textContent = i;
+            pageSelector.appendChild(opt);
+        }
+        
+        pageSelector.addEventListener("change", (e) => {
+            if (!isWebtoonMode) {
+                currentPage = parseInt(e.target.value);
+                renderPage(currentPage);
+                window.scrollTo(0, 0);
+            }
+        });
+    }
+
     function getFilenameForPage(pageNumber) {
         let numStr;
         if (pageNumber >= 100) {
-            numStr = String(pageNumber); // "100"
+            numStr = String(pageNumber);
         } else {
-            numStr = String(pageNumber).padStart(2, '0'); // "01", "64", etc.
+            numStr = String(pageNumber).padStart(2, '0');
         }
         return `chapters/chapitre-01/${numStr}.jpg`;
     }
@@ -136,8 +154,8 @@ document.addEventListener("DOMContentLoaded", () => {
 
         mangaContainer.appendChild(img);
 
-        if (pageIndicator) {
-            pageIndicator.textContent = `${currentPage} / ${totalPages}`;
+        if (pageSelector) {
+            pageSelector.value = currentPage;
         }
     }
 
@@ -148,7 +166,8 @@ document.addEventListener("DOMContentLoaded", () => {
         if (isWebtoonMode) {
             if (prevPageBtn) prevPageBtn.style.display = "none";
             if (nextPageBtn) nextPageBtn.style.display = "none";
-            if (pageIndicator) pageIndicator.style.display = "none";
+            if (pageSelector) pageSelector.style.display = "none";
+            if (pageSelector && pageSelector.nextElementSibling) pageSelector.nextElementSibling.style.display = "none"; // cache "/ 100"
             if (modeToggleBtn) modeToggleBtn.textContent = "📜 Webtoon";
 
             for (let i = 1; i <= totalPages; i++) {
@@ -161,14 +180,30 @@ document.addEventListener("DOMContentLoaded", () => {
         } else {
             if (prevPageBtn) prevPageBtn.style.display = "inline-block";
             if (nextPageBtn) prevPageBtn.style.display = "inline-block";
-            if (pageIndicator) pageIndicator.style.display = "inline-block";
+            if (pageSelector) pageSelector.style.display = "inline-block";
+            if (pageSelector && pageSelector.nextElementSibling) pageSelector.nextElementSibling.style.display = "inline-block"; // affiche "/ 100"
             if (modeToggleBtn) modeToggleBtn.textContent = "📄 Page";
 
             renderPage(currentPage);
         }
     }
 
-    // Chaque clic menant au lecteur remet à la page 1 et lance la musique si besoin
+    // Écoute des touches clavier (Flèche gauche / Flèche droite) pour aller vite sur PC
+    document.addEventListener("keydown", (e) => {
+        const readerView = document.getElementById("reader");
+        if (readerView && readerView.classList.contains("active") && !isWebtoonMode) {
+            if (e.key === "ArrowLeft" && currentPage > 1) {
+                currentPage--;
+                renderPage(currentPage);
+                window.scrollTo(0, 0);
+            } else if (e.key === "ArrowRight" && currentPage < totalPages) {
+                currentPage++;
+                renderPage(currentPage);
+                window.scrollTo(0, 0);
+            }
+        }
+    });
+
     const triggerElements = document.querySelectorAll('[data-target="reader"]');
     triggerElements.forEach(element => {
         element.addEventListener("click", () => {
