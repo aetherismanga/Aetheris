@@ -50,7 +50,7 @@ document.addEventListener("DOMContentLoaded", () => {
         }
     });
 
-    // --- GESTION AUDIO & BOUTON MUTE (Icône discrète) ---
+    // --- GESTION AUDIO & BOUTON MUTE ---
     const audio = document.getElementById("bg-audio");
     const muteBtn = document.getElementById("mute-btn");
     
@@ -70,7 +70,6 @@ document.addEventListener("DOMContentLoaded", () => {
         });
     }
 
-    // Lancer la musique lorsqu'on clique sur un bouton menant au lecteur
     const triggerElements = document.querySelectorAll('[data-target="reader"]');
     triggerElements.forEach(element => {
         element.addEventListener("click", () => {
@@ -82,7 +81,7 @@ document.addEventListener("DOMContentLoaded", () => {
         });
     });
 
-    // --- MODE PLEIN ÉCRAN IMMERSIF & VRAI PLEIN ÉCRAN NAVIGATEUR ---
+    // --- MODE PLEIN ÉCRAN IMMERSIF ---
     const fullscreenBtn = document.getElementById("fullscreen-btn");
     const floatingExitBtn = document.getElementById("floating-exit-fullscreen");
 
@@ -116,14 +115,16 @@ document.addEventListener("DOMContentLoaded", () => {
         }
     });
 
-    // --- LECTEUR MANGA PAGE PAR PAGE (Avec Clic et Boutons Suivant/Précédent) ---
+    // --- LECTEUR MANGA : MODE PAGE PAR PAGE & MODE WEBTOON ---
     const mangaContainer = document.getElementById("manga-container");
     const prevPageBtn = document.getElementById("prev-page");
     const nextPageBtn = document.getElementById("next-page");
     const pageIndicator = document.getElementById("page-indicator");
+    const modeToggleBtn = document.getElementById("mode-toggle-btn");
 
     let currentPage = 1;
     const totalPages = 63;
+    let isWebtoonMode = false; // false = Page par page, true = Webtoon (défilement vertical)
 
     function renderPage(page) {
         if (!mangaContainer) return;
@@ -136,14 +137,16 @@ document.addEventListener("DOMContentLoaded", () => {
         img.style.cursor = "pointer";
         
         img.addEventListener("click", () => {
-            if (currentPage < totalPages) {
-                currentPage++;
-                renderPage(currentPage);
-                window.scrollTo(0, 0);
-            } else {
-                currentPage = 1;
-                renderPage(currentPage);
-                window.scrollTo(0, 0);
+            if (!isWebtoonMode) {
+                if (currentPage < totalPages) {
+                    currentPage++;
+                    renderPage(currentPage);
+                    window.scrollTo(0, 0);
+                } else {
+                    currentPage = 1;
+                    renderPage(currentPage);
+                    window.scrollTo(0, 0);
+                }
             }
         });
 
@@ -154,12 +157,50 @@ document.addEventListener("DOMContentLoaded", () => {
         }
     }
 
+    function updateReaderMode() {
+        if (!mangaContainer) return;
+        mangaContainer.innerHTML = "";
+
+        if (isWebtoonMode) {
+            // Mode Webtoon : Afficher toutes les pages à la suite
+            if (prevPageBtn) prevPageBtn.style.display = "none";
+            if (nextPageBtn) nextPageBtn.style.display = "none";
+            if (pageIndicator) pageIndicator.style.display = "none";
+            if (modeToggleBtn) modeToggleBtn.textContent = "📜 Webtoon";
+
+            for (let i = 1; i <= totalPages; i++) {
+                const pageNum = String(i).padStart(2, '0');
+                const img = document.createElement("img");
+                img.src = `chapters/chapitre-01/${pageNum}.jpg`;
+                img.alt = `Page ${i}`;
+                img.loading = "lazy";
+                mangaContainer.appendChild(img);
+            }
+        } else {
+            // Mode Page par page
+            if (prevPageBtn) prevPageBtn.style.display = "inline-block";
+            if (nextPageBtn) nextPageBtn.style.display = "inline-block";
+            if (pageIndicator) pageIndicator.style.display = "inline-block";
+            if (modeToggleBtn) modeToggleBtn.textContent = "📄 Page";
+
+            renderPage(currentPage);
+        }
+    }
+
+    if (modeToggleBtn) {
+        modeToggleBtn.addEventListener("click", () => {
+            isWebtoonMode = !isWebtoonMode;
+            updateReaderMode();
+            window.scrollTo(0, 0);
+        });
+    }
+
     if (mangaContainer) {
-        renderPage(currentPage);
+        updateReaderMode();
 
         if (prevPageBtn) {
             prevPageBtn.addEventListener("click", () => {
-                if (currentPage > 1) {
+                if (!isWebtoonMode && currentPage > 1) {
                     currentPage--;
                     renderPage(currentPage);
                     window.scrollTo(0, 0);
@@ -169,7 +210,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
         if (nextPageBtn) {
             nextPageBtn.addEventListener("click", () => {
-                if (currentPage < totalPages) {
+                if (!isWebtoonMode && currentPage < totalPages) {
                     currentPage++;
                     renderPage(currentPage);
                     window.scrollTo(0, 0);
