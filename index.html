@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="google-site-verification" content="X0K3fGwJBXbKguIKHyJZ-IjHsh-qGJOsPIcD2CqtczI" />
     <title>AETHERIS | Manga Officiel</title>
-    <link rel="stylesheet" href="css/style.css?v=27">
+    <link rel="stylesheet" href="css/style.css?v=28">
 </head>
 <body>
     <div id="loader" class="active">
@@ -43,7 +43,6 @@
         <!-- PERSONNAGES -->
         <section id="characters" class="view">
             <div class="reader-header">
-                <button class="btn-icon" data-target="home">← Retour</button>
                 <h2>PERSONNAGES</h2>
             </div>
             <div class="characters-grid">
@@ -83,16 +82,15 @@
         <!-- LECTEUR MANGA -->
         <section id="reader" class="view">
             <div class="reader-header">
-                <button class="btn-icon" data-target="home">← Retour</button>
                 <h2 id="current-chapter-title">Chapitre 1</h2>
-                <div style="display: flex; gap: 15px; align-items: center;">
-                    <!-- Bouton Mute / Unmute -->
-                    <button id="mute-btn" class="btn-icon">🔊 Musique : ON</button>
-                    <!-- Bouton Plein écran -->
-                    <button id="fullscreen-btn" class="btn-icon">Plein écran</button>
-                    <button id="prev-page" class="btn-icon">← Précédent</button>
-                    <span id="page-indicator" style="font-family: var(--font-heading); color: var(--accent-gold); font-size: 16px;">1 / 63</span>
-                    <button id="next-page" class="btn-icon">Suivant →</button>
+                <div class="reader-controls">
+                    <!-- Bouton Musique discret (Icône seule) -->
+                    <button id="mute-btn" class="icon-only-btn" title="Activer / Couper la musique">🔊</button>
+                    <!-- Bouton Plein écran discret -->
+                    <button id="fullscreen-btn" class="icon-only-btn" title="Plein écran">⛶</button>
+                    <button id="prev-page" class="btn-icon">←</button>
+                    <span id="page-indicator" style="font-family: var(--font-heading); color: var(--accent-gold); font-size: 15px;">1 / 63</span>
+                    <button id="next-page" class="btn-icon">→</button>
                 </div>
             </div>
             <div id="manga-container"></div>
@@ -170,6 +168,6 @@
     <!-- Bouton flottant de sortie plein écran -->
     <button id="floating-exit-fullscreen">✕ Quitter</button>
 
-    <script src="js/app.js?v=27"></script>
+    <script src="js/app.js?v=28"></script>
 </body>
 </html>
