@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="google-site-verification" content="X0K3fGwJBXbKguIKHyJZ-IjHsh-qGJOsPIcD2CqtczI" />
     <title>AETHERIS | Manga Officiel</title>
-    <link rel="stylesheet" href="css/style.css?v=29">
+    <link rel="stylesheet" href="css/style.css?v=30">
 </head>
 <body>
     <div id="loader" class="active">
@@ -19,7 +19,7 @@
         </div>
         <div class="nav-links">
             <a href="#" data-target="home" class="active">ACCUEIL</a>
-            <a href="#" data-target="reader">LIRE LE MANGA</a>
+            <a href="#" data-target="chapters-list">CHAPITRES</a>
             <a href="#" data-target="characters">PERSONNAGES</a>
             <a href="#" data-target="universe">UNIVERS</a>
             <a href="#" data-target="author">L'AUTEUR</a>
@@ -34,9 +34,50 @@
             <div class="hero-content">
                 <img src="assets/images/logo.png" alt="AETHERIS" class="hero-logo">
                 <p class="subtitle">TROIS MONDES. UNE PROPHÉTIE. UN DESTIN À RÉVÉLER.</p>
-                <button class="btn-epic" data-target="reader">
+                <button class="btn-epic" data-target="chapters-list">
                     <span class="btn-text">COMMENCER L'AVENTURE</span>
                 </button>
+            </div>
+        </section>
+
+        <!-- LISTE DES CHAPITRES -->
+        <section id="chapters-list" class="view">
+            <div class="reader-header">
+                <h2>CHAPITRES D'AETHERIS</h2>
+            </div>
+            <div class="chapter-selection-grid">
+                <!-- Chapitre 1 (Cliquable & Disponible) -->
+                <div class="chapter-card clickable" data-target="reader">
+                    <div class="chapter-thumb" style="background: url('chapters/chapitre-01/01.jpg') center/cover;">
+                        <span class="chapter-badge available">Disponible</span>
+                    </div>
+                    <div class="chapter-info">
+                        <h3>Chapitre 1</h3>
+                        <p>Le Commencement — 63 pages</p>
+                    </div>
+                </div>
+
+                <!-- Chapitre 2 (En cours d'encrage) -->
+                <div class="chapter-card">
+                    <div class="chapter-thumb placeholder">
+                        <span class="chapter-badge in-progress">En cours d'encrage</span>
+                    </div>
+                    <div class="chapter-info">
+                        <h3>Chapitre 2</h3>
+                        <p>Les Ombres d'Elyndor</p>
+                    </div>
+                </div>
+
+                <!-- Chapitre 3 (Bientôt) -->
+                <div class="chapter-card">
+                    <div class="chapter-thumb placeholder">
+                        <span class="chapter-badge upcoming">À venir (Ulule)</span>
+                    </div>
+                    <div class="chapter-info">
+                        <h3>Chapitre 3</h3>
+                        <p>La Prophétie des Cieux</p>
+                    </div>
+                </div>
             </div>
         </section>
 
@@ -170,6 +211,6 @@
     <!-- Bouton flottant de sortie plein écran -->
     <button id="floating-exit-fullscreen">✕ Quitter</button>
 
-    <script src="js/app.js?v=29"></script>
+    <script src="js/app.js?v=30"></script>
 </body>
 </html>
