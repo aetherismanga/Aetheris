@@ -281,6 +281,17 @@ body {
     box-shadow: 0 10px 30px rgba(0,0,0,0.8);
 }
 
+/* --- MODE PLEIN ÉCRAN IMMERSIF --- */
+body.fullscreen-mode #main-nav {
+    display: none !important;
+}
+body.fullscreen-mode #reader {
+    padding-top: 0 !important;
+}
+body.fullscreen-mode .reader-header {
+    top: 0 !important;
+}
+
 /* --- SECTION PERSONNAGES --- */
 .characters-grid {
     display: flex;
