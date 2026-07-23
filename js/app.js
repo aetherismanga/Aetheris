@@ -31,23 +31,52 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 
-    fetch('assets/data/database.json')
-        .then(res => res.json())
-        .then(data => {
-            if (data && data.chapters && data.chapters.length > 0) {
-                const chapter = data.chapters[0];
-                const container = document.getElementById('manga-container');
-                const title = document.getElementById('current-chapter-title');
-                if (title) title.textContent = chapter.title;
-                if (container && chapter.pages) {
-                    container.innerHTML = '';
-                    chapter.pages.forEach(page => {
-                        const img = document.createElement('img');
-                        img.src = `${chapter.path}${page}`;
-                        container.appendChild(img);
-                    });
-                }
+    // --- SYSTÈME DE LECTURE PAGE PAR PAGE (60 pages) ---
+    const totalPages = 60;
+    let currentPage = 0; 
+    const chapterPath = 'chapitre1/'; // Dossier contenant tes images de 1.jpg à 60.jpg
+
+    const container = document.getElementById('manga-container');
+    const indicator = document.getElementById('page-indicator');
+    const btnPrev = document.getElementById('prev-page');
+    const btnNext = document.getElementById('next-page');
+    const title = document.getElementById('current-chapter-title');
+
+    if (title) title.textContent = "Chapitre 1 : L'Aventure";
+
+    function renderPage() {
+        if (container) {
+            container.innerHTML = '';
+            const img = document.createElement('img');
+            img.src = `${chapterPath}${currentPage + 1}.jpg`;
+            img.alt = `Page ${currentPage + 1}`;
+            container.appendChild(img);
+        }
+        if (indicator) {
+            indicator.textContent = `${currentPage + 1} / ${totalPages}`;
+        }
+    }
+
+    if (btnNext) {
+        btnNext.addEventListener('click', () => {
+            if (currentPage < totalPages - 1) {
+                currentPage++;
+                renderPage();
+                window.scrollTo(0, 0);
             }
-        })
-        .catch(err => console.error("Erreur de chargement :", err));
+        });
+    }
+
+    if (btnPrev) {
+        btnPrev.addEventListener('click', () => {
+            if (currentPage > 0) {
+                currentPage--;
+                renderPage();
+                window.scrollTo(0, 0);
+            }
+        });
+    }
+
+    // Affiche la première page au chargement
+    renderPage();
 });
