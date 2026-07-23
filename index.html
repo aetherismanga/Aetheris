@@ -1,537 +1,170 @@
-:root {
-    --bg-dark: #050507;
-    --bg-panel: rgba(15, 15, 20, 0.7);
-    --text-main: #f0f0f5;
-    --text-muted: #d0d0e0;
-    --accent-glow: #00e5ff;
-    --accent-gold: #d4af37;
-    --font-heading: 'Rajdhani', sans-serif;
-    --font-body: 'Inter', sans-serif;
-    --transition-smooth: 0.4s cubic-bezier(0.25, 1, 0.5, 1);
-}
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="google-site-verification" content="X0K3fGwJBXbKguIKHyJZ-IjHsh-qGJOsPIcD2CqtczI" />
+    <title>AETHERIS | Manga Officiel</title>
+    <link rel="stylesheet" href="css/style.css?v=26">
+</head>
+<body>
+    <div id="loader" class="active">
+        <div class="spinner"></div>
+    </div>
 
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
+    <nav id="main-nav">
+        <div class="nav-brand" data-target="home">AETHERIS</div>
+        <div class="hamburger">
+            <span></span><span></span><span></span>
+        </div>
+        <div class="nav-links">
+            <a href="#" data-target="home" class="active">ACCUEIL</a>
+            <a href="#" data-target="reader">LIRE LE MANGA</a>
+            <a href="#" data-target="characters">PERSONNAGES</a>
+            <a href="#" data-target="universe">UNIVERS</a>
+            <a href="#" data-target="author">L'AUTEUR</a>
+            <a href="#" data-target="news">ACTU / CONTACT</a>
+        </div>
+    </nav>
 
-body {
-    background-color: var(--bg-dark);
-    color: var(--text-main);
-    font-family: var(--font-body);
-    overflow-x: hidden;
-    -webkit-font-smoothing: antialiased;
-}
+    <main id="app-content">
+        <!-- ACCUEIL -->
+        <section id="home" class="view active">
+            <div class="hero-bg"></div>
+            <div class="hero-content">
+                <img src="assets/images/logo.png" alt="AETHERIS" class="hero-logo">
+                <p class="subtitle">TROIS MONDES. UNE PROPHÉTIE. UN DESTIN À RÉVÉLER.</p>
+                <button class="btn-epic" data-target="reader">
+                    <span class="btn-text">COMMENCER L'AVENTURE</span>
+                </button>
+            </div>
+        </section>
 
-/* --- LOADER --- */
-#loader {
-    position: fixed;
-    top: 0; left: 0; width: 100%; height: 100vh;
-    background: var(--bg-dark);
-    z-index: 9999;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    transition: opacity 0.5s ease;
-}
-#loader:not(.active) {
-    opacity: 0;
-    pointer-events: none;
-}
-.spinner {
-    width: 50px; height: 50px;
-    border: 3px solid transparent;
-    border-top-color: var(--accent-glow);
-    border-radius: 50%;
-    animation: spin 1s linear infinite;
-}
-@keyframes spin { 100% { transform: rotate(360deg); } }
+        <!-- PERSONNAGES -->
+        <section id="characters" class="view">
+            <div class="reader-header">
+                <button class="btn-icon" data-target="home">← Retour</button>
+                <h2>PERSONNAGES</h2>
+            </div>
+            <div class="characters-grid">
+                <div class="char-card">
+                    <img src="personnages/kael.jpeg" alt="Kael">
+                    <img src="personnages/kael2.jpeg" alt="Kael Design">
+                    <h3>Kael</h3>
+                    <p>Le personnage principal de l'aventure.</p>
+                </div>
+                <div class="char-card">
+                    <img src="personnages/lyssara.jpeg" alt="Lyssara">
+                    <img src="personnages/lyssara2.jpeg" alt="Lyssara Design">
+                    <h3>Lyssara</h3>
+                    <p>Celle qui l'accompagnera dans l'aventure.</p>
+                </div>
+                <div class="char-card">
+                    <img src="personnages/aldren.jpeg" alt="Aldren">
+                    <img src="personnages/aldren2.jpeg" alt="Aldren Design">
+                    <h3>Aldren</h3>
+                    <p>Le vieux pêcheur de Port-Lys.</p>
+                </div>
+                <div class="char-card">
+                    <img src="personnages/vaiana.jpeg" alt="Vaiana">
+                    <img src="personnages/vaiana2.jpeg" alt="Vaiana Design">
+                    <h3>Vaiana</h3>
+                    <p>Personnage clé de l'univers.</p>
+                </div>
+                <div class="char-card">
+                    <img src="personnages/draven.jpeg" alt="Draven">
+                    <img src="personnages/draven2.jpeg" alt="Draven Design">
+                    <h3>Draven</h3>
+                    <p>L'animal de Lyssara.</p>
+                </div>
+            </div>
+        </section>
 
-/* --- NAVIGATION --- */
-#main-nav {
-    position: fixed;
-    top: 0; width: 100%;
-    padding: 20px 50px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background: var(--bg-panel);
-    backdrop-filter: blur(12px);
-    -webkit-backdrop-filter: blur(12px);
-    border-bottom: 1px solid rgba(255,255,255,0.05);
-    z-index: 1000;
-}
+        <!-- LECTEUR MANGA -->
+        <section id="reader" class="view">
+            <div class="reader-header">
+                <button class="btn-icon" data-target="home">← Retour</button>
+                <h2 id="current-chapter-title">Chapitre 1</h2>
+                <div style="display: flex; gap: 15px; align-items: center;">
+                    <button id="mute-btn" class="btn-icon">🔊 Musique : ON</button>
+                    <button id="fullscreen-btn" class="btn-icon">Plein écran</button>
+                    <button id="prev-page" class="btn-icon">← Précédent</button>
+                    <span id="page-indicator" style="font-family: var(--font-heading); color: var(--accent-gold); font-size: 16px;">1 / 63</span>
+                    <button id="next-page" class="btn-icon">Suivant →</button>
+                </div>
+            </div>
+            <div id="manga-container"></div>
+        </section>
 
-.nav-brand {
-    font-family: var(--font-heading);
-    font-size: 28px;
-    font-weight: 700;
-    letter-spacing: 3px;
-    color: var(--text-main);
-    cursor: pointer;
-    text-shadow: 0 0 10px rgba(0, 229, 255, 0.3);
-}
+        <!-- UNIVERS -->
+        <section id="universe" class="view">
+            <div class="universe-bg"></div>
+            <div class="univers-container">
+                <h2>L'UNIVERS D'AETHERIS</h2>
+                <p class="subtitle">Entre ciel et oubli</p>
+                <div class="univers-card">
+                    <p>Il y a seize ans, un mystérieux bouleversement a marqué les cieux : des <strong>montagnes suspendues</strong> ont émergé, dominant un monde divisé entre l'agitation des hommes et les secrets enfouis des anciennes légendes.</p>
+                    <p>À l'extrémité occidentale du continent d'Aetheris, le paisible <strong>littoral d'Elyndor</strong> et son village de <strong>Port-Lys</strong> vivent au rythme des marées, ignorant tout des menaces qui grondent au-delà de la forêt. C'est pourtant là, dans l'ombre de ces terres que même les plus anciens évitent d'évoquer, que le destin s'écrit. Entre des reliques oubliées scellées par une magie inconnue, des pouvoirs endormis et des dimensions démoniaques oubliées, chaque murmure du vent cache une vérité prête à éclater au grand jour.</p>
+                    <p class="univers-quote">Trois mondes, une prophétie, un héritage : l'aventure ne fait que commencer.</p>
+                </div>
+            </div>
+        </section>
 
-.nav-links {
-    list-style: none;
-    display: flex;
-    gap: 30px;
-}
+        <!-- L'AUTEUR -->
+        <section id="author" class="view">
+            <div class="author-bg"></div>
+            <div class="univers-container">
+                <h2>L'AUTEUR</h2>
+                <div class="univers-card">
+                    <p>À quarante-cinq ans, sous le pseudo du <strong>Grognard du net</strong>, on pense souvent que certains rêves d'enfant doivent sagement rester au fond d'un tiroir. Depuis toujours, crayon en main, j'ai été nourri par la passion du dessin et happé par ces œuvres fondatrices que sont <em>Dragon Ball Z</em>, <em>Naruto</em> ou <em>One Piece</em>.</p>
+                    <p>Je tiens à être totalement transparent avec vous : sans l'aide de l'intelligence artificielle comme assistant et collaborateur, ce projet aurait fini par s'éteindre dans l'oubli. C'est grâce à ce coup de pouce que <strong>Kael, Lyssara et le monde d'Aetheris</strong> prennent vie aujourd'hui, transformant une frustration de longue date en réalité.</p>
+                    <p>Mes idées débordent et cette aventure est loin de s'arrêter là. Pour qu'elle devienne grandiose, j'ai besoin de votre soutien, mais aussi et surtout de vos retours — qu'ils soient positifs ou négatifs —, car ce sont eux qui m'aideront à grandir et à façonner la suite.</p>
+                </div>
+            </div>
+        </section>
 
-.nav-links a {
-    color: var(--text-muted);
-    text-decoration: none;
-    font-family: var(--font-heading);
-    font-size: 16px;
-    font-weight: 600;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    transition: var(--transition-smooth);
-    position: relative;
-}
+        <!-- ACTU / CONTACT -->
+        <section id="news" class="view">
+            <div class="news-bg"></div>
+            <div class="univers-container" style="max-width: 1200px;">
+                <h2 style="font-family: var(--font-heading); font-size: 2.5rem; letter-spacing: 2px; color: var(--text-main); text-shadow: 0 0 15px rgba(0,229,255,0.4);">ACTUALITÉS & CONTACT</h2>
+                <div class="news-grid">
+                    <div class="news-box">
+                        <h3>Journal de bord</h3>
+                        <p style="color: var(--text-muted); font-size: 1.15rem; line-height: 1.7; margin-bottom: 20px;">Bienvenue dans les actualités d'Aetheris. Retrouvez ici toutes les annonces sur les sorties des prochains chapitres, les croquis des coulisses et l'avancement du projet en vue de l'Ulule.</p>
+                        <p style="color: var(--accent-gold); font-size: 1.1rem; font-weight: 600;"><em>Le Chapitre 1 est disponible en lecture gratuite. Restez connectés pour la suite !</em></p>
+                    </div>
+                    
+                    <div class="contact-box">
+                        <h3>Rejoindre l'aventure</h3>
+                        <p style="color: var(--text-muted); font-size: 1.05rem; margin-bottom: 20px;">Une question ou envie de suivre la création au quotidien ?</p>
+                        
+                        <!-- YouTube -->
+                        <a href="https://www.youtube.com/@grognarddunet" target="_blank" class="contact-link">
+                            <img src="assets/images/logoyoutube01.png" alt="YouTube" class="contact-icon">
+                            <span>Le Grognard du net (25k)</span>
+                        </a>
+                        
+                        <!-- TikTok -->
+                        <a href="https://www.tiktok.com/@legrognarddunet" target="_blank" class="contact-link">
+                            <img src="assets/images/logotiktok01.png" alt="TikTok" class="contact-icon">
+                            <span>@legrognarddunet</span>
+                        </a>
 
-.nav-links a:hover, .nav-links a.active {
-    color: var(--text-main);
-}
+                        <!-- E-mail -->
+                        <a href="mailto:legrognarddunet@gmail.com" class="contact-link">
+                            <svg class="contact-icon" style="padding: 8px; fill: var(--accent-glow);" viewBox="0 0 24 24"><path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg>
+                            <span>legrognarddunet@gmail.com</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
 
-.nav-links a::after {
-    content: '';
-    position: absolute;
-    bottom: -5px; left: 0; width: 0%; height: 2px;
-    background: var(--accent-glow);
-    transition: var(--transition-smooth);
-    box-shadow: 0 0 8px var(--accent-glow);
-}
-.nav-links a.active::after, .nav-links a:hover::after { width: 100%; }
+    <!-- ÉLÉMENT AUDIO (MP3) -->
+    <audio id="bg-audio" src="assets/audio/themeeartheris.mp3" preload="auto" loop></audio>
 
-/* Menu Burger Mobile */
-.hamburger {
-    display: none;
-    flex-direction: column;
-    justify-content: space-between;
-    width: 30px;
-    height: 21px;
-    cursor: pointer;
-}
-.hamburger span {
-    display: block;
-    width: 100%;
-    height: 3px;
-    background-color: #fff;
-    border-radius: 2px;
-}
-
-/* --- SPA VIEWS --- */
-.view {
-    display: none;
-    min-height: 100vh;
-    padding-top: 80px;
-    animation: fadeIn 0.6s ease;
-}
-.view.active { 
-    display: block; 
-}
-#home.view.active {
-    display: flex;
-}
-@keyframes fadeIn { from { opacity: 0; transform: translateY(20px); } to { opacity: 1; transform: translateY(0); } }
-
-/* --- HERO SECTION (Accueil) --- */
-#home {
-    padding-top: 0;
-    position: relative;
-    justify-content: center;
-    align-items: center;
-    overflow: hidden;
-    min-height: 100vh;
-}
-
-.hero-bg {
-    position: absolute;
-    top: -5%; left: -5%; width: 110%; height: 110%;
-    background: url('../assets/images/hero-bg.jpg') center/cover;
-    filter: brightness(0.95) contrast(1.05);
-    z-index: -2;
-}
-
-.hero-content {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-    z-index: 10;
-    padding: 0 20px;
-}
-
-.hero-logo {
-    width: 450px;
-    max-width: 90%;
-    height: auto;
-    margin-top: -60px;
-    margin-bottom: 10px;
-    filter: drop-shadow(0 0 15px rgba(212, 175, 55, 0.4));
-    animation: floatLogo 4s ease-in-out infinite;
-}
-
-@keyframes floatLogo {
-    0% { transform: translateY(0px); }
-    50% { transform: translateY(-10px); }
-    100% { transform: translateY(0px); }
-}
-
-.subtitle {
-    font-size: 16px;
-    color: var(--accent-gold);
-    letter-spacing: 3px;
-    margin-bottom: 180px;
-    text-transform: uppercase;
-    font-family: var(--font-heading);
-    text-align: center;
-}
-
-/* --- BOUTON ÉPIQUE --- */
-.btn-epic {
-    position: relative;
-    padding: 18px 40px;
-    background: transparent;
-    border: 1px solid rgba(255,255,255,0.2);
-    color: var(--text-main);
-    font-family: var(--font-heading);
-    font-size: 18px;
-    font-weight: 600;
-    letter-spacing: 2px;
-    cursor: pointer;
-    overflow: hidden;
-    transition: var(--transition-smooth);
-    margin-top: 10px;
-}
-
-.btn-epic::before {
-    content: '';
-    position: absolute;
-    top: 0; left: -100%; width: 100%; height: 100%;
-    background: linear-gradient(90deg, transparent, rgba(0, 229, 255, 0.4), transparent);
-    transition: var(--transition-smooth);
-}
-
-.btn-epic:hover {
-    border-color: var(--accent-glow);
-    box-shadow: 0 0 20px rgba(0, 229, 255, 0.3);
-    transform: scale(1.05);
-}
-
-.btn-epic:hover::before { left: 100%; transition: 0.7s; }
-
-/* --- STYLE DU LECTEUR DE MANGA --- */
-#reader {
-    background-color: #000;
-}
-
-.reader-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 15px 5%;
-    background: var(--bg-panel);
-    border-bottom: 1px solid rgba(255,255,255,0.1);
-    position: sticky;
-    top: 80px;
-    z-index: 100;
-}
-
-.reader-header h2 {
-    font-family: var(--font-heading);
-    color: var(--accent-gold);
-    font-size: 20px;
-    letter-spacing: 2px;
-}
-
-.btn-icon {
-    background: transparent;
-    border: 1px solid var(--accent-glow);
-    color: var(--accent-glow);
-    padding: 8px 15px;
-    border-radius: 4px;
-    cursor: pointer;
-    font-family: var(--font-heading);
-    transition: var(--transition-smooth);
-}
-
-.btn-icon:hover {
-    background: var(--accent-glow);
-    color: #000;
-}
-
-#manga-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 100%;
-    padding: 40px 0;
-}
-
-#manga-container img {
-    max-width: 850px;
-    width: 100%;
-    height: auto;
-    margin-bottom: 20px;
-    display: block;
-    box-shadow: 0 10px 30px rgba(0,0,0,0.8);
-}
-
-/* --- MODE PLEIN ÉCRAN IMMERSIF --- */
-body.fullscreen-mode #main-nav {
-    display: none !important;
-}
-body.fullscreen-mode #reader {
-    padding-top: 0 !important;
-}
-body.fullscreen-mode .reader-header {
-    top: 0 !important;
-}
-
-/* --- SECTION PERSONNAGES --- */
-.characters-grid {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    max-width: 800px;
-    margin: 0 auto;
-    padding: 40px 20px;
-}
-
-.char-card {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 100%;
-    background: #121216;
-    border: 1px solid rgba(255, 255, 255, 0.1);
-    border-radius: 8px;
-    padding: 20px;
-    margin-bottom: 40px;
-    box-shadow: 0 5px 15px rgba(0,0,0,0.5);
-    text-align: center;
-}
-
-.char-card img {
-    width: 100%;
-    max-width: 100%;
-    height: auto;
-    border-radius: 4px;
-    margin-bottom: 15px;
-    display: block;
-}
-
-.char-card h3 {
-    color: #fff;
-    font-family: var(--font-heading);
-    font-size: 1.5rem;
-    margin-bottom: 10px;
-}
-
-.char-card p {
-    color: var(--text-muted);
-    font-size: 0.95rem;
-}
-
-/* --- SECTIONS LUMINEUSES ET ÉLARGIES (Univers, Auteur, Actu) --- */
-#universe, #author, #news {
-    position: relative;
-    overflow: hidden;
-}
-
-.universe-bg {
-    position: absolute;
-    top: -5%; left: -5%; width: 110%; height: 110%;
-    background: url('../assets/images/univers01.png') center/cover;
-    filter: brightness(0.85) contrast(1.05);
-    z-index: -2;
-}
-
-.author-bg {
-    position: absolute;
-    top: -5%; left: -5%; width: 110%; height: 110%;
-    background: url('../assets/images/univers02.png') center/cover;
-    filter: brightness(0.85) contrast(1.05);
-    z-index: -2;
-}
-
-.news-bg {
-    position: absolute;
-    top: -5%; left: -5%; width: 110%; height: 110%;
-    background: url('../assets/images/univers03.png') center/cover;
-    filter: brightness(0.85) contrast(1.05);
-    z-index: -2;
-}
-
-.univers-container {
-    max-width: 1100px;
-    margin: 0 auto;
-    padding: 50px 20px;
-    text-align: center;
-    position: relative;
-    z-index: 2;
-}
-
-.univers-card {
-    background: rgba(10, 10, 14, 0.55);
-    backdrop-filter: blur(8px);
-    border: 1px solid rgba(255, 255, 255, 0.15);
-    border-radius: 8px;
-    padding: 40px;
-    margin-top: 20px;
-    box-shadow: 0 10px 30px rgba(0,0,0,0.5);
-    text-align: left;
-}
-
-.univers-card p {
-    color: #f5f5f7;
-    font-size: 1.2rem;
-    line-height: 1.7;
-    margin-bottom: 22px;
-}
-
-.univers-quote {
-    color: var(--accent-glow);
-    font-family: var(--font-heading);
-    font-size: 1.35rem;
-    text-align: center;
-    font-weight: 600;
-    margin-top: 30px;
-}
-
-/* --- SECTION ACTU / CONTACT ÉPIQUE --- */
-.news-grid {
-    display: grid;
-    grid-template-columns: 1.2fr 0.8fr;
-    gap: 30px;
-    margin-top: 30px;
-}
-
-.news-box, .contact-box {
-    background: rgba(10, 10, 14, 0.55);
-    backdrop-filter: blur(10px);
-    border: 1px solid rgba(0, 229, 255, 0.2);
-    border-radius: 8px;
-    padding: 35px;
-    box-shadow: 0 10px 30px rgba(0,0,0,0.6);
-    text-align: left;
-}
-
-.news-box h3, .contact-box h3 {
-    color: var(--accent-gold);
-    font-family: var(--font-heading);
-    font-size: 1.6rem;
-    margin-bottom: 20px;
-    letter-spacing: 1px;
-}
-
-.news-box p, .contact-box p {
-    color: #f5f5f7;
-    font-size: 1.15rem;
-    line-height: 1.7;
-}
-
-.contact-link {
-    display: flex;
-    align-items: center;
-    gap: 15px;
-    padding: 16px 20px;
-    margin-top: 15px;
-    background: rgba(0, 229, 255, 0.08);
-    border: 1px solid rgba(0, 229, 255, 0.25);
-    border-radius: 8px;
-    color: var(--text-main);
-    text-decoration: none;
-    font-family: var(--font-heading);
-    font-size: 1.2rem;
-    font-weight: 600;
-    transition: var(--transition-smooth);
-}
-
-.contact-icon {
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
-    object-fit: cover;
-    border: 1px solid var(--accent-glow);
-    flex-shrink: 0;
-    transition: var(--transition-smooth);
-}
-
-.contact-link:hover {
-    background: rgba(0, 229, 255, 0.18);
-    border-color: var(--accent-glow);
-    box-shadow: 0 0 20px rgba(0, 229, 255, 0.35);
-    transform: translateY(-3px);
-}
-
-.contact-link:hover .contact-icon {
-    transform: scale(1.1);
-}
-
-/* --- RESPONSIVE MOBILE --- */
-@media (max-width: 768px) {
-    #main-nav { padding: 15px 20px; }
-    
-    .hamburger {
-        display: flex;
-    }
-
-    .nav-links {
-        display: none;
-        flex-direction: column;
-        position: absolute;
-        top: 70px;
-        left: 0;
-        width: 100%;
-        background: rgba(0, 0, 0, 0.95);
-        padding: 20px;
-        box-sizing: border-box;
-        border-bottom: 1px solid rgba(255,255,255,0.1);
-    }
-
-    .nav-links.active {
-        display: flex;
-    }
-
-    .hero-logo { 
-        width: 280px; 
-        margin-top: -30px;
-    }
-
-    .subtitle {
-        font-size: 12px;
-        margin-bottom: 140px;
-    }
-
-    .news-grid {
-        grid-template-columns: 1fr;
-    }
-}
-
-/* --- CORRECTION MOBILE LECTEUR --- */
-@media (max-width: 768px) {
-    .reader-header {
-        flex-direction: column;
-        gap: 10px;
-        padding: 10px 15px;
-        top: 70px;
-    }
-    
-    .reader-header h2 {
-        font-size: 16px;
-    }
-
-    #manga-container {
-        padding: 20px 10px;
-    }
-
-    #manga-container img {
-        width: 100%;
-        max-width: 100%;
-    }
-}
+    <script src="js/app.js?v=26"></script>
+</body>
+</html>
