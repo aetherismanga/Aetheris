@@ -82,18 +82,39 @@ document.addEventListener("DOMContentLoaded", () => {
         });
     });
 
-    // --- MODE PLEIN ÉCRAN IMMERSIF ---
+    // --- MODE PLEIN ÉCRAN IMMERSIF & VRAI PLEIN ÉCRAN NAVIGATEUR ---
     const fullscreenBtn = document.getElementById("fullscreen-btn");
-    if (fullscreenBtn) {
-        fullscreenBtn.addEventListener("click", () => {
-            document.body.classList.toggle("fullscreen-mode");
-            if (document.body.classList.contains("fullscreen-mode")) {
-                fullscreenBtn.textContent = "Quitter";
-            } else {
-                fullscreenBtn.textContent = "Plein écran";
+    const floatingExitBtn = document.getElementById("floating-exit-fullscreen");
+
+    function toggleFullscreen() {
+        document.body.classList.toggle("fullscreen-mode");
+        
+        if (document.body.classList.contains("fullscreen-mode")) {
+            if (document.documentElement.requestFullscreen) {
+                document.documentElement.requestFullscreen().catch(err => console.log(err));
             }
-        });
+            if (fullscreenBtn) fullscreenBtn.textContent = "Quitter";
+        } else {
+            if (document.fullscreenElement) {
+                document.exitFullscreen().catch(err => console.log(err));
+            }
+            if (fullscreenBtn) fullscreenBtn.textContent = "Plein écran";
+        }
     }
+
+    if (fullscreenBtn) {
+        fullscreenBtn.addEventListener("click", toggleFullscreen);
+    }
+    if (floatingExitBtn) {
+        floatingExitBtn.addEventListener("click", toggleFullscreen);
+    }
+
+    document.addEventListener("fullscreenchange", () => {
+        if (!document.fullscreenElement) {
+            document.body.classList.remove("fullscreen-mode");
+            if (fullscreenBtn) fullscreenBtn.textContent = "Plein écran";
+        }
+    });
 
     // --- LECTEUR MANGA PAGE PAR PAGE (Avec Clic et Boutons Suivant/Précédent) ---
     const mangaContainer = document.getElementById("manga-container");
@@ -114,14 +135,13 @@ document.addEventListener("DOMContentLoaded", () => {
         img.alt = `Page ${page}`;
         img.style.cursor = "pointer";
         
-        // Clic ou appui sur l'image pour passer à la page suivante
         img.addEventListener("click", () => {
             if (currentPage < totalPages) {
                 currentPage++;
                 renderPage(currentPage);
                 window.scrollTo(0, 0);
             } else {
-                currentPage = 1; // Retour au début à la fin du chapitre
+                currentPage = 1;
                 renderPage(currentPage);
                 window.scrollTo(0, 0);
             }
@@ -129,7 +149,6 @@ document.addEventListener("DOMContentLoaded", () => {
 
         mangaContainer.appendChild(img);
 
-        // Mettre à jour l'indicateur de page (ex: 1 / 63)
         if (pageIndicator) {
             pageIndicator.textContent = `${currentPage} / ${totalPages}`;
         }
