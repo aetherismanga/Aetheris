@@ -128,7 +128,7 @@ body {
 .view {
     display: none;
     min-height: 100vh;
-    padding-top: 80px;
+    padding-top: 90px;
     animation: fadeIn 0.6s ease;
 }
 .view.active { 
@@ -658,6 +658,19 @@ body.fullscreen-mode #floating-exit-fullscreen {
 
     .news-grid {
         grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .univers-container {
+        padding: 30px 15px;
+    }
+
+    .news-box, .contact-box, .univers-card {
+        padding: 22px;
+    }
+
+    .view {
+        padding-top: 75px;
     }
 }
 
