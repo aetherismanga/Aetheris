@@ -7,6 +7,25 @@ document.addEventListener("DOMContentLoaded", () => {
         }, 500);
     }
 
+    // --- GÉNÉRATION DES PARTICULES MAGIQUES (ACCUEIL) ---
+    const particlesContainer = document.getElementById("particles");
+    if (particlesContainer) {
+        for (let i = 0; i < 35; i++) {
+            const p = document.createElement("div");
+            p.classList.add("particle");
+            const size = Math.random() * 3 + 1; // Entre 1px et 4px
+            p.style.width = `${size}px`;
+            p.style.height = `${size}px`;
+            p.style.left = `${Math.random() * 100}%`;
+            p.style.top = `${Math.random() * 100}%`;
+            const duration = Math.random() * 6 + 4; // Entre 4s et 10s
+            const delay = Math.random() * 5;
+            p.style.animationDuration = `${duration}s`;
+            p.style.animationDelay = `${delay}s`;
+            particlesContainer.appendChild(p);
+        }
+    }
+
     // --- NAVIGATION SPA & MOBILE BURGER ---
     const navLinks = document.querySelectorAll(".nav-links a, .nav-brand, [data-target]");
     const views = document.querySelectorAll(".view");
@@ -118,7 +137,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
         if (isWebtoonMode) {
             if (prevPageBtn) prevPageBtn.style.display = "none";
-            if (nextPageBtn) prevPageBtn.style.display = "none";
+            if (nextPageBtn) nextPageBtn.style.display = "none";
             if (pageIndicator) pageIndicator.style.display = "none";
             if (modeToggleBtn) modeToggleBtn.textContent = "📜 Webtoon";
 
