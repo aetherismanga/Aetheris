@@ -367,7 +367,7 @@ body {
 
 .reader-controls {
     display: flex;
-    gap: 10px;
+    gap: 8px;
     align-items: center;
 }
 
@@ -391,6 +391,28 @@ body {
 .btn-icon:hover, .icon-only-btn:hover {
     background: var(--accent-glow);
     color: #000;
+}
+
+/* Sélecteur de page instantané (Pro Search) */
+#page-selector {
+    background: rgba(15, 15, 20, 0.9);
+    border: 1px solid var(--accent-glow);
+    color: var(--accent-gold);
+    font-family: var(--font-heading);
+    font-size: 14px;
+    font-weight: 600;
+    padding: 5px 10px;
+    border-radius: 4px;
+    cursor: pointer;
+    outline: none;
+    transition: var(--transition-smooth);
+}
+#page-selector:hover {
+    box-shadow: 0 0 10px rgba(0, 229, 255, 0.4);
+}
+#page-selector option {
+    background: #121216;
+    color: var(--text-main);
 }
 
 #manga-container {
@@ -737,8 +759,9 @@ body.fullscreen-mode #floating-exit-fullscreen {
         font-size: 13px;
     }
 
-    #page-indicator {
+    #page-selector {
         font-size: 12px !important;
+        padding: 3px 6px;
     }
 
     #manga-container {
