@@ -22,11 +22,13 @@
             <a href="#" data-target="reader">LIRE LE MANGA</a>
             <a href="#" data-target="characters">PERSONNAGES</a>
             <a href="#" data-target="universe">UNIVERS</a>
-            <a href="#" data-target="news">ACTUALITÉS</a>
+            <a href="#" data-target="author">L'AUTEUR</a>
+            <a href="#" data-target="news">ACTU / CONTACT</a>
         </div>
     </nav>
 
     <main id="app-content">
+        <!-- ACCUEIL -->
         <section id="home" class="view active">
             <div class="hero-bg"></div>
             <div class="hero-content">
@@ -38,6 +40,7 @@
             </div>
         </section>
 
+        <!-- PERSONNAGES -->
         <section id="characters" class="view">
             <div class="reader-header">
                 <button class="btn-icon" data-target="home">← Retour</button>
@@ -77,20 +80,23 @@
             </div>
         </section>
 
+        <!-- LECTEUR MANGA -->
         <section id="reader" class="view">
             <div class="reader-header">
                 <button class="btn-icon" data-target="home">← Retour</button>
                 <h2 id="current-chapter-title">Chapitre 1</h2>
                 <div style="display: flex; gap: 15px; align-items: center;">
                     <button id="prev-page" class="btn-icon">← Précédent</button>
-                    <span id="page-indicator" style="font-family: var(--font-heading); color: var(--accent-gold); font-size: 16px;">1 / 60</span>
+                    <span id="page-indicator" style="font-family: var(--font-heading); color: var(--accent-gold); font-size: 16px;">1 / 63</span>
                     <button id="next-page" class="btn-icon">Suivant →</button>
                 </div>
             </div>
             <div id="manga-container"></div>
         </section>
 
+        <!-- UNIVERS -->
         <section id="universe" class="view">
+            <div class="universe-bg"></div> <!-- Fond d'écran spécifique à l'univers -->
             <div class="univers-container">
                 <h2>L'UNIVERS D'AETHERIS</h2>
                 <p class="subtitle">Entre ciel et oubli</p>
@@ -98,6 +104,38 @@
                     <p>Il y a seize ans, un mystérieux bouleversement a marqué les cieux : des <strong>montagnes suspendues</strong> ont émergé, dominant un monde divisé entre l'agitation des hommes et les secrets enfouis des anciennes légendes.</p>
                     <p>À l'extrémité occidentale du continent d'Aetheris, le paisible <strong>littoral d'Elyndor</strong> et son village de <strong>Port-Lys</strong> vivent au rythme des marées, ignorant tout des menaces qui grondent au-delà de la forêt. C'est pourtant là, dans l'ombre de ces terres que même les plus anciens évitent d'évoquer, que le destin s'écrit. Entre des reliques oubliées scellées par une magie inconnue, des pouvoirs endormis et des dimensions démoniaques oubliées, chaque murmure du vent cache une vérité prête à éclater au grand jour.</p>
                     <p class="univers-quote">Trois mondes, une prophétie, un héritage : l'aventure ne fait que commencer.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- L'AUTEUR -->
+        <section id="author" class="view">
+            <div class="univers-container">
+                <h2>L'AUTEUR</h2>
+                <div class="univers-card">
+                    <p>À quarante-cinq ans, sous le pseudo du <strong>Grognard du net</strong>, on pense souvent que certains rêves d'enfant doivent sagement rester au fond d'un tiroir. Depuis toujours, crayon en main, j'ai été nourri par la passion du dessin et happé par ces œuvres fondatrices que sont <em>Dragon Ball Z</em>, <em>Naruto</em> ou <em>One Piece</em>.</p>
+                    <p>Je tiens à être totalement transparent avec vous : sans l'aide de l'intelligence artificielle comme assistant et collaborateur, ce projet aurait fini par s'éteindre dans l'oubli. C'est grâce à ce coup de pouce que <strong>Kael, Lyssara et le monde d'Aetheris</strong> prennent vie aujourd'hui, transformant une frustration de longue date en réalité.</p>
+                    <p>Mes idées débordent et cette aventure est loin de s'arrêter là. Pour qu'elle devienne grandiose, j'ai besoin de votre soutien, mais aussi et surtout de vos retours — qu'ils soient positifs ou négatifs —, car ce sont eux qui m'aideront à grandir et à façonner la suite.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- ACTU / CONTACT -->
+        <section id="news" class="view">
+            <div class="univers-container">
+                <h2>ACTUALITÉS & CONTACT</h2>
+                <div class="univers-card">
+                    <h3 style="color: #fff; font-family: var(--font-heading); margin-bottom: 15px; font-size: 1.5rem;">Actualités</h3>
+                    <p>Bienvenue dans le journal de bord d'Aetheris. Retrouvez ici toutes les annonces sur les sorties des prochains chapitres, les croquis des coulisses et l'avancement du projet en vue de l'Ulule.</p>
+                    <p><em>Le Chapitre 1 est disponible en lecture gratuite. Restez connectés pour la suite !</em></p>
+                    
+                    <h3 style="color: #fff; font-family: var(--font-heading); margin-top: 40px; margin-bottom: 15px; font-size: 1.5rem;">Contact & Réseaux</h3>
+                    <p>Une question, un retour sur l'histoire ou envie de suivre l'aventure au quotidien ?</p>
+                    <p style="margin-top: 15px;">
+                        <strong>YouTube :</strong> 
+                        <a href="https://youtube.com" target="_blank" style="color: var(--accent-glow); text-decoration: none; font-weight: bold;">Le Grognard du net (25k abonnés)</a>
+                    </p>
+                    <p style="margin-top: 15px;">Un formulaire de contact direct sera intégré ici prochainement pour que vous puissiez m'écrire facilement.</p>
                 </div>
             </div>
         </section>
