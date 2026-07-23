@@ -90,7 +90,8 @@ document.addEventListener("DOMContentLoaded", () => {
         for (let i = 1; i <= 63; i++) {
             const pageNum = String(i).padStart(2, '0');
             const img = document.createElement("img");
-            img.src = `chapitres/chapitre-01/${pageNum}.jpg`;
+            // CORRECTION ICI : "chapters" au lieu de "chapitres"
+            img.src = `chapters/chapitre-01/${pageNum}.jpg`;
             img.alt = `Page ${i}`;
             img.loading = "lazy";
             mangaContainer.appendChild(img);
