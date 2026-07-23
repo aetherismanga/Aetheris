@@ -113,6 +113,7 @@ body {
     width: 30px;
     height: 21px;
     cursor: pointer;
+    z-index: 1100;
 }
 .hamburger span {
     display: block;
@@ -120,6 +121,7 @@ body {
     height: 3px;
     background-color: #fff;
     border-radius: 2px;
+    transition: var(--transition-smooth);
 }
 
 /* --- SPA VIEWS --- */
