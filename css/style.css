@@ -326,6 +326,70 @@ body {
     font-size: 0.95rem;
 }
 
+/* --- SECTION UNIVERS (Fond d'écran) --- */
+#universe {
+    position: relative;
+    overflow: hidden;
+}
+
+.universe-bg {
+    position: absolute;
+    top: -5%; left: -5%; width: 110%; height: 110%;
+    background: url('../assets/images/univers01.png') center/cover;
+    filter: brightness(0.4) contrast(1.05);
+    z-index: -2;
+}
+
+.univers-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 40px 20px;
+    text-align: center;
+    position: relative;
+    z-index: 2;
+}
+
+.univers-card {
+    background: rgba(18, 18, 22, 0.85);
+    backdrop-filter: blur(8px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 8px;
+    padding: 30px;
+    margin-top: 20px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.5);
+    text-align: left;
+}
+
+.univers-card p {
+    color: var(--text-muted);
+    font-size: 1.05rem;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.univers-quote {
+    color: var(--accent-glow);
+    font-family: var(--font-heading);
+    font-size: 1.2rem;
+    text-align: center;
+    font-weight: 600;
+    margin-top: 30px;
+}
+
+/* --- SECTION AUTEUR (Fond d'écran) --- */
+#author {
+    position: relative;
+    overflow: hidden;
+}
+
+.author-bg {
+    position: absolute;
+    top: -5%; left: -5%; width: 110%; height: 110%;
+    background: url('../assets/images/author-bg.jpg') center/cover;
+    filter: brightness(0.4) contrast(1.05);
+    z-index: -2;
+}
+
 /* --- RESPONSIVE MOBILE --- */
 @media (max-width: 768px) {
     #main-nav { padding: 15px 20px; }
@@ -360,39 +424,6 @@ body {
         font-size: 12px;
         margin-bottom: 140px;
     }
-}
-
-.univers-container {
-    max-width: 800px;
-    margin: 0 auto;
-    padding: 40px 20px;
-    text-align: center;
-}
-
-.univers-card {
-    background: #121216;
-    border: 1px solid rgba(255, 255, 255, 0.1);
-    border-radius: 8px;
-    padding: 30px;
-    margin-top: 20px;
-    box-shadow: 0 5px 15px rgba(0,0,0,0.5);
-    text-align: left;
-}
-
-.univers-card p {
-    color: var(--text-muted);
-    font-size: 1.05rem;
-    line-height: 1.6;
-    margin-bottom: 20px;
-}
-
-.univers-quote {
-    color: var(--accent-glow);
-    font-family: var(--font-heading);
-    font-size: 1.2rem;
-    text-align: center;
-    font-weight: 600;
-    margin-top: 30px;
 }
 
 /* --- CORRECTION MOBILE LECTEUR --- */
