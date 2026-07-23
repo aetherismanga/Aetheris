@@ -394,3 +394,26 @@ body {
     font-weight: 600;
     margin-top: 30px;
 }
+
+/* --- CORRECTION MOBILE LECTEUR --- */
+@media (max-width: 768px) {
+    .reader-header {
+        flex-direction: column;
+        gap: 10px;
+        padding: 10px 15px;
+        top: 70px;
+    }
+    
+    .reader-header h2 {
+        font-size: 16px;
+    }
+
+    #manga-container {
+        padding: 20px 10px;
+    }
+
+    #manga-container img {
+        width: 100%;
+        max-width: 100%;
+    }
+}
