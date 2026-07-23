@@ -124,7 +124,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
     let currentPage = 1;
     const totalPages = 63;
-    let isWebtoonMode = false; // false = Page par page, true = Webtoon (défilement vertical)
+    let isWebtoonMode = false;
 
     function renderPage(page) {
         if (!mangaContainer) return;
@@ -162,7 +162,6 @@ document.addEventListener("DOMContentLoaded", () => {
         mangaContainer.innerHTML = "";
 
         if (isWebtoonMode) {
-            // Mode Webtoon : Afficher toutes les pages à la suite
             if (prevPageBtn) prevPageBtn.style.display = "none";
             if (nextPageBtn) nextPageBtn.style.display = "none";
             if (pageIndicator) pageIndicator.style.display = "none";
@@ -177,9 +176,8 @@ document.addEventListener("DOMContentLoaded", () => {
                 mangaContainer.appendChild(img);
             }
         } else {
-            // Mode Page par page
             if (prevPageBtn) prevPageBtn.style.display = "inline-block";
-            if (nextPageBtn) nextPageBtn.style.display = "inline-block";
+            if (nextPageBtn) prevPageBtn.style.display = "inline-block";
             if (pageIndicator) pageIndicator.style.display = "inline-block";
             if (modeToggleBtn) modeToggleBtn.textContent = "📄 Page";
 
