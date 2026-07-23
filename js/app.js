@@ -50,7 +50,7 @@ document.addEventListener("DOMContentLoaded", () => {
         }
     });
 
-    // --- GESTION AUDIO & BOUTON MUTE ---
+    // --- GESTION AUDIO & BOUTON MUTE (Icône discrète) ---
     const audio = document.getElementById("bg-audio");
     const muteBtn = document.getElementById("mute-btn");
     
@@ -62,10 +62,10 @@ document.addEventListener("DOMContentLoaded", () => {
         muteBtn.addEventListener("click", () => {
             if (audio.muted) {
                 audio.muted = false;
-                muteBtn.textContent = "🔊 Musique : ON";
+                muteBtn.textContent = "🔊";
             } else {
                 audio.muted = true;
-                muteBtn.textContent = "🔇 Musique : OFF";
+                muteBtn.textContent = "🔇";
             }
         });
     }
@@ -93,12 +93,12 @@ document.addEventListener("DOMContentLoaded", () => {
             if (document.documentElement.requestFullscreen) {
                 document.documentElement.requestFullscreen().catch(err => console.log(err));
             }
-            if (fullscreenBtn) fullscreenBtn.textContent = "Quitter";
+            if (fullscreenBtn) fullscreenBtn.textContent = "🗗";
         } else {
             if (document.fullscreenElement) {
                 document.exitFullscreen().catch(err => console.log(err));
             }
-            if (fullscreenBtn) fullscreenBtn.textContent = "Plein écran";
+            if (fullscreenBtn) fullscreenBtn.textContent = "⛶";
         }
     }
 
@@ -112,7 +112,7 @@ document.addEventListener("DOMContentLoaded", () => {
     document.addEventListener("fullscreenchange", () => {
         if (!document.fullscreenElement) {
             document.body.classList.remove("fullscreen-mode");
-            if (fullscreenBtn) fullscreenBtn.textContent = "Plein écran";
+            if (fullscreenBtn) fullscreenBtn.textContent = "⛶";
         }
     });
 
