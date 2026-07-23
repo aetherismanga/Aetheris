@@ -31,7 +31,7 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 
-    // --- SYSTÈME DE LECTURE PAGE PAR PAGE (60 pages) ---
+    // --- SYSTÈME DE LECTURE PAGE PAR PAGE (63 pages) ---
     const totalPages = 63;
     let currentPage = 0; 
     const chapterPath = 'chapters/chapitre-01/'; // Chemin exact sur GitHub
@@ -52,6 +52,17 @@ document.addEventListener('DOMContentLoaded', () => {
             const pageNum = String(currentPage + 1).padStart(2, '0');
             img.src = `${chapterPath}${pageNum}.jpg`;
             img.alt = `Page ${currentPage + 1}`;
+            
+            // Permet de passer à la page suivante en cliquant ou tapant sur l'image (PC et Mobile)
+            img.style.cursor = 'pointer';
+            img.addEventListener('click', () => {
+                if (currentPage < totalPages - 1) {
+                    currentPage++;
+                    renderPage();
+                    window.scrollTo(0, 0);
+                }
+            });
+
             container.appendChild(img);
         }
         if (indicator) {
