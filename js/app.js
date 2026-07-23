@@ -13,12 +13,12 @@ document.addEventListener("DOMContentLoaded", () => {
         for (let i = 0; i < 35; i++) {
             const p = document.createElement("div");
             p.classList.add("particle");
-            const size = Math.random() * 3 + 1; // Entre 1px et 4px
+            const size = Math.random() * 3 + 1;
             p.style.width = `${size}px`;
             p.style.height = `${size}px`;
             p.style.left = `${Math.random() * 100}%`;
             p.style.top = `${Math.random() * 100}%`;
-            const duration = Math.random() * 6 + 4; // Entre 4s et 10s
+            const duration = Math.random() * 6 + 4;
             const delay = Math.random() * 5;
             p.style.animationDuration = `${duration}s`;
             p.style.animationDelay = `${delay}s`;
@@ -74,7 +74,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const muteBtn = document.getElementById("mute-btn");
     
     if (audio) {
-        audio.volume = 0.5; // Volume à 50%
+        audio.volume = 0.5;
     }
 
     if (muteBtn) {
@@ -89,7 +89,7 @@ document.addEventListener("DOMContentLoaded", () => {
         });
     }
 
-    // --- LECTEUR MANGA : MODE PAGE PAR PAGE & MODE WEBTOON ---
+    // --- LECTEUR MANGA : MODE PAGE PAR PAGE & MODE WEBTOON (Jusqu'à 100 pages) ---
     const mangaContainer = document.getElementById("manga-container");
     const prevPageBtn = document.getElementById("prev-page");
     const nextPageBtn = document.getElementById("next-page");
@@ -97,16 +97,26 @@ document.addEventListener("DOMContentLoaded", () => {
     const modeToggleBtn = document.getElementById("mode-toggle-btn");
 
     let currentPage = 1;
-    const totalPages = 63;
+    const totalPages = 100; // Mis à jour à 100 pages
     let isWebtoonMode = false;
+
+    // Fonction intelligente pour gérer 01.jpg jusqu'à 99.jpg et 100.jpg
+    function getFilenameForPage(pageNumber) {
+        let numStr;
+        if (pageNumber >= 100) {
+            numStr = String(pageNumber); // "100"
+        } else {
+            numStr = String(pageNumber).padStart(2, '0'); // "01", "64", etc.
+        }
+        return `chapters/chapitre-01/${numStr}.jpg`;
+    }
 
     function renderPage(page) {
         if (!mangaContainer) return;
         mangaContainer.innerHTML = "";
         
-        const pageNum = String(page).padStart(2, '0');
         const img = document.createElement("img");
-        img.src = `chapters/chapitre-01/${pageNum}.jpg`;
+        img.src = getFilenameForPage(page);
         img.alt = `Page ${page}`;
         img.style.cursor = "pointer";
         
@@ -142,9 +152,8 @@ document.addEventListener("DOMContentLoaded", () => {
             if (modeToggleBtn) modeToggleBtn.textContent = "📜 Webtoon";
 
             for (let i = 1; i <= totalPages; i++) {
-                const pageNum = String(i).padStart(2, '0');
                 const img = document.createElement("img");
-                img.src = `chapters/chapitre-01/${pageNum}.jpg`;
+                img.src = getFilenameForPage(i);
                 img.alt = `Page ${i}`;
                 img.loading = "lazy";
                 mangaContainer.appendChild(img);
