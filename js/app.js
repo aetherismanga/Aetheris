@@ -82,19 +82,67 @@ document.addEventListener("DOMContentLoaded", () => {
         });
     });
 
-    // --- CHARGEMENT DU CHAPITRE DE MANGA ---
+    // --- LECTEUR MANGA PAGE PAR PAGE (Avec Clic et Boutons Suivant/Précédent) ---
     const mangaContainer = document.getElementById("manga-container");
-    if (mangaContainer) {
+    const prevPageBtn = document.getElementById("prev-page");
+    const nextPageBtn = document.getElementById("next-page");
+    const pageIndicator = document.getElementById("page-indicator");
+
+    let currentPage = 1;
+    const totalPages = 63;
+
+    function renderPage(page) {
+        if (!mangaContainer) return;
         mangaContainer.innerHTML = "";
-        // Génération automatique des 63 pages (01.jpg, 02.jpg...)
-        for (let i = 1; i <= 63; i++) {
-            const pageNum = String(i).padStart(2, '0');
-            const img = document.createElement("img");
-            // CORRECTION ICI : "chapters" au lieu de "chapitres"
-            img.src = `chapters/chapitre-01/${pageNum}.jpg`;
-            img.alt = `Page ${i}`;
-            img.loading = "lazy";
-            mangaContainer.appendChild(img);
+        
+        const pageNum = String(page).padStart(2, '0');
+        const img = document.createElement("img");
+        img.src = `chapters/chapitre-01/${pageNum}.jpg`;
+        img.alt = `Page ${page}`;
+        img.style.cursor = "pointer";
+        
+        // Clic ou appui sur l'image pour passer à la page suivante
+        img.addEventListener("click", () => {
+            if (currentPage < totalPages) {
+                currentPage++;
+                renderPage(currentPage);
+                window.scrollTo(0, 0);
+            } else {
+                currentPage = 1; // Retour au début à la fin du chapitre
+                renderPage(currentPage);
+                window.scrollTo(0, 0);
+            }
+        });
+
+        mangaContainer.appendChild(img);
+
+        // Mettre à jour l'indicateur de page (ex: 1 / 63)
+        if (pageIndicator) {
+            pageIndicator.textContent = `${currentPage} / ${totalPages}`;
+        }
+    }
+
+    if (mangaContainer) {
+        renderPage(currentPage);
+
+        if (prevPageBtn) {
+            prevPageBtn.addEventListener("click", () => {
+                if (currentPage > 1) {
+                    currentPage--;
+                    renderPage(currentPage);
+                    window.scrollTo(0, 0);
+                }
+            });
+        }
+
+        if (nextPageBtn) {
+            nextPageBtn.addEventListener("click", () => {
+                if (currentPage < totalPages) {
+                    currentPage++;
+                    renderPage(currentPage);
+                    window.scrollTo(0, 0);
+                }
+            });
         }
     }
 });
