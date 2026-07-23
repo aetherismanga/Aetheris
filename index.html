@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="google-site-verification" content="X0K3fGwJBXbKguIKHyJZ-IjHsh-qGJOsPIcD2CqtczI" />
     <title>AETHERIS | Manga Officiel</title>
-    <link rel="stylesheet" href="css/style.css?v=19">
+    <link rel="stylesheet" href="css/style.css?v=22">
 </head>
 <body>
     <div id="loader" class="active">
@@ -86,6 +86,8 @@
                 <button class="btn-icon" data-target="home">← Retour</button>
                 <h2 id="current-chapter-title">Chapitre 1</h2>
                 <div style="display: flex; gap: 15px; align-items: center;">
+                    <!-- Bouton Mute / Unmute -->
+                    <button id="mute-btn" class="btn-icon">🔊 Musique : ON</button>
                     <button id="prev-page" class="btn-icon">← Précédent</button>
                     <span id="page-indicator" style="font-family: var(--font-heading); color: var(--accent-gold); font-size: 16px;">1 / 63</span>
                     <button id="next-page" class="btn-icon">Suivant →</button>
@@ -160,6 +162,9 @@
         </section>
     </main>
 
-    <script src="js/app.js?v=19"></script>
+    <!-- ÉLÉMENT AUDIO (MP3) -->
+    <audio id="bg-audio" src="assets/audio/themeeartheris.mp3" preload="auto" loop></audio>
+
+    <script src="js/app.js?v=22"></script>
 </body>
 </html>
