@@ -82,6 +82,19 @@ document.addEventListener("DOMContentLoaded", () => {
         });
     });
 
+    // --- MODE PLEIN ÉCRAN IMMERSIF ---
+    const fullscreenBtn = document.getElementById("fullscreen-btn");
+    if (fullscreenBtn) {
+        fullscreenBtn.addEventListener("click", () => {
+            document.body.classList.toggle("fullscreen-mode");
+            if (document.body.classList.contains("fullscreen-mode")) {
+                fullscreenBtn.textContent = "Quitter";
+            } else {
+                fullscreenBtn.textContent = "Plein écran";
+            }
+        });
+    }
+
     // --- LECTEUR MANGA PAGE PAR PAGE (Avec Clic et Boutons Suivant/Précédent) ---
     const mangaContainer = document.getElementById("manga-container");
     const prevPageBtn = document.getElementById("prev-page");
