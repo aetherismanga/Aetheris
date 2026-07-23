@@ -80,7 +80,12 @@
         <section id="reader" class="view">
             <div class="reader-header">
                 <button class="btn-icon" data-target="home">← Retour</button>
-                <h2 id="current-chapter-title">Chargement...</h2>
+                <h2 id="current-chapter-title">Chapitre 1</h2>
+                <div style="display: flex; gap: 15px; align-items: center;">
+                    <button id="prev-page" class="btn-icon">← Précédent</button>
+                    <span id="page-indicator" style="font-family: var(--font-heading); color: var(--accent-gold); font-size: 16px;">1 / 60</span>
+                    <button id="next-page" class="btn-icon">Suivant →</button>
+                </div>
             </div>
             <div id="manga-container"></div>
         </section>
