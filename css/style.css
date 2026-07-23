@@ -285,11 +285,35 @@ body {
 body.fullscreen-mode #main-nav {
     display: none !important;
 }
+body.fullscreen-mode .reader-header {
+    display: none !important;
+}
 body.fullscreen-mode #reader {
     padding-top: 0 !important;
+    min-height: 100vh;
+    background: #000;
 }
-body.fullscreen-mode .reader-header {
-    top: 0 !important;
+
+/* Bouton flottant pour quitter le plein écran */
+#floating-exit-fullscreen {
+    display: none;
+    position: fixed;
+    top: 15px;
+    right: 15px;
+    z-index: 99999;
+    background: rgba(0, 0, 0, 0.8);
+    border: 1px solid var(--accent-glow);
+    color: var(--accent-glow);
+    padding: 8px 16px;
+    border-radius: 6px;
+    font-family: var(--font-heading);
+    font-size: 14px;
+    cursor: pointer;
+    backdrop-filter: blur(8px);
+    box-shadow: 0 0 15px rgba(0, 229, 255, 0.3);
+}
+body.fullscreen-mode #floating-exit-fullscreen {
+    display: block;
 }
 
 /* --- SECTION PERSONNAGES --- */
