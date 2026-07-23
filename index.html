@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="google-site-verification" content="X0K3fGwJBXbKguIKHyJZ-IjHsh-qGJOsPIcD2CqtczI" />
     <title>AETHERIS | Manga Officiel</title>
-    <link rel="stylesheet" href="css/style.css?v=36">
+    <link rel="stylesheet" href="css/style.css?v=37">
 </head>
 <body>
     <div id="loader" class="active">
@@ -134,7 +134,13 @@
                     <!-- Bouton Changement de mode (Page / Webtoon) -->
                     <button id="mode-toggle-btn" class="btn-icon" title="Changer le mode de lecture">📄 Page</button>
                     <button id="prev-page" class="btn-icon">←</button>
-                    <span id="page-indicator" style="font-family: var(--font-heading); color: var(--accent-gold); font-size: 14px;">1 / 100</span>
+                    
+                    <!-- Sélecteur Pro de page direct (Dropdown) + Total pages -->
+                    <div style="display: flex; align-items: center; gap: 4px;">
+                        <select id="page-selector" title="Aller directement à la page"></select>
+                        <span style="font-family: var(--font-heading); color: var(--accent-gold); font-size: 14px;">/ 100</span>
+                    </div>
+
                     <button id="next-page" class="btn-icon">→</button>
                 </div>
             </div>
@@ -213,6 +219,6 @@
     <!-- Bouton flottant de sortie plein écran -->
     <button id="floating-exit-fullscreen">✕ Quitter</button>
 
-    <script src="js/app.js?v=36"></script>
+    <script src="js/app.js?v=37"></script>
 </body>
 </html>
