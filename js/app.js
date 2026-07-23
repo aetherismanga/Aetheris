@@ -28,7 +28,6 @@ document.addEventListener("DOMContentLoaded", () => {
             }
         });
         
-        // Mettre à jour les liens actifs dans la nav
         document.querySelectorAll(".nav-links a").forEach(link => {
             if (link.getAttribute("data-target") === targetId) {
                 link.classList.add("active");
@@ -37,7 +36,6 @@ document.addEventListener("DOMContentLoaded", () => {
             }
         });
 
-        // Fermer le menu mobile si ouvert
         if (navMenu) navMenu.classList.remove("active");
         window.scrollTo(0, 0);
     }
@@ -88,11 +86,11 @@ document.addEventListener("DOMContentLoaded", () => {
     const mangaContainer = document.getElementById("manga-container");
     if (mangaContainer) {
         mangaContainer.innerHTML = "";
-        // Génération automatique des 63 pages du chapitre 1
+        // Génération automatique des 63 pages (01.jpg, 02.jpg...)
         for (let i = 1; i <= 63; i++) {
             const pageNum = String(i).padStart(2, '0');
             const img = document.createElement("img");
-            img.src = `chapitres/chapitre-01/page_${pageNum}.jpg`;
+            img.src = `chapitres/chapitre-01/${pageNum}.jpg`;
             img.alt = `Page ${i}`;
             img.loading = "lazy";
             mangaContainer.appendChild(img);
