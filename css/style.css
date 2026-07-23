@@ -3,8 +3,8 @@
     --bg-panel: rgba(15, 15, 20, 0.7);
     --text-main: #f0f0f5;
     --text-muted: #8a8a9e;
-    --accent-glow: #00e5ff; /* Cyan magique */
-    --accent-gold: #d4af37; /* Or épique */
+    --accent-glow: #00e5ff;
+    --accent-gold: #d4af37;
     --font-heading: 'Rajdhani', sans-serif;
     --font-body: 'Inter', sans-serif;
     --transition-smooth: 0.4s cubic-bezier(0.25, 1, 0.5, 1);
@@ -133,7 +133,7 @@ body {
     display: block; 
 }
 #home.view.active {
-    display: flex; /* Conserve le centrage de l'accueil */
+    display: flex;
 }
 @keyframes fadeIn { from { opacity: 0; transform: translateY(20px); } to { opacity: 1; transform: translateY(0); } }
 
@@ -150,7 +150,7 @@ body {
 .hero-bg {
     position: absolute;
     top: -5%; left: -5%; width: 110%; height: 110%;
-    background: url('../assets/images/hero-bg.jpg') center/cover;
+    background: url('/assets/images/hero-bg.jpg') center/cover;
     filter: brightness(0.95) contrast(1.05);
     z-index: -2;
 }
@@ -335,7 +335,7 @@ body {
 .universe-bg {
     position: absolute;
     top: -5%; left: -5%; width: 110%; height: 110%;
-    background: url('../assets/images/univers01.png') center/cover;
+    background: url('/assets/images/univers01.png') center/cover !important;
     filter: brightness(0.4) contrast(1.05);
     z-index: -2;
 }
@@ -385,7 +385,7 @@ body {
 .author-bg {
     position: absolute;
     top: -5%; left: -5%; width: 110%; height: 110%;
-    background: url('../assets/images/author-bg.jpg') center/cover;
+    background: url('/assets/images/author-bg.jpg') center/cover;
     filter: brightness(0.4) contrast(1.05);
     z-index: -2;
 }
