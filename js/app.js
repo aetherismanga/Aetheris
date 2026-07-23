@@ -32,7 +32,7 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
     // --- SYSTÈME DE LECTURE PAGE PAR PAGE (60 pages) ---
-    const totalPages = 60;
+    const totalPages = 63;
     let currentPage = 0; 
     const chapterPath = 'chapters/chapitre-01/'; // Chemin exact sur GitHub
 
