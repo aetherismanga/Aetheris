@@ -178,7 +178,7 @@ document.addEventListener("DOMContentLoaded", () => {
             }
         } else {
             if (prevPageBtn) prevPageBtn.style.display = "inline-block";
-            if (nextPageBtn) nextPageBtn.style.display = "inline-block";
+            if (nextPageBtn) prevPageBtn.style.display = "inline-block";
             if (pageSelector) pageSelector.style.display = "inline-block";
             if (pageSelector && pageSelector.nextElementSibling) pageSelector.nextElementSibling.style.display = "inline-block";
             if (modeToggleBtn) modeToggleBtn.textContent = "📄 Page";
