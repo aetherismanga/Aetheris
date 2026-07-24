@@ -4,7 +4,7 @@
     --text-main: #f0f0f5;
     --text-muted: #d0d0e0;
     --accent-glow: #00e5ff;
-    --accent-gold: #d4af37;
+    --accent-gold: #ffdf40;
     --font-heading: 'Rajdhani', sans-serif;
     --font-body: 'Inter', sans-serif;
     --transition-smooth: 0.4s cubic-bezier(0.25, 1, 0.5, 1);
@@ -141,9 +141,11 @@ body {
 
 /* --- HERO SECTION (Accueil) --- */
 #home {
-    padding-top: 0;
+    padding-top: 85px;
     position: relative;
-    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
     align-items: center;
     overflow: hidden;
     min-height: 100vh;
@@ -184,33 +186,35 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-start;
     width: 100%;
     z-index: 10;
-    padding: 0 20px;
+    padding: 10px 20px 0 20px;
 }
 
 .hero-logo {
-    width: 450px;
-    max-width: 90%;
+    width: 420px;
+    max-width: 85%;
     height: auto;
-    margin-top: -60px;
-    margin-bottom: 10px;
-    filter: drop-shadow(0 0 15px rgba(212, 175, 55, 0.4));
+    margin-top: 5px;
+    margin-bottom: 8px;
+    filter: drop-shadow(0 0 18px rgba(212, 175, 55, 0.7));
     animation: floatLogo 4s ease-in-out infinite;
 }
 
 @keyframes floatLogo {
     0% { transform: translateY(0px); }
-    50% { transform: translateY(-10px); }
+    50% { transform: translateY(-8px); }
     100% { transform: translateY(0px); }
 }
 
 .subtitle {
     font-size: 16px;
+    font-weight: 700;
     color: var(--accent-gold);
-    letter-spacing: 3px;
-    margin-bottom: 180px;
+    text-shadow: 0 0 12px rgba(212, 175, 55, 0.9), 0 2px 5px rgba(0, 0, 0, 0.9);
+    letter-spacing: 2.5px;
+    margin-bottom: 35px;
     text-transform: uppercase;
     font-family: var(--font-heading);
     text-align: center;
@@ -219,9 +223,10 @@ body {
 /* --- BOUTON ÉPIQUE --- */
 .btn-epic {
     position: relative;
-    padding: 18px 40px;
-    background: transparent;
-    border: 1px solid rgba(255,255,255,0.2);
+    padding: 16px 38px;
+    background: rgba(0, 0, 0, 0.4);
+    backdrop-filter: blur(6px);
+    border: 1px solid rgba(255,255,255,0.3);
     color: var(--text-main);
     font-family: var(--font-heading);
     font-size: 18px;
@@ -230,7 +235,8 @@ body {
     cursor: pointer;
     overflow: hidden;
     transition: var(--transition-smooth);
-    margin-top: 10px;
+    margin-top: 5px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.5);
 }
 
 .btn-epic::before {
@@ -243,7 +249,7 @@ body {
 
 .btn-epic:hover {
     border-color: var(--accent-glow);
-    box-shadow: 0 0 20px rgba(0, 229, 255, 0.3);
+    box-shadow: 0 0 20px rgba(0, 229, 255, 0.4);
     transform: scale(1.05);
 }
 
@@ -669,7 +675,6 @@ body.fullscreen-mode #floating-exit-fullscreen {
     transform: scale(1.1);
 }
 
-/* Style moderne pour le bloc compteur de vues */
 .visitor-counter-wrapper {
     margin-top: 25px;
     padding-top: 20px;
@@ -711,14 +716,19 @@ body.fullscreen-mode #floating-exit-fullscreen {
         display: flex;
     }
 
+    #home {
+        padding-top: 75px;
+    }
+
     .hero-logo { 
-        width: 280px; 
-        margin-top: -30px;
+        width: 250px; 
+        margin-top: 2px;
     }
 
     .subtitle {
-        font-size: 12px;
-        margin-bottom: 140px;
+        font-size: 12.5px;
+        letter-spacing: 1.5px;
+        margin-bottom: 25px;
     }
 
     .news-grid {
