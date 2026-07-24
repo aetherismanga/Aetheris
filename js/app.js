@@ -89,16 +89,34 @@ document.addEventListener("DOMContentLoaded", () => {
         });
     }
 
-    // --- LECTEUR MANGA : MODE PAGE PAR PAGE & WEBTOON + SÉLECTEUR RAPIDE ---
+    // --- LECTEUR MANGA : MODE PAGE PAR PAGE & WEBTOON + REPRISE AUTO ---
     const mangaContainer = document.getElementById("manga-container");
     const prevPageBtn = document.getElementById("prev-page");
     const nextPageBtn = document.getElementById("next-page");
     const pageSelector = document.getElementById("page-selector");
     const modeToggleBtn = document.getElementById("mode-toggle-btn");
 
-    let currentPage = 1;
     const totalPages = 100;
     let isWebtoonMode = false;
+
+    // Récupérer la dernière page lue dans le navigateur
+    function getSavedPage() {
+        const saved = localStorage.getItem('aetheris_ch1_page');
+        if (saved) {
+            const pageNum = parseInt(saved, 10);
+            if (pageNum >= 1 && pageNum <= totalPages) {
+                return pageNum;
+            }
+        }
+        return 1;
+    }
+
+    // Sauvegarder la page actuelle
+    function saveCurrentPage(page) {
+        localStorage.setItem('aetheris_ch1_page', page);
+    }
+
+    let currentPage = getSavedPage();
 
     if (pageSelector) {
         pageSelector.innerHTML = "";
@@ -111,7 +129,8 @@ document.addEventListener("DOMContentLoaded", () => {
         
         pageSelector.addEventListener("change", (e) => {
             if (!isWebtoonMode) {
-                currentPage = parseInt(e.target.value);
+                currentPage = parseInt(e.target.value, 10);
+                saveCurrentPage(currentPage);
                 renderPage(currentPage);
                 window.scrollTo(0, 0);
             }
@@ -132,6 +151,8 @@ document.addEventListener("DOMContentLoaded", () => {
         if (!mangaContainer) return;
         mangaContainer.innerHTML = "";
         
+        saveCurrentPage(page); // Enregistre la progression à chaque affichage
+
         const img = document.createElement("img");
         img.src = getFilenameForPage(page);
         img.alt = `Page ${page}`;
@@ -205,7 +226,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const triggerElements = document.querySelectorAll('[data-target="reader"]');
     triggerElements.forEach(element => {
         element.addEventListener("click", () => {
-            currentPage = 1;
+            currentPage = getSavedPage(); // Charge la dernière page enregistrée lors de l'ouverture
             updateReaderMode();
             if (audio && audio.paused) {
                 audio.play().catch(error => {
