@@ -100,7 +100,6 @@ document.addEventListener("DOMContentLoaded", () => {
     const totalPages = 100;
     let isWebtoonMode = false;
 
-    // Remplir dynamiquement le sélecteur de pages (1 à 100)
     if (pageSelector) {
         pageSelector.innerHTML = "";
         for (let i = 1; i <= totalPages; i++) {
@@ -167,7 +166,7 @@ document.addEventListener("DOMContentLoaded", () => {
             if (prevPageBtn) prevPageBtn.style.display = "none";
             if (nextPageBtn) nextPageBtn.style.display = "none";
             if (pageSelector) pageSelector.style.display = "none";
-            if (pageSelector && pageSelector.nextElementSibling) pageSelector.nextElementSibling.style.display = "none"; // cache "/ 100"
+            if (pageSelector && pageSelector.nextElementSibling) pageSelector.nextElementSibling.style.display = "none";
             if (modeToggleBtn) modeToggleBtn.textContent = "📜 Webtoon";
 
             for (let i = 1; i <= totalPages; i++) {
@@ -179,16 +178,15 @@ document.addEventListener("DOMContentLoaded", () => {
             }
         } else {
             if (prevPageBtn) prevPageBtn.style.display = "inline-block";
-            if (nextPageBtn) prevPageBtn.style.display = "inline-block";
+            if (nextPageBtn) nextPageBtn.style.display = "inline-block";
             if (pageSelector) pageSelector.style.display = "inline-block";
-            if (pageSelector && pageSelector.nextElementSibling) pageSelector.nextElementSibling.style.display = "inline-block"; // affiche "/ 100"
+            if (pageSelector && pageSelector.nextElementSibling) pageSelector.nextElementSibling.style.display = "inline-block";
             if (modeToggleBtn) modeToggleBtn.textContent = "📄 Page";
 
             renderPage(currentPage);
         }
     }
 
-    // Écoute des touches clavier (Flèche gauche / Flèche droite) pour aller vite sur PC
     document.addEventListener("keydown", (e) => {
         const readerView = document.getElementById("reader");
         if (readerView && readerView.classList.contains("active") && !isWebtoonMode) {
@@ -217,7 +215,6 @@ document.addEventListener("DOMContentLoaded", () => {
         });
     });
 
-    // --- MODE PLEIN ÉCRAN IMMERSIF ---
     const fullscreenBtn = document.getElementById("fullscreen-btn");
     const floatingExitBtn = document.getElementById("floating-exit-fullscreen");
 
