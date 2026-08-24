@@ -1,4 +1,5 @@
 /* V23 workspace routing safety fix */
+try{window.v20MatVisual=v23MatVisual}catch(_){}
 window.v20WorkspaceBody=function(p,tab){
   if(tab==='materials')return v23MaterialsTab(p);
   if(tab==='expenses')return v23ExpensesTab(p);
