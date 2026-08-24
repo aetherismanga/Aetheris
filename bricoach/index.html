@@ -33,6 +33,7 @@
 <script src="./v29-home.js?v=31"></script>
 <script src="./v31-fix.js?v=31"></script>
 <script src="./supabase-v32.js?v=32"></script>
+<script src="./supabase-v32-fix.js?v=32.1"></script>
 <script>
 if('serviceWorker' in navigator){navigator.serviceWorker.getRegistrations().then(rs=>rs.forEach(r=>r.unregister())).catch(()=>{});}
 if('caches' in window){caches.keys().then(keys=>keys.filter(k=>k.startsWith('bricoach-')).forEach(k=>caches.delete(k))).catch(()=>{});}
