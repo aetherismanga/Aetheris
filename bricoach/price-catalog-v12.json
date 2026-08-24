@@ -1,0 +1,112 @@
+{
+  "updatedAt": "2026-08-24T18:35:00+02:00",
+  "currency": "EUR",
+  "scope": "France - prix web de référence relevés le 24/08/2026, hors livraison et sous réserve du magasin",
+  "notes": "Chaque gamme utilise une vraie tranche de prix. Les prix et stocks locaux peuvent varier selon le magasin ou dépôt sélectionné.",
+  "bands": {
+    "Carrelage": {
+      "unit": "€/m²",
+      "Éco": {"min": 0, "max": 23.50, "label": "jusqu’à 23,50 €/m²"},
+      "Standard": {"min": 23.90, "max": 34.90, "label": "23,90 à 34,90 €/m²"},
+      "Premium": {"min": 35, "max": null, "label": "à partir de 35 €/m²"}
+    },
+    "Peinture": {
+      "unit": "pot 10 L",
+      "Éco": {"min": 0, "max": 44.90, "label": "jusqu’à 44,90 € / 10 L"},
+      "Standard": {"min": 59.90, "max": 99.90, "label": "59,90 à 99,90 € / 10 L"},
+      "Premium": {"min": 120, "max": null, "label": "à partir de 120 € / 10 L"}
+    },
+    "Sol / parquet": {
+      "unit": "€/m²",
+      "Éco": {"min": 0, "max": 15.99, "label": "jusqu’à 15,99 €/m²"},
+      "Standard": {"min": 16.50, "max": 34.90, "label": "16,50 à 34,90 €/m²"},
+      "Premium": {"min": 35, "max": null, "label": "à partir de 35 €/m²"}
+    },
+    "Placo / isolation": {
+      "unit": "€/m² de plaque",
+      "Éco": {"min": 0, "max": 3.60, "label": "jusqu’à 3,60 €/m²"},
+      "Standard": {"min": 4.50, "max": 7.50, "label": "4,50 à 7,50 €/m²"},
+      "Premium": {"min": 7.60, "max": null, "label": "à partir de 7,60 €/m²"}
+    }
+  },
+  "retailers": {
+    "leroymerlin": {
+      "name": "Leroy Merlin",
+      "url": "https://www.leroymerlin.fr/",
+      "products": {
+        "Carrelage": {
+          "Éco": {"price": 18.90, "unit": "€/m²", "name": "Casablanca effet marbre blanc 60 × 60 cm", "url": "https://www.leroymerlin.fr/produits/revetement-sol-et-mur/carrelage/carrelage-sol/carrelage-marbre/carrelage-interieur-60-x-60-p.html", "verified": true},
+          "Standard": {"price": 29.90, "unit": "€/m²", "name": "Galbe effet béton amande 60 × 60 cm", "url": "https://www.leroymerlin.fr/produits/revetement-sol-et-mur/carrelage/carrelage-exterieur/carrelage-60x60-interieur-p.html", "verified": true},
+          "Premium": {"price": 39.91, "unit": "€/m²", "name": "Rimini effet marbre zébré poli 60 × 60 cm", "url": "https://www.leroymerlin.fr/produits/revetement-sol-et-mur/carrelage/carrelage-sol/carrelage-marbre/carrelage-sol-interieur-60-60-p.html?p=1", "verified": true}
+        },
+        "Peinture": {
+          "Éco": {"price": 27.90, "unit": "pot 10 L", "name": "LUXENS Classique blanc mat 10 L", "url": "https://www.leroymerlin.fr/produits/peinture-mur-blanc-mat-luxens-classique-10l-95909007.html", "verified": true},
+          "Standard": {"price": 79.90, "unit": "pot 10 L", "name": "LUXENS Résistant blanc mat 10 L", "url": "https://www.leroymerlin.fr/produits/peinture-mur-plafond-boiserie-blanc-mat-luxens-resistant-10l-95909015.html", "verified": true},
+          "Premium": {"price": 149.00, "unit": "pot 10 L", "name": "SIKKENS mur/plafond blanc mat 10 L", "url": "https://www.leroymerlin.fr/produits/peinture-mur-plafond-blanc-mat-sikkens-10l-82032710.html", "verified": true}
+        },
+        "Sol / parquet": {
+          "Éco": {"price": 13.99, "unit": "€/m²", "name": "ARTENS Rodana 2 stratifié 8 mm", "url": "https://www.leroymerlin.fr/produits/carrelage-parquet-sol-souple/stratifie/sol-stratifie/sol-stratifie-cuisine/sol-stratifie-artens-8-mm-p.html?p=1", "verified": true},
+          "Standard": {"price": 19.99, "unit": "€/m²", "name": "ARTENS Intenso point de Hongrie / Aqua selon stock", "url": "https://www.leroymerlin.fr/produits/carrelage-parquet-sol-souple/stratifie/sol-stratifie/sol-stratifie-cuisine/sol-stratifie-artens-8-mm-p.html?p=1", "verified": true},
+          "Premium": {"price": 39.90, "unit": "€/m²", "name": "Parquet contrecollé chêne Porto campagne vitrifié XL", "url": "https://www.leroymerlin.fr/produits/parquet-contrecolle-chene-porto-campagne-vitrifie-xl-lamett-l-19-cm-74778012.html", "verified": true}
+        },
+        "Placo / isolation": {
+          "Éco": {"price": 2.73, "unit": "€/m²", "name": "BA13 standard CE 250 × 120 cm", "url": "https://www.leroymerlin.fr/produits/plaque-de-platre-ba-13-standard-ce-l-250-x-l-120-cm-69051871.html", "verified": true},
+          "Standard": {"price": 6.97, "unit": "€/m²", "name": "BA13 hydrofuge H1 250 × 120 cm", "url": "https://www.leroymerlin.fr/produits/materiaux/cloison-et-plafond/plaque-de-platre/ba13/plaque-platre-ba-13-p.html", "verified": true},
+          "Premium": {"price": 8.17, "unit": "€/m²", "name": "KNAUF Diamant 5 en 1 BA13 250 × 120 cm", "url": "https://www.leroymerlin.fr/produits/plaque-de-platre-ba13-5en1-diamant-knauf-l-250-x-l120-cm-nf-knauf-67161143.html", "verified": true}
+        }
+      }
+    },
+    "castorama": {
+      "name": "Castorama",
+      "url": "https://www.castorama.fr/",
+      "products": {
+        "Carrelage": {
+          "Éco": {"price": 12.95, "unit": "€/m²", "name": "Prisma Perla grès cérame 60 × 60 cm", "url": "https://www.castorama.fr/carrelage-sol/carrelage-sol-et-mural/carrelage-interieur-sol-et-mural/cat_id_3898.cat?Forme+du+produit=Carr%C3%A9&Mati%C3%A8re=Gr%C3%A8s+c%C3%A9rame", "verified": true},
+          "Standard": {"price": 25.95, "unit": "€/m²", "name": "Basilea effet pierre 60 × 60 cm", "url": "https://www.castorama.fr/revetement-sol-et-mur/carrelage-sol-et-mur/carrelage-interieur-sol.cat", "verified": true},
+          "Premium": {"price": 39.95, "unit": "€/m²", "name": "Aster grès cérame effet marbre 120 × 60 cm", "url": "https://www.castorama.fr/carrelage-sol/carrelage-sol-et-mural/carrelage-interieur-sol-et-mural/cat_id_3898.cat?Mati%C3%A8re=Gr%C3%A8s+c%C3%A9rame", "verified": true}
+        },
+        "Peinture": {
+          "Éco": {"price": 39.90, "unit": "pot 10 L", "name": "Ripolin Illico blanc mat 10 L", "url": "https://www.castorama.fr/peinture/peinture-interieure/peinture-interieure-blanche/cat_id_2078.cat?Capacit%C3%A9+en+litres+%28L%29=10", "verified": true},
+          "Standard": {"price": 79.90, "unit": "pot 10 L", "name": "V33 éclat de blanc velours 10 L", "url": "https://www.castorama.fr/peinture/peinture-interieure/peinture-interieure-blanche/cat_id_2078.cat?Capacit%C3%A9+en+litres+%28L%29=10", "verified": true},
+          "Premium": {"price": 129.90, "unit": "pot 10 L", "name": "Référence premium 10 L à confirmer selon magasin", "url": "https://www.castorama.fr/peinture/peinture-interieure/peinture-interieure-blanche/cat_id_2078.cat?Capacit%C3%A9+en+litres+%28L%29=10", "verified": false}
+        },
+        "Sol / parquet": {
+          "Éco": {"price": 13.90, "unit": "€/m²", "name": "Sol stratifié entrée de gamme — référence locale à confirmer", "url": "https://www.castorama.fr/revetement-sol-et-mur/parquet-stratifie-et-sol-souple/sol-stratifie/cat_id_3104.cat", "verified": false},
+          "Standard": {"price": 27.90, "unit": "€/m²", "name": "Bishorn XXL parquet contrecollé", "url": "https://www.castorama.fr/parquet-contrecolle/cat_id_0003851.cat?Type+de+produit=Parquet+contrecoll%C3%A9", "verified": true},
+          "Premium": {"price": 42.90, "unit": "€/m²", "name": "Visby M parquet contrecollé chêne", "url": "https://www.castorama.fr/parquet-contrecolle/cat_id_0003851.cat?Type+de+Produit+Facette=Parquet+contrecoll%C3%A9", "verified": true}
+        },
+        "Placo / isolation": {
+          "Éco": {"price": 2.79, "unit": "€/m²", "name": "BA13 standard NF Planodis 250 × 120 cm", "url": "https://www.castorama.fr/materiaux-et-gros-oeuvre/cloison/plaque-de-platre-et-de-doublage/cat_id_571.cat", "verified": true},
+          "Standard": {"price": 6.97, "unit": "€/m²", "name": "BA13 hydrofuge / acoustique Planodis 250 × 120 cm", "url": "https://www.castorama.fr/materiaux-et-gros-oeuvre/cloison/plaque-de-platre-et-de-doublage/cat_id_571.cat", "verified": true},
+          "Premium": {"price": 9.67, "unit": "€/m²", "name": "BA13 hydrofuge Planodis 250 × 60 cm haute performance", "url": "https://www.castorama.fr/materiaux-et-gros-oeuvre/plaque-de-platre-hydrofuge-dyn.cat", "verified": true}
+        }
+      }
+    },
+    "bricodepot": {
+      "name": "Brico Dépôt",
+      "url": "https://www.bricodepot.fr/",
+      "products": {
+        "Carrelage": {
+          "Éco": {"price": 10.40, "unit": "€/m²", "name": "Référence carrelage prix dépôt", "url": "https://www.bricodepot.fr/catalogue/construction-renovation/carrelage-stratifie-parquet/carrelage-galet/", "verified": true},
+          "Standard": {"price": 24.90, "unit": "€/m²", "name": "Référence standard à confirmer selon dépôt", "url": "https://www.bricodepot.fr/catalogue/construction-renovation/carrelage-stratifie-parquet/carrelage-galet/", "verified": false},
+          "Premium": {"price": 35.90, "unit": "€/m²", "name": "Référence premium à confirmer selon dépôt", "url": "https://www.bricodepot.fr/catalogue/construction-renovation/carrelage-stratifie-parquet/carrelage-galet/", "verified": false}
+        },
+        "Peinture": {
+          "Éco": {"price": 29.90, "unit": "pot 10 L", "name": "Référence peinture éco à confirmer selon dépôt", "url": "https://www.bricodepot.fr/", "verified": false},
+          "Standard": {"price": 69.90, "unit": "pot 10 L", "name": "Référence peinture standard à confirmer selon dépôt", "url": "https://www.bricodepot.fr/", "verified": false},
+          "Premium": {"price": 129.90, "unit": "pot 10 L", "name": "Référence peinture premium à confirmer selon dépôt", "url": "https://www.bricodepot.fr/", "verified": false}
+        },
+        "Sol / parquet": {
+          "Éco": {"price": 12.90, "unit": "€/m²", "name": "Référence stratifié éco à confirmer selon dépôt", "url": "https://www.bricodepot.fr/", "verified": false},
+          "Standard": {"price": 22.90, "unit": "€/m²", "name": "Référence sol standard à confirmer selon dépôt", "url": "https://www.bricodepot.fr/", "verified": false},
+          "Premium": {"price": 39.90, "unit": "€/m²", "name": "Référence sol premium à confirmer selon dépôt", "url": "https://www.bricodepot.fr/", "verified": false}
+        },
+        "Placo / isolation": {
+          "Éco": {"price": 2.70, "unit": "€/m²", "name": "BA13 standard prix dépôt à confirmer", "url": "https://www.bricodepot.fr/", "verified": false},
+          "Standard": {"price": 6.50, "unit": "€/m²", "name": "BA13 hydro / technique à confirmer", "url": "https://www.bricodepot.fr/", "verified": false},
+          "Premium": {"price": 8.50, "unit": "€/m²", "name": "Plaque technique premium à confirmer", "url": "https://www.bricodepot.fr/", "verified": false}
+        }
+      }
+    }
+  }
+}
