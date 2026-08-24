@@ -21,6 +21,7 @@
 <script src="./v23-fix.js?v=25"></script>
 <script src="./v24.js?v=25"></script>
 <script src="./v25.js?v=25"></script>
+<script src="./v25-project.js?v=25"></script>
 <script>
 if('serviceWorker' in navigator){navigator.serviceWorker.getRegistrations().then(rs=>rs.forEach(r=>r.unregister())).catch(()=>{});}
 if('caches' in window){caches.keys().then(keys=>keys.filter(k=>k.startsWith('bricoach-')).forEach(k=>caches.delete(k))).catch(()=>{});}
