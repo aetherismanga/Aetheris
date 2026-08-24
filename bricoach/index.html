@@ -2,6 +2,7 @@
 <div id="app"></div>
 <script src="./app.js?v=10"></script>
 <script src="./details-v10.js?v=10"></script>
+<script src="./v10-fix.js?v=10"></script>
 <script>
 if('serviceWorker' in navigator){navigator.serviceWorker.getRegistrations().then(rs=>rs.forEach(r=>r.unregister())).catch(()=>{});}
 if('caches' in window){caches.keys().then(keys=>keys.filter(k=>k.startsWith('bricoach-')).forEach(k=>caches.delete(k))).catch(()=>{});}
