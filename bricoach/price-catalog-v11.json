@@ -1,0 +1,45 @@
+{
+  "updatedAt": "2026-08-24T18:30:00+02:00",
+  "currency": "EUR",
+  "scope": "France - prix web de référence, hors frais de livraison",
+  "notes": "Les prix sont des relevés de référence. Ils peuvent varier selon le magasin, le dépôt, les promotions et la disponibilité locale.",
+  "retailers": {
+    "leroymerlin": {
+      "name": "Leroy Merlin",
+      "tile": {
+        "Éco": {"pricePerM2": 10.90, "name": "Arcano effet béton beige 60 x 60 cm", "format": "60 × 60", "url": "https://www.leroymerlin.fr/produits/revetement-sol-et-mur/carrelage/carrelage-sol/carrelage-marbre/carrelage-sol-interieur-60x60-p.html"},
+        "Standard": {"pricePerM2": 18.90, "name": "Casablanca effet marbre blanc 60 x 60 cm", "format": "60 × 60", "url": "https://www.leroymerlin.fr/produits/revetement-sol-et-mur/carrelage/carrelage-sol/carrelage-marbre/carrelage-sol-interieur-60-60-p.html?p=1"},
+        "Premium": {"pricePerM2": 31.90, "name": "Essentiel effet pierre gris 60 x 60 cm", "format": "60 × 60", "url": "https://www.leroymerlin.fr/produits/revetement-sol-et-mur/carrelage/carrelage-sol/carrelage-marbre/carrelage-de-sol-60-x-60-p.html?p=10"}
+      },
+      "glue": {
+        "default": {"unitPrice": 26.90, "unit": "sac 25 kg", "name": "AXTON C2S1ET 25 kg", "url": "https://www.leroymerlin.fr/produits/colle-en-poudre-sol-irregulier-interieur-exterieur-gris-axton-25kg-88318250.html"}
+      },
+      "joint": {"unitPrice": 23.90, "unit": "sac 5 kg", "name": "AXTON hydrofuge 5 kg", "url": "https://www.leroymerlin.fr/produits/joint-tous-types-de-carrelage-et-mosaique-beige-axton-5-kg-91952413.html"}
+    },
+    "castorama": {
+      "name": "Castorama",
+      "tile": {
+        "Éco": {"pricePerM2": 12.95, "name": "Prisma perla 60 x 60 cm", "format": "60 × 60", "url": "https://www.castorama.fr/revetement-sol-et-mur/carrelage-sol-et-mur/carrelage-interieur-sol.cat"},
+        "Standard": {"pricePerM2": 19.90, "name": "Soft Travertin 60 x 60 cm", "format": "60 × 60", "url": "https://www.castorama.fr/revetement-sol-et-mur/carrelage-sol-et-mur/carrelage-interieur-sol.cat"},
+        "Premium": {"pricePerM2": 28.95, "name": "Asphalt effet béton 60 x 60 cm", "format": "60 × 60", "url": "https://www.castorama.fr/revetement-sol-et-mur/carrelage-sol-et-mur/carrelage-interieur-sol.cat"}
+      },
+      "glue": {
+        "default": {"unitPrice": 15.95, "unit": "sac 25 kg", "name": "Mapei Flex C2 gris 25 kg", "url": "https://www.castorama.fr/revetement-sol-et-mur/preparation-et-finition-du-sol/colle-carrelage.cat"},
+        "large": {"unitPrice": 32.95, "unit": "sac 25 kg", "name": "Parexlanko Flex performance 25 kg", "url": "https://www.castorama.fr/vb/colle-flex-carrelage"}
+      },
+      "joint": {"unitPrice": 17.90, "unit": "sac 5 kg", "name": "Parexlanko joint sol hydrofugé 5 kg", "url": "https://www.castorama.fr/joint-sol-hydrofuge-gris-parexlanko-5-kg/3306500000784_CAFR.prd"}
+    },
+    "bricodepot": {
+      "name": "Brico Dépôt",
+      "tile": {
+        "Éco": {"pricePerM2": 10.40, "name": "Konkrete gris 42 x 42 cm", "format": "42 × 42", "url": "https://wsprd.bricodepot.fr/catalogue/construction-renovation/carrelage-stratifie-parquet/carrelage-galet/"},
+        "Standard": {"pricePerM2": 16.90, "name": "Lozere grip beige 30 x 60,3 cm", "format": "30 × 60", "url": "https://wsprd.bricodepot.fr/catalogue/construction-renovation/carrelage-stratifie-parquet/carrelage-galet/"},
+        "Premium": {"pricePerM2": 18.95, "name": "Vintage Oak 15 x 90 cm", "format": "15 × 90", "url": "https://wsprd.bricodepot.fr/catalogue/construction-renovation/carrelage-stratifie-parquet/carrelage-galet/"}
+      },
+      "glue": {
+        "default": {"unitPrice": 16.90, "unit": "sac 25 kg", "name": "Mapei mortier colle flex multisupport C2E 25 kg", "url": "https://wsprd.bricodepot.fr/catalogue/construction-renovation/carrelage-stratifie-parquet/carrelage-galet/"}
+      },
+      "joint": null
+    }
+  }
+}
