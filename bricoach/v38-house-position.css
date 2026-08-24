@@ -1,0 +1,10 @@
+/* BRICOACH V38 — remonter l'illustration maison sur l'accueil */
+@media(max-width:760px){
+  .v29HeroVisual{top:102px!important;right:-38px!important;}
+}
+@media(max-width:430px){
+  .v29HeroVisual{top:96px!important;right:-42px!important;}
+}
+@media(max-width:380px){
+  .v29HeroVisual{top:92px!important;right:-45px!important;}
+}
