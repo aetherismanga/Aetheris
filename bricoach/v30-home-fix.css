@@ -1,0 +1,22 @@
+/* Bricoach V30 — correctif accueil mobile demandé */
+@media(max-width:760px){
+  .v29Hero{display:flex;flex-direction:column;gap:0;padding:27px 22px 24px;}
+  .v29HeroText{min-height:0!important;position:relative;z-index:3;}
+  .v29Hero h2{position:relative;z-index:4;}
+  .v29HeroVisual{right:-18px!important;top:175px!important;width:46%!important;z-index:1!important;opacity:.98;}
+  .v29Hero p{position:relative;z-index:5;max-width:100%!important;margin:170px 0 0!important;padding:13px 14px;background:rgba(246,255,253,.92);border:1px solid rgba(11,145,139,.10);border-radius:16px;font-size:18px!important;line-height:1.48!important;font-weight:500;color:#153a47;box-shadow:0 7px 20px rgba(20,91,84,.05);}
+  .v29HeroActions{display:flex!important;flex-direction:column!important;gap:11px!important;margin-top:16px!important;position:relative;z-index:6;width:100%;}
+  .v29HeroActions button{width:100%;min-height:66px!important;}
+  .v29Start{order:1}.v29Problem{order:2}
+}
+@media(max-width:430px){
+  .v29Hero{padding:24px 18px 20px;}
+  .v29HeroVisual{right:-26px!important;top:168px!important;width:48%!important;}
+  .v29Hero p{margin-top:158px!important;font-size:17px!important;line-height:1.5!important;padding:12px 13px;}
+  .v29HeroActions{margin-top:14px!important;gap:10px!important;}
+  .v29HeroActions button{min-height:64px!important;}
+}
+@media(max-width:360px){
+  .v29HeroVisual{top:162px!important;width:45%!important;}
+  .v29Hero p{margin-top:145px!important;font-size:16.5px!important;}
+}
