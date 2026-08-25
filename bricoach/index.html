@@ -1,42 +1,25 @@
-<!doctype html><html lang="fr"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"><meta name="theme-color" content="#0b8f8a"><title>Bricoach</title><link rel="manifest" href="manifest.json?v=37"><link rel="icon" type="image/svg+xml" href="./bricoach-app-icon.svg?v=37"><link rel="apple-touch-icon" href="./bricoach-app-icon.svg?v=37"><link rel="stylesheet" href="./styles.css?v=37"><link rel="stylesheet" href="./mobile-fix.css?v=37"><link rel="stylesheet" href="./wizard.css?v=37"><link rel="stylesheet" href="./details-v10.css?v=37"><link rel="stylesheet" href="./pricing-v11.css?v=37"><link rel="stylesheet" href="./pricing-v12.css?v=37"><link rel="stylesheet" href="./configurator-v14.css?v=37"><link rel="stylesheet" href="./ux-v15.css?v=37"><link rel="stylesheet" href="./ux-v16.css?v=37"><link rel="stylesheet" href="./profile-v18.css?v=37"><link rel="stylesheet" href="./tools-v19.css?v=37"><link rel="stylesheet" href="./workspace-v20.css?v=37"><link rel="stylesheet" href="./v21.css?v=37"><link rel="stylesheet" href="./v22.css?v=37"><link rel="stylesheet" href="./v23.css?v=37"><link rel="stylesheet" href="./v24.css?v=37"><link rel="stylesheet" href="./v25.css?v=37"><link rel="stylesheet" href="./v26.css?v=37"><link rel="stylesheet" href="./v27.css?v=37"><link rel="stylesheet" href="./v28.css?v=37"><link rel="stylesheet" href="./v28-ui.css?v=37"><link rel="stylesheet" href="./v29-home.css?v=37"><link rel="stylesheet" href="./v30-home-fix.css?v=37"><link rel="stylesheet" href="./v31-home.css?v=37"><link rel="stylesheet" href="./auth-v34.css?v=37"><link rel="stylesheet" href="./v35-header-account.css?v=37"><link rel="stylesheet" href="./v36-account-referral.css?v=37"><link rel="stylesheet" href="./v37-official-logo.css?v=37"><link rel="stylesheet" href="./v38-house-position.css?v=38"></head><body>
-<div id="app"></div>
-<script src="https://cdn.jsdelivr.net/npm/jspdf@2.5.1/dist/jspdf.umd.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
-<script src="./app.js?v=37"></script>
-<script src="./details-v10.js?v=37"></script>
-<script src="./v10-fix.js?v=37"></script>
-<script src="./pricing-v11.js?v=37"></script>
-<script src="./pricing-v12.js?v=37"></script>
-<script src="./location-v13.js?v=37"></script>
-<script src="./configurator-v14.js?v=37"></script>
-<script src="./location-v15.js?v=37"></script>
-<script src="./ux-v15.js?v=37"></script>
-<script src="./ux-v16.js?v=37"></script>
-<script src="./scroll-v17.js?v=37"></script>
-<script src="./profile-v18.js?v=37"></script>
-<script src="./tools-v19.js?v=37"></script>
-<script src="./workspace-v20.js?v=37"></script>
-<script src="./v21.js?v=37"></script>
-<script src="./v22.js?v=37"></script>
-<script src="./v23.js?v=37"></script>
-<script src="./v23-fix.js?v=37"></script>
-<script src="./v24.js?v=37"></script>
-<script src="./v25.js?v=37"></script>
-<script src="./v25-project.js?v=37"></script>
-<script src="./v26.js?v=37"></script>
-<script src="./v27.js?v=37"></script>
-<script src="./v28-core.js?v=37"></script>
-<script src="./v28-tutorials.js?v=37"></script>
-<script src="./v28-pricing.js?v=37"></script>
-<script src="./v28-fix.js?v=37"></script>
-<script src="./v28-ui.js?v=37"></script>
-<script src="./v29-home.js?v=37"></script>
-<script src="./v31-fix.js?v=37"></script>
-<script src="./auth-v34.js?v=37"></script>
-<script src="./v35-header-account.js?v=37"></script>
-<script src="./v36-account-referral.js?v=37"></script>
-<script src="./v36-profile-sync.js?v=37"></script>
-<script src="./v36-admin-referral-preview.js?v=37"></script>
-<script src="./v37-official-logo.js?v=37"></script>
-<script>if('serviceWorker' in navigator){navigator.serviceWorker.getRegistrations().then(rs=>rs.forEach(r=>r.unregister())).catch(()=>{});}if('caches' in window){caches.keys().then(keys=>keys.filter(k=>k.startsWith('bricoach-')).forEach(k=>caches.delete(k))).catch(()=>{});}</script>
-</body></html>
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+  <meta name="theme-color" content="#0b8f8a">
+  <meta name="application-name" content="Bricoach">
+  <meta name="description" content="Bricoach, ton coach travaux : chantiers, calculs, tutoriels, matériaux et suivi.">
+  <title>Bricoach</title>
+  <link rel="manifest" href="manifest.json?build=1.0.0">
+  <link rel="icon" type="image/svg+xml" href="./bricoach-app-icon.svg?build=1.0.0">
+  <link rel="apple-touch-icon" href="./bricoach-app-icon.svg?build=1.0.0">
+  <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
+</head>
+<body>
+  <div id="app"></div>
+
+  <!-- Dépendances externes communes -->
+  <script src="https://cdn.jsdelivr.net/npm/jspdf@2.5.1/dist/jspdf.umd.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+
+  <!-- Bricoach 1.0 : point d'entrée unique consolidé -->
+  <script src="./bricoach-1.0.js?build=1.0.0"></script>
+</body>
+</html>
