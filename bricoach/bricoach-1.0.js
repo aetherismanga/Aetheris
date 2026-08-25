@@ -6,7 +6,7 @@
 (() => {
   'use strict';
 
-  const BUILD = '1.0.1';
+  const BUILD = '1.0.3';
   window.BRICOACH_BUILD = BUILD;
 
   const CSS_SOURCES = [
@@ -17,7 +17,7 @@
     'v26.css','v27.css','v28.css','v28-ui.css','v29-home.css',
     'v30-home-fix.css','v31-home.css','auth-v34.css','v35-header-account.css',
     'v36-account-referral.css','v37-official-logo.css','v38-house-position.css',
-    'retailer-detail-1.0.css'
+    'retailer-detail-1.0.css','account-menu-1.0.css'
   ];
 
   const JS_SOURCES = [
@@ -28,7 +28,8 @@
     'v26.js','v27.js','v28-core.js','v28-tutorials.js','v28-pricing.js',
     'v28-fix.js','v28-ui.js','v29-home.js','v31-fix.js','auth-v34.js',
     'v35-header-account.js','v36-account-referral.js','v36-profile-sync.js',
-    'v36-admin-referral-preview.js','v37-official-logo.js','retailer-detail-1.0.js'
+    'v36-admin-referral-preview.js','v37-official-logo.js','retailer-detail-1.0.js',
+    'account-menu-1.0.js'
   ];
 
   function versioned(path) {
