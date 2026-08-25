@@ -1,0 +1,9 @@
+/* BRICOACH 1.0 — action de déconnexion */
+#v21Menu .v21DrawerLinks .bcLogoutMenu{
+  margin-top:10px;
+  border-top:1px solid rgba(190,83,70,.18);
+  color:#a33f35;
+  background:#fff5f3;
+}
+#v21Menu .v21DrawerLinks .bcLogoutMenu b{color:#a33f35}
+#v21Menu .v21DrawerLinks .bcLogoutMenu:hover{background:#ffebe7}
