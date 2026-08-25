@@ -9,22 +9,26 @@
     button.type='button';
     button.className='bcLogoutMenu';
     button.innerHTML='<span>🚪</span><b>Se déconnecter</b><em>›</em>';
-    button.addEventListener('click', async()=>{
+    button.addEventListener('click',async()=>{
       document.querySelector('#v21Menu')?.remove();
       try{
         if(typeof window.bcLogout==='function') await window.bcLogout();
-      }catch(e){
-        console.error('[BRICOACH] déconnexion impossible',e);
-      }
+      }catch(e){console.error('[BRICOACH] déconnexion impossible',e)}
     });
     menu.appendChild(button);
   }
 
-  const baseOpenMenu=window.v21OpenMenu;
-  if(typeof baseOpenMenu==='function'){
-    window.v21OpenMenu=function(){
-      baseOpenMenu();
-      requestAnimationFrame(addLogoutButton);
-    };
+  function patch(){
+    const baseOpenMenu=window.v21OpenMenu;
+    if(typeof baseOpenMenu!=='function' || baseOpenMenu.__bcLogoutPatched) return false;
+    const patched=function(){baseOpenMenu();requestAnimationFrame(addLogoutButton)};
+    patched.__bcLogoutPatched=true;
+    window.v21OpenMenu=patched;
+    return true;
+  }
+
+  if(!patch()){
+    const timer=setInterval(()=>{if(patch())clearInterval(timer)},100);
+    setTimeout(()=>clearInterval(timer),10000);
   }
 })();
