@@ -1,4 +1,23 @@
-/* BRICOACH 1.0 — action de déconnexion */
+/* BRICOACH 1.0 — menu compte + zone basse toujours visible */
+#v21Menu .v21Drawer{
+  box-sizing:border-box;
+  height:100vh;
+  height:100dvh;
+  max-height:100dvh;
+  overflow:hidden;
+  padding-bottom:max(14px,env(safe-area-inset-bottom));
+}
+#v21Menu .v21DrawerHead{
+  flex:0 0 auto;
+}
+#v21Menu .v21DrawerLinks{
+  flex:1 1 auto;
+  min-height:0;
+  overflow-y:auto;
+  overscroll-behavior:contain;
+  -webkit-overflow-scrolling:touch;
+  padding-bottom:8px;
+}
 #v21Menu .v21DrawerLinks .bcLogoutMenu{
   margin-top:10px;
   border-top:1px solid rgba(190,83,70,.18);
@@ -7,3 +26,14 @@
 }
 #v21Menu .v21DrawerLinks .bcLogoutMenu b{color:#a33f35}
 #v21Menu .v21DrawerLinks .bcLogoutMenu:hover{background:#ffebe7}
+#v21Menu .v21DrawerCoach{
+  flex:0 0 auto;
+  width:100%;
+  margin-top:10px;
+  margin-bottom:0;
+  min-height:52px;
+  display:block;
+  position:relative;
+  z-index:2;
+  box-shadow:0 -8px 22px rgba(251,250,246,.88);
+}
