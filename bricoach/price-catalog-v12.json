@@ -1,8 +1,8 @@
 {
-  "updatedAt": "2026-08-24T18:35:00+02:00",
+  "updatedAt": "2026-08-31T08:29:00+02:00",
   "currency": "EUR",
-  "scope": "France - prix web de référence relevés le 24/08/2026, hors livraison et sous réserve du magasin",
-  "notes": "Chaque gamme utilise une vraie tranche de prix. Les prix et stocks locaux peuvent varier selon le magasin ou dépôt sélectionné.",
+  "scope": "France - prix web de référence vérifiés le 31/08/2026, hors livraison et sous réserve du magasin",
+  "notes": "Chaque gamme utilise une vraie tranche de prix. Les prix et stocks locaux peuvent varier selon le magasin ou dépôt sélectionné. Les lignes verified=false restent explicitement à confirmer et ne doivent pas être utilisées comme tarif vérifié.",
   "bands": {
     "Carrelage": {
       "unit": "€/m²",
@@ -35,9 +35,9 @@
       "url": "https://www.leroymerlin.fr/",
       "products": {
         "Carrelage": {
-          "Éco": {"price": 18.90, "unit": "€/m²", "name": "Casablanca effet marbre blanc 60 × 60 cm", "url": "https://www.leroymerlin.fr/produits/revetement-sol-et-mur/carrelage/carrelage-sol/carrelage-marbre/carrelage-interieur-60-x-60-p.html", "verified": true},
-          "Standard": {"price": 29.90, "unit": "€/m²", "name": "Galbe effet béton amande 60 × 60 cm", "url": "https://www.leroymerlin.fr/produits/revetement-sol-et-mur/carrelage/carrelage-exterieur/carrelage-60x60-interieur-p.html", "verified": true},
-          "Premium": {"price": 39.91, "unit": "€/m²", "name": "Rimini effet marbre zébré poli 60 × 60 cm", "url": "https://www.leroymerlin.fr/produits/revetement-sol-et-mur/carrelage/carrelage-sol/carrelage-marbre/carrelage-sol-interieur-60-60-p.html?p=1", "verified": true}
+          "Éco": {"price": 18.90, "unit": "€/m²", "name": "Casablanca effet marbre blanc 60 × 60 cm", "url": "https://www.leroymerlin.fr/produits/carrelage-sol-mur-effet-marbre-blanc-casablanca-l-60-x-l-60-cm-artens-90543471.html", "verified": true},
+          "Standard": {"price": 29.90, "unit": "€/m²", "name": "Galbe effet béton amande 60 × 60 cm", "url": "https://www.leroymerlin.fr/produits/carrelage-sol-interieur-mur-interieur-effet-beton-amande-galbe-l-60-x-l-60-cm-84997619.html", "verified": true},
+          "Premium": {"price": 39.91, "unit": "€/m²", "name": "Rimini effet marbre zébré poli 60 × 60 cm", "url": "https://www.leroymerlin.fr/produits/revetement-sol-et-mur/carrelage/carrelage-exterieur/carrelage-sol-et-mur-imitation-marbre-p.html?p=2", "verified": true}
         },
         "Peinture": {
           "Éco": {"price": 27.90, "unit": "pot 10 L", "name": "LUXENS Classique blanc mat 10 L", "url": "https://www.leroymerlin.fr/produits/peinture-mur-blanc-mat-luxens-classique-10l-95909007.html", "verified": true},
@@ -45,13 +45,13 @@
           "Premium": {"price": 149.00, "unit": "pot 10 L", "name": "SIKKENS mur/plafond blanc mat 10 L", "url": "https://www.leroymerlin.fr/produits/peinture-mur-plafond-blanc-mat-sikkens-10l-82032710.html", "verified": true}
         },
         "Sol / parquet": {
-          "Éco": {"price": 13.99, "unit": "€/m²", "name": "ARTENS Rodana 2 stratifié 8 mm", "url": "https://www.leroymerlin.fr/produits/carrelage-parquet-sol-souple/stratifie/sol-stratifie/sol-stratifie-cuisine/sol-stratifie-artens-8-mm-p.html?p=1", "verified": true},
-          "Standard": {"price": 19.99, "unit": "€/m²", "name": "ARTENS Intenso point de Hongrie / Aqua selon stock", "url": "https://www.leroymerlin.fr/produits/carrelage-parquet-sol-souple/stratifie/sol-stratifie/sol-stratifie-cuisine/sol-stratifie-artens-8-mm-p.html?p=1", "verified": true},
-          "Premium": {"price": 39.90, "unit": "€/m²", "name": "Parquet contrecollé chêne Porto campagne vitrifié XL", "url": "https://www.leroymerlin.fr/produits/parquet-contrecolle-chene-porto-campagne-vitrifie-xl-lamett-l-19-cm-74778012.html", "verified": true}
+          "Éco": {"price": 13.99, "unit": "€/m²", "name": "ARTENS Rodana 2 stratifié 8 mm", "url": "https://www.leroymerlin.fr/produits/sol-stratifie-forte-artens-rodana-2-ep-8-mm-89750447.html", "verified": true},
+          "Standard": {"price": 19.99, "unit": "€/m²", "name": "ARTENS Weenen stratifié Intenso 10 mm résistant à l’eau", "url": "https://www.leroymerlin.fr/produits/sol-stratifie-intenso-artens-weenen-ep-10-mm-resistant-a-eau-89975058.html", "verified": true},
+          "Premium": {"price": 54.90, "unit": "€/m²", "name": "Parquet contrecollé chêne Porto campagne vitrifié XL", "url": "https://www.leroymerlin.fr/produits/parquet-contrecolle-chene-porto-campagne-vitrifie-xl-lamett-l-19-cm-74778012.html", "verified": true}
         },
         "Placo / isolation": {
           "Éco": {"price": 2.73, "unit": "€/m²", "name": "BA13 standard CE 250 × 120 cm", "url": "https://www.leroymerlin.fr/produits/plaque-de-platre-ba-13-standard-ce-l-250-x-l-120-cm-69051871.html", "verified": true},
-          "Standard": {"price": 6.97, "unit": "€/m²", "name": "BA13 hydrofuge H1 250 × 120 cm", "url": "https://www.leroymerlin.fr/produits/materiaux/cloison-et-plafond/plaque-de-platre/ba13/plaque-platre-ba-13-p.html", "verified": true},
+          "Standard": {"price": 6.97, "unit": "€/m²", "name": "BA13 hydrofuge H1 250 × 120 cm", "url": "https://www.leroymerlin.fr/produits/plaque-de-platre-ba-13-panelplac-hydrofuge-h1-l-250-x-120-cm-nf-82369805.html", "verified": true},
           "Premium": {"price": 8.17, "unit": "€/m²", "name": "KNAUF Diamant 5 en 1 BA13 250 × 120 cm", "url": "https://www.leroymerlin.fr/produits/plaque-de-platre-ba13-5en1-diamant-knauf-l-250-x-l120-cm-nf-knauf-67161143.html", "verified": true}
         }
       }
@@ -61,24 +61,24 @@
       "url": "https://www.castorama.fr/",
       "products": {
         "Carrelage": {
-          "Éco": {"price": 12.95, "unit": "€/m²", "name": "Prisma Perla grès cérame 60 × 60 cm", "url": "https://www.castorama.fr/carrelage-sol/carrelage-sol-et-mural/carrelage-interieur-sol-et-mural/cat_id_3898.cat?Forme+du+produit=Carr%C3%A9&Mati%C3%A8re=Gr%C3%A8s+c%C3%A9rame", "verified": true},
-          "Standard": {"price": 25.95, "unit": "€/m²", "name": "Basilea effet pierre 60 × 60 cm", "url": "https://www.castorama.fr/revetement-sol-et-mur/carrelage-sol-et-mur/carrelage-interieur-sol.cat", "verified": true},
-          "Premium": {"price": 39.95, "unit": "€/m²", "name": "Aster grès cérame effet marbre 120 × 60 cm", "url": "https://www.castorama.fr/carrelage-sol/carrelage-sol-et-mural/carrelage-interieur-sol-et-mural/cat_id_3898.cat?Mati%C3%A8re=Gr%C3%A8s+c%C3%A9rame", "verified": true}
+          "Éco": {"price": 12.95, "unit": "€/m²", "name": "Prisma Perla grès cérame 60 × 60 cm", "url": "https://www.castorama.fr/revetement-sol-et-mur/carrelage-sol-et-mur/carrelage-interieur-sol.cat", "verified": true},
+          "Standard": {"price": 25.95, "unit": "€/m²", "name": "Basilea effet pierre 60 × 60 cm", "url": "https://www.castorama.fr/carrelage-sol-et-mur-interieur-en-gres-cerame-effet-pierre-beige-mat-l-60-x-l-60-cm-x-ep-9-mm-basilea/8429991139407_CAFR.prd", "verified": true},
+          "Premium": {"price": 39.95, "unit": "€/m²", "name": "Aster grès cérame effet marbre 120 × 60 cm", "url": "https://www.castorama.fr/carrelage-sol-et-mur-interieur-en-gres-cerame-emaille-effet-marbre-blanc-mat-l-120-x-l-60-cm-x-ep-9-mm-aster/8429991138752_CAFR.prd", "verified": true}
         },
         "Peinture": {
-          "Éco": {"price": 39.90, "unit": "pot 10 L", "name": "Ripolin Illico blanc mat 10 L", "url": "https://www.castorama.fr/peinture/peinture-interieure/peinture-interieure-blanche/cat_id_2078.cat?Capacit%C3%A9+en+litres+%28L%29=10", "verified": true},
-          "Standard": {"price": 79.90, "unit": "pot 10 L", "name": "V33 éclat de blanc velours 10 L", "url": "https://www.castorama.fr/peinture/peinture-interieure/peinture-interieure-blanche/cat_id_2078.cat?Capacit%C3%A9+en+litres+%28L%29=10", "verified": true},
+          "Éco": {"price": 39.90, "unit": "pot 10 L", "name": "Ripolin Illico blanc mat 10 L", "url": "https://www.castorama.fr/peinture-murs-et-plafonds-blanc-mat-ripolin-illico-10l/3174264784536_CAFR.prd", "verified": true},
+          "Standard": {"price": 79.90, "unit": "pot 10 L", "name": "V33 éclat de blanc velours 10 L", "url": "https://www.castorama.fr/peinture-murs-plafonds-et-boiseries-eclat-de-blanc-v33-blanc-velours-10l/3153895214162_CAFR.prd", "verified": true},
           "Premium": {"price": 129.90, "unit": "pot 10 L", "name": "Référence premium 10 L à confirmer selon magasin", "url": "https://www.castorama.fr/peinture/peinture-interieure/peinture-interieure-blanche/cat_id_2078.cat?Capacit%C3%A9+en+litres+%28L%29=10", "verified": false}
         },
         "Sol / parquet": {
           "Éco": {"price": 13.90, "unit": "€/m²", "name": "Sol stratifié entrée de gamme — référence locale à confirmer", "url": "https://www.castorama.fr/revetement-sol-et-mur/parquet-stratifie-et-sol-souple/sol-stratifie/cat_id_3104.cat", "verified": false},
-          "Standard": {"price": 27.90, "unit": "€/m²", "name": "Bishorn XXL parquet contrecollé", "url": "https://www.castorama.fr/parquet-contrecolle/cat_id_0003851.cat?Type+de+produit=Parquet+contrecoll%C3%A9", "verified": true},
-          "Premium": {"price": 42.90, "unit": "€/m²", "name": "Visby M parquet contrecollé chêne", "url": "https://www.castorama.fr/parquet-contrecolle/cat_id_0003851.cat?Type+de+Produit+Facette=Parquet+contrecoll%C3%A9", "verified": true}
+          "Standard": {"price": 27.90, "unit": "€/m²", "name": "Bishorn XXL parquet contrecollé", "url": "https://www.castorama.fr/parquet-contrecolle-clipsable-bishorn-xl-en-chene-verni-naturel/3663602537038_CAFR.prd", "verified": true},
+          "Premium": {"price": 42.90, "unit": "€/m²", "name": "Visby M parquet contrecollé chêne", "url": "https://www.castorama.fr/parquet-contrecolle-clipsable-visby-m-en-chene-verni-blond-rustique/5059340394275_CAFR.prd", "verified": true}
         },
         "Placo / isolation": {
-          "Éco": {"price": 2.79, "unit": "€/m²", "name": "BA13 standard NF Planodis 250 × 120 cm", "url": "https://www.castorama.fr/materiaux-et-gros-oeuvre/cloison/plaque-de-platre-et-de-doublage/cat_id_571.cat", "verified": true},
-          "Standard": {"price": 6.97, "unit": "€/m²", "name": "BA13 hydrofuge / acoustique Planodis 250 × 120 cm", "url": "https://www.castorama.fr/materiaux-et-gros-oeuvre/cloison/plaque-de-platre-et-de-doublage/cat_id_571.cat", "verified": true},
-          "Premium": {"price": 9.67, "unit": "€/m²", "name": "BA13 hydrofuge Planodis 250 × 60 cm haute performance", "url": "https://www.castorama.fr/materiaux-et-gros-oeuvre/plaque-de-platre-hydrofuge-dyn.cat", "verified": true}
+          "Éco": {"price": 2.79, "unit": "€/m²", "name": "BA13 standard NF Planodis 250 × 120 cm", "url": "https://www.castorama.fr/plaque-de-platre-standard-planodis-250-x-120-cm-ep-12-5-mm-vendue-a-la-plaque-zone-nord-/3334160144715_CAFR.prd", "verified": true},
+          "Standard": {"price": 6.97, "unit": "€/m²", "name": "BA13 hydrofuge Planodis 250 × 120 cm", "url": "https://www.castorama.fr/plaque-de-pl-tre-hydrofuge-ba13-planodis-250-x-120-cm-p-12-5-mm-vendue-la-plaque-zone-nord-/3334160158651_CAFR.prd", "verified": true},
+          "Premium": {"price": 9.67, "unit": "€/m²", "name": "BA13 hydrofuge Planodis 250 × 60 cm haute performance", "url": "https://www.castorama.fr/marques/planodis-dyn.cat", "verified": true}
         }
       }
     },
