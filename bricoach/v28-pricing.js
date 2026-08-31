@@ -1,24 +1,24 @@
 /* Bricoach V28 — chiffrage de référence avec liens magasins pour 3 nouveaux métiers */
 (function(){
-const V28_PRICE_DATE='2026-08-24';
+const V28_PRICE_DATE='2026-08-31';
 const V28_REF={
  leroymerlin:{
   name:'Leroy Merlin',
   'Plomberie / sanitaire':{name:'Tube multicouche gainé bleu Ø16 — couronne 50 m EQUATION',price:89.90,pack:50,unit:'50 m',url:'https://www.leroymerlin.fr/produits/tube-multicouche-gaine-bleu-16-en-couronne-de-50m-equation-84850996.html',verified:true},
-  'Électricité':{name:'Câble électrique U1000R2V 3G2,5 mm² — 100 m',price:135,pack:100,unit:'100 m',url:'https://www.leroymerlin.fr/produits/cable-electrique-3g2-5-u1000r2v-l-100-m-noir-70808815.html',verified:true},
+  'Électricité':{name:'Câble électrique U1000R2V 3G2,5 mm² — 100 m',price:139,pack:100,unit:'100 m',url:'https://www.leroymerlin.fr/produits/cable-electrique-3g2-5-u1000r2v-l-100-m-noir-70808815.html',verified:true},
   'Maçonnerie':{name:'Béton prêt à l’emploi SACAMAT — 35 kg',price:4.49,pack:35,unit:'sac 35 kg',url:'https://www.leroymerlin.fr/produits/beton-pret-a-emploi-sacamat-35-kg-89224180.html',verified:true}
  },
  castorama:{
   name:'Castorama',
   'Plomberie / sanitaire':{name:'Couronne tube multicouche nu Ø16 — 50 m',price:52.90,pack:50,unit:'50 m',url:'https://www.castorama.fr/couronne-tube-multicouche-nu-16-mm-l-50-m/3540730043146_CAFR.prd',verified:true},
-  'Électricité':{name:'Câble électrique U1000R2V 3X2,5 mm² — 100 m',price:139.90,pack:100,unit:'100 m',url:'https://www.castorama.fr/cable-electrique-u1000r2v-3x2-5-mm-100-m/3427500884041_CAFR.prd',verified:true},
-  'Maçonnerie':{name:'Béton 35 kg pour fondations, ancrages et dalles',price:5.99,pack:35,unit:'sac 35 kg',url:'https://www.castorama.fr/materiaux-et-gros-oeuvre/materiau-poudre-et-agregat/beton-ciment-mortier-ragreage/beton/cat_id_5024.cat',verified:true}
+  'Électricité':{name:'Câble électrique U1000R2V 3X2,5 mm² — 100 m',price:139.90,pack:100,unit:'100 m',url:'https://www.castorama.fr/cable-electrique-u1000r2v-3x2-5-mm2-100-m/3427500884041_CAFR.prd',verified:true},
+  'Maçonnerie':{name:'Béton 35 kg pour fondations, ancrages et dalles',price:5.99,pack:35,unit:'sac 35 kg',url:'https://www.castorama.fr/beton-35kg/8436588670922_CAFR.prd',verified:true}
  },
  bricodepot:{
   name:'Brico Dépôt',
   'Plomberie / sanitaire':{name:'Couronne tube multicouche D16 — 50 m Somatherm',price:49.90,pack:50,unit:'50 m',url:'https://www.bricodepot.fr/catalogue/construction-renovation/plomberie/alimentation-en-eau/tube-raccord-multicouche/',verified:false,local:true},
   'Électricité':{name:'Couronne câble R2V 3G2,5 mm² — 100 m',price:89.90,pack:100,unit:'100 m',url:'https://www.bricodepot.fr/catalogue/construction-renovation/electricite/cable-fil-gaine-tube-amp-accessoires/cable-dinstallation-fil-electrique/',verified:false,local:true},
-  'Maçonnerie':{name:'Béton universel travaux courants — 35 kg',price:4.90,pack:35,unit:'sac 35 kg',url:'https://www.bricodepot.fr/catalogue/chainage-carre-pour-solidarisation-des-murs-et-planchers-fondations-l-6m-section-10-x-10-cm/prod11436/',verified:false,local:true}
+  'Maçonnerie':{name:'Béton universel travaux courants — 35 kg',price:4.90,pack:35,unit:'sac 35 kg',url:'https://www.bricodepot.fr/catalogue/construction-renovation/materiau-gros-oeuvre/ciment-mortier-et-beton/beton/',verified:false,local:true}
  }
 };
 const NEW=['Plomberie / sanitaire','Électricité','Maçonnerie'];
