@@ -1,0 +1,37 @@
+name: Publish OU ES-TU APK
+
+on:
+  push:
+    paths:
+      - '.github/workflows/publish-ouestu-apk.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Download APK artifact
+        run: |
+          curl -L --fail --retry 3 \
+            'https://sdmntprnortheu.oaiusercontent.com/files/00000000-4008-81f4-a62b-a36e29c5c081/raw?se=2026-09-01T09%3A53%3A31Z&sp=r&sv=2026-02-06&sr=b&scid=181ab294-5410-566d-802e-44967a85c6b8&skoid=c30e7ce7-1f51-4051-a377-288cdba21c02&sktid=a48cca56-e6da-484e-a814-9c849652bcb3&skt=2026-09-01T08%3A59%3A04Z&ske=2026-09-02T08%3A59%3A04Z&sks=b&skv=2026-02-06&sig=taYfn9O1m6rVMOkCrIY7eZZclebnmQFXd7xaMCLadbo%3D' \
+            -o /tmp/ouestu.zip
+          rm -rf /tmp/ouestu-unzip
+          mkdir -p /tmp/ouestu-unzip downloads
+          unzip -q /tmp/ouestu.zip -d /tmp/ouestu-unzip
+          APK=$(find /tmp/ouestu-unzip -type f -name '*.apk' | head -n 1)
+          test -n "$APK"
+          cp "$APK" downloads/OU-ES-TU-V2.2.apk
+
+      - name: Commit public APK only
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add downloads/OU-ES-TU-V2.2.apk
+          git diff --cached --quiet && exit 0
+          git commit -m 'Publish OU ES-TU V2.2 APK'
+          git push
