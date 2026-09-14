@@ -1,6 +1,6 @@
 /* Bricoach V28 — chiffrage de référence avec liens magasins pour 3 nouveaux métiers */
 (function(){
-const V28_PRICE_DATE='2026-08-31';
+const V28_PRICE_DATE='2026-09-14';
 const V28_REF={
  leroymerlin:{
   name:'Leroy Merlin',
@@ -11,7 +11,7 @@ const V28_REF={
  castorama:{
   name:'Castorama',
   'Plomberie / sanitaire':{name:'Couronne tube multicouche nu Ø16 — 50 m',price:52.90,pack:50,unit:'50 m',url:'https://www.castorama.fr/couronne-tube-multicouche-nu-16-mm-l-50-m/3540730043146_CAFR.prd',verified:true},
-  'Électricité':{name:'Câble électrique U1000R2V 3X2,5 mm² — 100 m',price:139.90,pack:100,unit:'100 m',url:'https://www.castorama.fr/cable-electrique-u1000r2v-3x2-5-mm2-100-m/3427500884041_CAFR.prd',verified:true},
+  'Électricité':{name:'Câble électrique U1000R2V 3X2,5 mm² — 100 m',price:144.90,pack:100,unit:'100 m',url:'https://www.castorama.fr/cable-3x2-5-mm2-u1000r2v-couronne-100m/3427500884041_CAFR.prd',verified:true},
   'Maçonnerie':{name:'Béton 35 kg pour fondations, ancrages et dalles',price:5.99,pack:35,unit:'sac 35 kg',url:'https://www.castorama.fr/beton-35kg/8436588670922_CAFR.prd',verified:true}
  },
  bricodepot:{
@@ -48,7 +48,5 @@ function qFor(p,key,retailer){const ref=V28_REF[key]?.[p.category];if(!ref)retur
 }
 const baseQuote=v12QuoteForRetailer;
 v12QuoteForRetailer=function(p,key,retailer,catalog,oldCatalog){if(NEW.includes(p.category)){const k=key||retailerKey(retailer);return qFor(p,k,retailer)}return baseQuote(p,key,retailer,catalog,oldCatalog)};
-
-/* Afficher clairement la date et la nature des prix. */
 try{const baseCard=v21RetailerCard;v21RetailerCard=function(q,best){let h=baseCard(q,best);if(q&&!q.unsupported&&NEW.includes(v21QuoteData?.entries?.find(e=>e.quotes?.includes(q))?.w?.category||''))h=h.replace('Prix web de référence · le prix du magasin peut varier',`Prix web de référence relevé le ${new Date(V28_PRICE_DATE).toLocaleDateString('fr-FR')} · le prix magasin peut varier`);return h}}catch(_){}
 })();
