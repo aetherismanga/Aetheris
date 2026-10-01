@@ -1,17 +1,16 @@
 {
   "name": "Le Scribe et l’Ombre de Pharaon",
   "short_name": "Le Scribe",
-  "description": "Roman historique — Égypte antique sous Ramsès II.",
-  "lang": "fr-FR",
+  "description": "Roman numérique de lecture immersive — Le Scribe et l’Ombre de Pharaon",
   "start_url": "./",
   "scope": "./",
   "display": "standalone",
   "orientation": "any",
   "background_color": "#efe4c8",
-  "theme_color": "#2b2118",
+  "theme_color": "#3a2b1d",
   "icons": [
     {
-      "src": "icons/icon.svg",
+      "src": "icon.svg",
       "sizes": "any",
       "type": "image/svg+xml",
       "purpose": "any maskable"
