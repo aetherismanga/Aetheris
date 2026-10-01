@@ -1,11 +1,5 @@
 {
-  "name": "le-scribe-pwa",
+  "name": "le-scribe-ombre-pharaon",
   "version": "1.0.0",
-  "private": true,
-  "scripts": {
-    "start": "serve -s . -l $PORT"
-  },
-  "dependencies": {
-    "serve": "14.2.4"
-  }
+  "private": true
 }
