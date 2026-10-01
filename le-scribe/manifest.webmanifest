@@ -1,0 +1,13 @@
+{
+  "name": "Le Scribe et l’Ombre de Pharaon",
+  "short_name": "Le Scribe",
+  "description": "Roman de lecture interactif — Le Scribe et l’Ombre de Pharaon",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#f3ead7",
+  "theme_color": "#1b1712",
+  "lang": "fr",
+  "orientation": "portrait-primary",
+  "icons": [{"src":"icon.svg","sizes":"any","type":"image/svg+xml","purpose":"any maskable"}]
+}
