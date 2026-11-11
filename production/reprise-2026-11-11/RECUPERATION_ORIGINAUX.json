@@ -1,0 +1,54 @@
+[
+  {
+    "page": 1,
+    "source_originale": "upload/01-1000062644.png",
+    "path": "production/reprise-2026-11-11/images/01.png",
+    "sha256": "5a38a7263b00b85cc746d682fef13d9b253317d9bad13bf6d3d6fef35e979430",
+    "bytes": 682416,
+    "dimensions": [
+      1024,
+      1536
+    ],
+    "web": "production/reprise-2026-11-11/web/01.webp",
+    "web_bytes": 710260
+  },
+  {
+    "page": 2,
+    "source_originale": "upload/02-1000062645.png",
+    "path": "production/reprise-2026-11-11/images/02.png",
+    "sha256": "7e4f715ee8673b6850e9441c585f8473bd2c7a1f97c6e155ee181255019aa244",
+    "bytes": 732445,
+    "dimensions": [
+      1024,
+      1536
+    ],
+    "web": "production/reprise-2026-11-11/web/02.webp",
+    "web_bytes": 773540
+  },
+  {
+    "page": 3,
+    "source_originale": "upload/03-1000062646.png",
+    "path": "production/reprise-2026-11-11/images/03.png",
+    "sha256": "35cc87769270c397a4f95b331a6a97b8536f6c187f8448f3de98f1c7604f197a",
+    "bytes": 686109,
+    "dimensions": [
+      1024,
+      1536
+    ],
+    "web": "production/reprise-2026-11-11/web/03.webp",
+    "web_bytes": 723392
+  },
+  {
+    "page": 4,
+    "source_originale": "upload/04-1000062647.png",
+    "path": "production/reprise-2026-11-11/images/04.png",
+    "sha256": "2dba154fd7feae92f95415b700c14ef145674f859faed92e877e557769404acd",
+    "bytes": 734394,
+    "dimensions": [
+      1024,
+      1536
+    ],
+    "web": "production/reprise-2026-11-11/web/04.webp",
+    "web_bytes": 769050
+  }
+]

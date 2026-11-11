@@ -1,0 +1,146 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex,nofollow">
+  <meta name="color-scheme" content="dark">
+  <title>AETHERIS — Aperçu de validation</title>
+  <style>
+    :root{color-scheme:dark;--bg:#080a0e;--panel:#121720;--line:#2a3441;--text:#f0f2f6;--muted:#aab7c5;--accent:#5fe0ed;--gold:#ead390}
+    *{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--text);font-family:system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;line-height:1.5}button,select,a{touch-action:manipulation}button,select{font:inherit}button,select,.original{border:1px solid var(--line);background:var(--panel);color:var(--text);border-radius:8px;padding:.62rem .85rem;min-height:44px}button:not(:disabled),select{cursor:pointer}button:hover:not(:disabled),.original:hover{border-color:var(--accent)}button:disabled{opacity:.35;cursor:default}a{color:var(--accent)}:focus-visible{outline:3px solid var(--accent);outline-offset:4px}[hidden]{display:none!important}
+    .shell{width:min(1180px,100%);margin:auto;padding:24px}.masthead{display:flex;justify-content:space-between;align-items:center;gap:20px;padding-bottom:18px;border-bottom:1px solid var(--line)}.brand{font-weight:800;font-size:1.55rem;letter-spacing:.18em;margin:0}.eyebrow{color:var(--gold);font-size:.76rem;text-transform:uppercase;letter-spacing:.1em;margin:3px 0 0}.badge{border:1px solid #615534;border-radius:30px;color:var(--gold);padding:6px 13px;font-size:.8rem;white-space:nowrap}h1{font-size:clamp(1.45rem,4vw,2.1rem);line-height:1.2;margin:26px 0 9px}.intro,.summary{color:var(--muted);margin:0 0 20px;font-size:.94rem}.summary{margin:0}.toolbar{display:flex;flex-wrap:wrap;align-items:center;gap:10px;margin:20px 0 12px}.toolbar label{color:var(--muted);font-size:.84rem}.toolbar .page-select{display:flex;align-items:center;gap:8px}.toolbar .spacer{flex:1}.original{display:inline-flex;align-items:center;text-decoration:none;font-size:.88rem}.viewer{background:#050608;border:1px solid var(--line);border-radius:12px;overflow:hidden}.stage{overflow:auto;overscroll-behavior-x:contain;max-height:none;padding:12px;text-align:center}.stage.zoomed{max-height:86vh}.page-turn{display:block;padding:0;margin:auto;background:white;border:0;border-radius:0;width:min(100%,820px);line-height:0;min-height:0;cursor:pointer}.page-turn img{display:block;width:100%;height:auto;color:#111;font-size:16px;line-height:1.4;min-height:100px}.stage.zoomed .page-turn{max-width:none;cursor:zoom-out}.page-meta{display:flex;justify-content:space-between;align-items:center;gap:12px;padding:12px 16px;border-top:1px solid var(--line);font-size:.86rem}.page-status{color:var(--gold)}figure{margin:0}.image-help{font-size:.8rem;color:var(--muted);margin:0 0 14px}.thumbs{display:flex;gap:10px;overflow-x:auto;padding:16px 3px 18px;scrollbar-color:var(--line) transparent}.thumb{flex:0 0 73px;padding:5px;min-height:0;border-radius:6px;color:var(--muted);font-size:.75rem}.thumb img{display:block;width:61px;height:91px;object-fit:contain;background:#fff;margin-bottom:5px}.thumb[aria-current="page"]{border-color:var(--accent);color:var(--accent);box-shadow:0 0 0 1px var(--accent)}.details{background:var(--panel);border:1px solid var(--line);border-radius:10px;padding:15px 18px;margin:2px 0 18px}.details summary{cursor:pointer;font-weight:600}.details ol{margin:14px 0 0;padding-left:24px}.details li+li{margin-top:7px}.notes{color:var(--muted);font-size:.88rem;margin:10px 0 0;white-space:pre-wrap}.error{padding:20px;border:1px solid #905d5d;background:#211719;border-radius:10px}.footer{border-top:1px solid var(--line);padding:18px 0 5px;font-size:.8rem;color:var(--muted)}.sr-only{position:absolute;clip:rect(0,0,0,0);width:1px;height:1px;overflow:hidden;white-space:nowrap}
+    @media(max-width:600px){.shell{padding:15px 10px}.masthead{gap:8px}.brand{font-size:1.2rem}.badge{font-size:.68rem;padding:5px 8px}.eyebrow{font-size:.63rem}.toolbar{gap:8px}.toolbar button{padding:.58rem .7rem}.toolbar .spacer{display:none}.toolbar .original{margin-left:auto}.stage{padding:5px}.viewer{border-radius:5px}.page-meta{padding:10px;font-size:.77rem}.thumbs{gap:8px}.intro{font-size:.87rem}}
+    @media print{body{background:white;color:black}.masthead,.intro,.toolbar,.thumbs,.image-help,.details,.footer,.summary{display:none!important}.shell{padding:0;width:100%}h1{font-size:14pt;margin:0 0 10px}.viewer{border:0}.stage,.stage.zoomed{max-height:none!important;overflow:visible;padding:0}.page-turn{width:100%!important}.page-meta{color:black;border:0}.page-status{color:black}}
+  </style>
+</head>
+<body>
+  <div class="shell">
+    <header class="masthead">
+      <div><p class="brand">AETHERIS</p><p class="eyebrow">Atelier de production · chapitre 2</p></div>
+      <span class="badge">Validation avant publication</span>
+    </header>
+    <main>
+      <h1 id="chapter-title">Les Ombres d’Elyndor</h1>
+      <p class="intro">Aperçu de travail : seules les planches sauvegardées sont proposées à la lecture. Les réserves de continuité et les transcriptions accompagnent chaque image.</p>
+      <p id="summary" class="summary"></p>
+      <p id="error" class="error" role="alert" hidden></p>
+      <section id="reader" aria-label="Lecteur de validation" hidden>
+        <div class="toolbar" role="group" aria-label="Commandes de lecture">
+          <button id="prev" type="button" aria-label="Planche précédente">←</button>
+          <div class="page-select"><label for="page-select">Planche</label><select id="page-select" aria-label="Choisir une planche"></select></div>
+          <button id="next" type="button" aria-label="Planche suivante">→</button>
+          <span class="spacer"></span>
+          <label class="sr-only" for="zoom">Zoom de la planche</label>
+          <select id="zoom" aria-label="Zoom de la planche"><option value="1">Ajuster</option><option value="1.5">Zoom 150 %</option><option value="2">Zoom 200 %</option></select>
+          <a id="original" class="original" target="_blank" rel="noopener">Original PNG ↗</a>
+        </div>
+        <p class="image-help">Touchez la planche pour avancer. Flèches ← / → au clavier. En zoom, déplacez-vous dans l’image ; touchez-la pour revenir à la vue ajustée.</p>
+        <figure class="viewer">
+          <div id="stage" class="stage">
+            <button id="page-turn" class="page-turn" type="button" aria-label="Passer à la planche suivante"><img id="page-image" alt="" decoding="async"></button>
+          </div>
+          <figcaption class="page-meta"><span id="page-label"></span><span id="page-status" class="page-status"></span></figcaption>
+        </figure>
+        <p id="announcement" class="sr-only" role="status" aria-live="polite"></p>
+        <nav id="thumbs" class="thumbs" aria-label="Vignettes des planches sauvegardées"></nav>
+        <details class="details" open><summary>Dialogues et continuité</summary><ol id="dialogues"></ol><p id="notes" class="notes"></p></details>
+      </section>
+    </main>
+    <footer class="footer">Document de validation. Aucune mise en ligne du chapitre n’est déclenchée par cet aperçu. Lecture de gauche à droite, puis de haut en bas.</footer>
+  </div>
+  <script src="manifest.js"></script>
+  <script>
+  (() => {
+    'use strict';
+    const byId = id => document.getElementById(id);
+    const storageKey = 'aetheris-production-reprise-ch2';
+    let pages = [], current = 0, zoom = 1, manifest = null;
+    const image = byId('page-image');
+    function error(message) { byId('error').textContent = message; byId('error').hidden = false; }
+    function dialogueText(item) {
+      if (typeof item === 'string') return item;
+      if (!item || typeof item !== 'object') return '';
+      return [item.speaker || item.personnage || '', item.text || item.texte || item.dialogue || ''].filter(Boolean).join(' : ');
+    }
+    function setZoom(value) {
+      zoom = value;
+      byId('zoom').value = String(value);
+      byId('stage').classList.toggle('zoomed', value > 1);
+      byId('page-turn').style.width = value > 1 ? `${Math.max(byId('stage').clientWidth - 24, 300) * value}px` : '';
+      byId('page-turn').setAttribute('aria-label', value > 1 ? 'Revenir à la vue ajustée' : current < pages.length - 1 ? 'Passer à la planche suivante' : 'Dernière planche sauvegardée');
+    }
+    function render(index, announce = true) {
+      current = Math.min(Math.max(index, 0), pages.length - 1);
+      const page = pages[current];
+      setZoom(1);
+      image.dataset.fallback = 'false';
+      image.alt = `AETHERIS, chapitre ${manifest.chapter || 2}, planche ${page.number}. Transcription des dialogues disponible sous l’image.`;
+      image.src = page.src;
+      byId('stage').scrollTop = 0;
+      byId('stage').scrollLeft = 0;
+      byId('page-select').value = String(current);
+      byId('prev').disabled = current === 0;
+      byId('next').disabled = current === pages.length - 1;
+      const label = `Planche ${String(page.number).padStart(2, '0')} / 20`;
+      byId('page-label').textContent = label;
+      byId('page-status').textContent = page.status || 'À contrôler';
+      byId('original').hidden = !page.original;
+      if (page.original) byId('original').href = page.original;
+      else byId('original').removeAttribute('href');
+      byId('dialogues').replaceChildren();
+      const lines = Array.isArray(page.dialogues) ? page.dialogues.map(dialogueText).filter(Boolean) : [];
+      for (const line of lines) { const li = document.createElement('li'); li.textContent = line; byId('dialogues').appendChild(li); }
+      byId('dialogues').hidden = lines.length === 0;
+      const notes = Array.isArray(page.notes) ? page.notes.join('\n') : page.notes || '';
+      byId('notes').textContent = [lines.length ? '' : 'Aucun dialogue transcrit pour cette planche.', notes].filter(Boolean).join('\n');
+      for (const thumb of byId('thumbs').children) {
+        if (Number(thumb.dataset.index) === current) thumb.setAttribute('aria-current', 'page');
+        else thumb.removeAttribute('aria-current');
+      }
+      if (announce) byId('announcement').textContent = `${label}. ${page.status || 'À contrôler'}.`;
+      try { localStorage.setItem(storageKey, String(page.number)); } catch (_) { /* Lecture hors ligne sans stockage autorisé. */ }
+    }
+    function initialize(data) {
+      if (!data || !Array.isArray(data.pages)) { error('Le manifeste de production est absent ou incomplet. Conservez apercu.html, manifest.js et les images dans le même dossier.'); return; }
+      manifest = data;
+      pages = data.pages.filter(page => page && typeof page.src === 'string' && page.src && Number.isInteger(Number(page.number))).sort((a, b) => Number(a.number) - Number(b.number));
+      byId('chapter-title').textContent = data.title || 'Les Ombres d’Elyndor';
+      document.title = `AETHERIS — ${data.title || 'Chapitre 2'} — Validation`;
+      byId('summary').textContent = `${pages.length} planche${pages.length > 1 ? 's' : ''} sauvegardée${pages.length > 1 ? 's' : ''} sur 20 prévues · publication en attente de validation finale.`;
+      if (!pages.length) { error('Aucune image sauvegardée n’est référencée dans le manifeste.'); return; }
+      pages.forEach((page, index) => {
+        const option = document.createElement('option'); option.value = index; option.textContent = String(page.number).padStart(2, '0'); byId('page-select').appendChild(option);
+        const button = document.createElement('button'); button.type = 'button'; button.className = 'thumb'; button.dataset.index = index; button.setAttribute('aria-label', `Lire la planche ${page.number}`);
+        const thumbnail = document.createElement('img'); thumbnail.src = page.src; thumbnail.alt = ''; thumbnail.loading = 'lazy'; thumbnail.decoding = 'async';
+        button.append(thumbnail, document.createTextNode(`P. ${String(page.number).padStart(2, '0')}`)); button.addEventListener('click', () => render(index)); byId('thumbs').appendChild(button);
+      });
+      let saved = null; try { saved = Number(localStorage.getItem(storageKey)); } catch (_) { /* Sans stockage. */ }
+      const savedIndex = pages.findIndex(page => Number(page.number) === saved);
+      byId('reader').hidden = false;
+      render(savedIndex >= 0 ? savedIndex : 0, false);
+    }
+    image.addEventListener('error', () => {
+      const page = pages[current];
+      if (page && page.original && image.dataset.fallback !== 'true') { image.dataset.fallback = 'true'; image.src = page.original; }
+      else error('Cette image est introuvable. Consultez le manifeste et les fichiers du checkpoint ; aucune page de remplacement n’a été inventée.');
+    });
+    byId('prev').addEventListener('click', () => render(current - 1));
+    byId('next').addEventListener('click', () => render(current + 1));
+    byId('page-select').addEventListener('change', event => render(Number(event.target.value)));
+    byId('zoom').addEventListener('change', event => setZoom(Number(event.target.value)));
+    byId('page-turn').addEventListener('click', () => { if (zoom > 1) setZoom(1); else if (current < pages.length - 1) render(current + 1); });
+    document.addEventListener('keydown', event => {
+      if (!pages.length || event.altKey || event.ctrlKey || event.metaKey || ['INPUT','TEXTAREA','SELECT'].includes(document.activeElement.tagName)) return;
+      if (event.key === 'ArrowLeft' && current > 0) { event.preventDefault(); render(current - 1); }
+      if (event.key === 'ArrowRight' && current < pages.length - 1) { event.preventDefault(); render(current + 1); }
+      if (event.key === 'Escape' && zoom > 1) setZoom(1);
+    });
+    window.addEventListener('resize', () => { if (zoom > 1) setZoom(zoom); });
+    if (window.AETHERIS_PREVIEW) initialize(window.AETHERIS_PREVIEW);
+    else if (location.protocol === 'http:' || location.protocol === 'https:') fetch('manifest.json').then(response => { if (!response.ok) throw new Error('manifest'); return response.json(); }).then(initialize).catch(() => error('Impossible de charger le manifeste de production. Vérifiez la présence de manifest.js ou manifest.json.'));
+    else error('Pour la lecture hors ligne, ouvrez cet aperçu avec manifest.js et les dossiers d’images à ses côtés.');
+  })();
+  </script>
+</body>
+</html>
