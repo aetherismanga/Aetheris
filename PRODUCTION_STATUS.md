@@ -13,7 +13,7 @@ Checkpoint du 11 novembre 2026 — reprise indépendante de la conversation.
 - Anomalies : ancien découpage de 20 planches annoncé mais non retrouvé ; anciennes branches de production/backup identiques à main, sans documents ni images du chapitre 2. La reconstitution éditoriale sera identifiée explicitement.
 - Chapitre 1 : 100 fichiers présents ; aucune page manquante dans 01–100. Fin ouverte sur navire noir. Réserves détaillées dans l’audit ; aucune réécriture silencieuse.
 - Prochaine action : sauvegarder ce checkpoint à distance, puis produire les planches 05–06 et contrôler leur continuité.
-- Dernier commit GitHub vérifié : base `50ec8a652a3bb8fdff4202200936fb6889afd4f1`. Commit local de récupération `25c2c72` pas encore synchronisé. La tentative de push Git HTTPS n’a pas abouti, faute d’identification de ce client ; sauvegarde par la connexion GitHub à poursuivre.
+- Dernier commit GitHub vérifié : `76169374838da6be530973e67376c64a05f3d4e5` (14 fichiers de reprise dont les quatre originaux et leur audit). Vérification : tête de branche distante identique au SHA attendu et blobs comparés à leur SHA Git local. Le découpage reconstitué et le prompt05 sont ajoutés au checkpoint suivant.
 
 ## Publication
 
