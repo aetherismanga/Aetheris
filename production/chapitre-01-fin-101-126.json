@@ -1,0 +1,293 @@
+{
+  "project": "AETHERIS",
+  "chapter": 1,
+  "range": [
+    101,
+    126
+  ],
+  "status": "production",
+  "date": "2026-11-11",
+  "continuity": [
+    "Suite directe des 100 images officielles. Ignorer les essais antérieurs des chapitres2/3.",
+    "Un seul médaillon, rose des vents à huit pointes, toujours porté au cou de Kael. Aldren ne porte AUCUN médaillon ni pendentif.",
+    "Aldren vieux pêcheur en apparence, ancien guerrier de génie; dissimule volontairement passé et pouvoirs. Montrer précision/autorité furtives, pas de révélation explicite.",
+    "Graam (orthographe retenue par auteur) grand sage et magicien sachant davantage. Kael le croit fou au début. Le distinguer du père forgeron de Vaiana.",
+    "Homme encapuchonné se retire à cause de la CORNE DE BRUME DU NAVIRE, pas battu par Kael. Sa lame a marqué la cuisse gauche anatomique de Lyssara et permet drainage vers maître inconnu.",
+    "Sur bateau uniquement torse massif main et manche de hache avec tête de mort; tête entière et visage HORS CADRE. Identité et nature humaine/nonhumaine indéterminées.",
+    "Kael a16ans au début de continuation; son dix-septième anniversaire arrive après nuit clairement montrée. À17ans le CONTACT PHYSIQUE du seul médaillon avec lettre révèle la SUITE du texte. Pas une activation automatique par lumière du jour, pas par marque seule.",
+    "Draven petit drake noir cornes petites ailes, saute/court, ne sait pas voler. Lyssara17ans, tenue fantasy couvrante non sexualisée, blessure non graphique à cuisse gauche sous jupe/bandage conservée.",
+    "Kael/Lyssara première rencontre ici. Port-Lys pas détruit, réfugiés à forge. Graam soin protecteur provisoire, pas guérison instantanée.",
+    "Lecture gauche à droite et de haut en bas comme original. Images portrait1080x1620 noir et blanc encre fine hachures trames. Varier compositions, cases ouvertes, diagonales, respirations, gros plans. Dialogues français exacts et courts.",
+    "Une image complète distincte par page. Ne jamais fabriquer une fausse planche à partir d'une mosaïque miniature. Art original et dialogues intégrés par imagegen."
+  ],
+  "characters": {
+    "kael": "Adolescent mince16puis17ans, cheveux noirs ébouriffés, yeux grands sombres, visage doux et taches légères, chemise claire usée manches longues retroussées col ouvert, ceinture sombre pantalon rapiécé bottes, petit sac toile bandoulière. UN médaillon rond rose des vents huit pointes au cou. Marque front étoile discrète seulement si scène.",
+    "aldren": "Vieux pêcheur65ans robuste, barbe grise courte, cheveux gris ondulés, casquette marine souple visière courte, long manteau sombre usé col relevé, chemise fermée simple pantalon et bottes. AUCUN pendentif/médaillon. Regard profond, gestes précis, pouvoir caché.",
+    "lyssara": "Jeune démone17ans cheveux noirs très longs, deux cornes incurvées, oreilles pointues, yeux grands, robe fantasy sombre couvrante avec épaules et tissu sombre autour du buste et des jambes. Blessure légère non graphique cuisse GAUCHE anatomique, puis bandage. Fatiguée digne protectrice.",
+    "draven": "Très petit drake noir trapu adorable écailles petites cornes grandes oreilles ailes membrane petites qui ne volent pas, yeux grands queue; court et bondit.",
+    "graam": "Grand vieil homme mince70ans, visage anguleux, nez aquilin, sourcils blancs broussailleux, cheveux blancs longs attachés haut en chignon désordonné, longue barbe blanche jusqu'au sternum (bien plus longue que barbe Aldren), petites lunettes RONDES sur le nez, robe de mage sombre rapiécée manches très amples, écharpe claire, bâton bois tordu simple. Jamais casquette, jamais médaillon. D'abord excentrique puis regard de mage précis.",
+    "vaiana": "Fille10ans cheveux noirs longue tresse unique, robe de village simple ceinture pochette, bottines, petite épée en bois, père adulte robuste forgeron tablier de cuir et manches retroussées (PAS Graam).",
+    "hooded": "Jeune homme assassin mince visage à demi caché par capuche noire, manteau plumeux sombre, lame droite, regard étroit sournois.",
+    "boat": "Navire noir colossal château gothique de pont multiples mâts, énormes chaînes pendant de coque, brume très dense. Figure massive seulement torse armure sombre main énorme manche de hache orné crâne; cou/tête hors cadre, aucun portrait."
+  },
+  "pages": [
+    {
+      "page": 101,
+      "layout": "4 cases asymétriques; grande ouverture de port en haut, petite case de craquement, regard de Kael, bas ouvert sur enfant pris au piège.",
+      "scene": "Après bateau page100, une houle secoue appontement Port-Lys. Kael et Aldren sur quai; enfant garçon6ans cheveux courts clairs chemise rayée caché sous auvent de bois. Une poutre craque au-dessus. Kael le voit.",
+      "dialogues": [
+        "CRAC !",
+        "KAEL : Là-dessous ! Il y a quelqu’un !"
+      ]
+    },
+    {
+      "page": 102,
+      "layout": "3 cases obliques dynamiques, dernière grande case ouverte; forte perspective.",
+      "scene": "Kael se glisse sous auvent affaissé vers garçon clair chemise rayée. Bloque poutre avec épaule tente lever mais trop lourde. Bateau lointain fond brume. Aldren approche.",
+      "dialogues": [
+        "KAEL : Ne bouge pas. Regarde-moi.",
+        "ENFANT : Je peux pas sortir…",
+        "KAEL : Je suis là."
+      ]
+    },
+    {
+      "page": 103,
+      "layout": "5 cases irrégulières: yeux d’Aldren, nœud de corde, geste du pied, ensemble, réaction.",
+      "scene": "Aldren analyse structure en une fraction seconde, fixe corde avec nœud de marin et utilise levier de bois, posture précise exceptionnellement stable. Pas magie visible. Kael sous poutre surpris par calme autorité du grand-père. Appelle2pêcheurs.",
+      "dialogues": [
+        "ALDREN : La corde autour du montant. Maintenant.",
+        "ALDREN : Kael, à mon signal.",
+        "KAEL : Papi… ?"
+      ]
+    },
+    {
+      "page": 104,
+      "layout": "Une grande case action centrale débordant cadres, deux inserts mains/visages, bande inférieure large.",
+      "scene": "Deux pêcheurs et Aldren tendent corde levier, poutre se lève. Kael extrait garçon rayé et le protège du bois qui tombe. Aldren dévie discrètement un débris avec précision, sans geste spectaculaire ni pouvoir révélé.",
+      "dialogues": [
+        "ALDREN : Maintenant !",
+        "KAEL : Viens !",
+        "SFX : KRRAC !"
+      ]
+    },
+    {
+      "page": 105,
+      "layout": "5 cases chaleur humaine et rythme descendant; dernière rue en perspective.",
+      "scene": "Garçon retrouve mère, Kael mains éraflées respire. Aldren contrôle main Kael avec tendresse. Vaiana et père forgeron ouvrent forge aux habitants, père tablier cuir. Vaiana regarde Kael partir accompagné Aldren vers chemin Graam.",
+      "dialogues": [
+        "MÈRE : Merci…",
+        "ALDREN : Tu peux marcher ?",
+        "KAEL : Oui.",
+        "VAÏANA : Reviens, d’accord ?",
+        "KAEL : Promis."
+      ]
+    },
+    {
+      "page": 106,
+      "layout": "2 cases seulement: immense verticale ouverte pont sur2/3 et bande basse de corne, cadrage cinéma menaçant.",
+      "scene": "Sur navire colossal sous brume, cadrage STRICTEMENT des épaules vers ceinture du géant non identifié: torse massif armure, main autour manche de hache orné tête de mort. COU ET TÊTE ENTIÈRE hors cadre, aucun visage même ombre. Seconde case corne de brume cuivre fixée pont vibre, équipage seulement silhouettes petites. Inquiétant.",
+      "dialogues": [
+        "SFX : BÔÔÔÔÔÔÔ…"
+      ]
+    },
+    {
+      "page": 107,
+      "layout": "4 cases montage parallèle sonore; diagonale Draven puis gros plan yeux sous capuche puis arbre et lame abaissée.",
+      "scene": "AU MÊME INSTANT forêt, suite page82. Draven bondit sur main agresseur et interrompt contact magique. CORNE DE BRUME venant clairement du bateau traverse forêt. Homme capuchonné s’immobilise écoute puis abaisse lame et se détourne alors Lyssara agenouillée blessure cuisse gauche. Il n’est pas vaincu.",
+      "dialogues": [
+        "CARTOUCHE : Au même instant, dans la forêt…",
+        "SFX : BÔÔÔÔÔ…",
+        "HOMME : L’appel…",
+        "HOMME : Ce n’est que partie remise."
+      ]
+    },
+    {
+      "page": 108,
+      "layout": "3 bandes de largeur inégale; bas forêt ouvert large silencieux.",
+      "scene": "Homme encapuchonné s’éloigne vers brume côtière après ordre corne, Lyssara résiste douleur et ramène Draven contre elle. Noir courant subtil de blessure gauche persiste sans gore. Elle se relève appuyée tronc et fuit à pied vers sentier, sa robe intacte et couvrante.",
+      "dialogues": [
+        "LYSSARA : Draven… on s’en va.",
+        "LYSSARA : Ne te retourne pas."
+      ]
+    },
+    {
+      "page": 109,
+      "layout": "5 cases petites au départ puis grande course ouverte en bas.",
+      "scene": "Lyssara s’effondre assise contre racines au bord ruisseau près sentier, vivante épuisée. Draven la lèche puis COURT sans voler chercher aide. Elle lui tend main. Il découvre Kael Aldren sur chemin forestier vers Graam.",
+      "dialogues": [
+        "LYSSARA : Reste près de moi…",
+        "SFX : TAP TAP TAP"
+      ]
+    },
+    {
+      "page": 110,
+      "layout": "4 cases comiques brèves vers inquiétude, dernière case panorama sentier.",
+      "scene": "Draven se plante devant bottes Kael ailes repliées. Kael sursaute. Aldren attentif s’accroupit sans peur; Kael remarque petite trace de sang non graphique sur patte. Draven tire ourlet chemise puis court quelques pas se retourne.",
+      "dialogues": [
+        "KAEL : Mais… qu’est-ce que c’est que ça ?",
+        "ALDREN : Attends. Regarde sa patte.",
+        "KAEL : Tu veux qu’on te suive ?"
+      ]
+    },
+    {
+      "page": 111,
+      "layout": "Grande case découverte ouverte sur moitié haute puis2gros plans et petit bas.",
+      "scene": "Kael et Aldren arrivent à Lyssara adossée racines, Draven entre eux. PREMIÈRE RENCONTRE. Kael voit cornes, Lyssara voit humain et se crispe. Aldren reste arrière calme sans médaillon. Tension silencieuse sans texte explicatif.",
+      "dialogues": [
+        "KAEL : Tu es blessée…",
+        "LYSSARA : N’approche pas."
+      ]
+    },
+    {
+      "page": 112,
+      "layout": "6 petites cases dissymétriques, temps étiré, mains puis regards.",
+      "scene": "Lyssara cache Draven d’un bras, tente se relever seule mais genou gauche cède. Kael fait un pas puis s’arrête pour ne pas effrayer. Son regard passe cornes puis main protectrice sur Draven, il comprend. Aldren tient bâton trouvé comme aide au fond.",
+      "dialogues": [
+        "LYSSARA : Je peux me débrouiller.",
+        "KAEL : D’accord…",
+        "KAEL : Mais tu tombes."
+      ]
+    },
+    {
+      "page": 113,
+      "layout": "Grande case ouverte centrale main tendue; deux inserts et large bas calme.",
+      "scene": "Kael s’accroupit même hauteur et tend main vide ouverte à Lyssara; médaillon unique au cou. Elle hésite puis accepte. Draven observe. Accent respect et compassion, zéro romance sexuelle.",
+      "dialogues": [
+        "LYSSARA : Pourquoi tu m’aiderais ?",
+        "KAEL : Parce que tu n’arrives plus à marcher."
+      ]
+    },
+    {
+      "page": 114,
+      "layout": "4 cases diagnostic pratique et gros plan regard Aldren.",
+      "scene": "Aldren inspecte sans toucher blessure cuisse GAUCHE de Lyssara partiellement couverte de tissu déchiré localement; très peu sang. Il voit fil sombre magique et enveloppe tissu propre par-dessus. Regard identifie danger qu’il dissimule. Il donne appui à Lyssara avec Kael.",
+      "dialogues": [
+        "ALDREN : Qui t’a fait ça ?",
+        "LYSSARA : Un homme… sous une capuche.",
+        "ALDREN : Nous allons chez Graam. Il pourra t’aider."
+      ]
+    },
+    {
+      "page": 115,
+      "layout": "1grande diagonale montée forestière ouverte,3inserts fatigue/entraide pieds.",
+      "scene": "Kael soutient Lyssara côté droit valide et Aldren côté gauche blessé, marchent lentement vers maison du sage. Kael fatigue, Lyssara faible dévie petite branche par pensée pour libérer passage puis reprend appui, Draven court au sol. Fin aperçoit maison ronde pierre toit pentu entourée herbes.",
+      "dialogues": [
+        "LYSSARA : Tu trembles, toi aussi.",
+        "KAEL : Alors… on avancera doucement."
+      ]
+    },
+    {
+      "page": 116,
+      "layout": "3 cases: maison en ouverture, détail porte farfelue, réaction Kael.",
+      "scene": "Maison Graam pierre ronde toit pentu, bocaux suspendus et carillons ustensiles, porte s’ouvre derrière fumée d’infusion. Graam apparaît (utiliser référence design fournie), longues manches, lunettes rondes, chignon haut blanc barbe longue. Kael incrédule a entendu village le traite fou. Aldren sérieux.",
+      "dialogues": [
+        "KAEL : Papi… tu es sûr ?",
+        "KAEL : C’est chez le vieux fou…",
+        "GRAAM : Le vieux fou vous entend très bien."
+      ]
+    },
+    {
+      "page": 117,
+      "layout": "5 cases asymétriques comédie contrôlée puis gravité, dernière case longue regard.",
+      "scene": "Intérieur Graam bibliothèque circulaire herbes bocaux table ronde, lit banquette sous fenêtre. Graam tient théière à l’envers absent puis voit Lyssara, repose aussitôt avec précision; contraste excentricité / grand sage. Aldren aide l’asseoir banquette, Kael regarde. Graam même design référence.",
+      "dialogues": [
+        "GRAAM : Entrez. Et fermez…",
+        "GRAAM : …la porte.",
+        "GRAAM : Aldren. Depuis combien de temps ?",
+        "ALDREN : Trop longtemps."
+      ]
+    },
+    {
+      "page": 118,
+      "layout": "Grande case sort ouvert à gauche,2inserts geste/Kael, bande basse blessure protégée.",
+      "scene": "Graam vrai grand magicien, pose mains au-dessus blessure gauche couverte bandage, cercle runique de lumière blanche précis autour bandage, noir filet contenu plutôt qu’effacé. Lunettes brillent, expression noble concentrée. Kael étonné. Aldren sans magie juste veille porte.",
+      "dialogues": [
+        "GRAAM : Kael, la lampe. Près de moi.",
+        "KAEL : Vous… vous êtes vraiment…",
+        "GRAAM : La lampe, garçon."
+      ]
+    },
+    {
+      "page": 119,
+      "layout": "4cases lisibles temps long, grande dernière autour banquette.",
+      "scene": "Graam stabilise drainage avec rune sur bandage cuisse gauche. Lyssara souffle, Draven sur couverture côté sain. Soin PROVISOIRE. Graam explique simplement limite pendant Kael passe eau. Lueur blanche réduite, filament sombre contenu.",
+      "dialogues": [
+        "GRAAM : J’ai ralenti le lien. Je ne l’ai pas brisé.",
+        "LYSSARA : Il disait que mon pouvoir rejoignait son maître.",
+        "GRAAM : Alors repose-toi. Nous parlerons ensuite."
+      ]
+    },
+    {
+      "page": 120,
+      "layout": "3cases lentes: Aldren/Graam regard, main Aldren porte, Kael observant sans comprendre.",
+      "scene": "À l’entrée de pièce, Graam et Aldren échange regard anciens qui se connaissent. Graam remarque calme garde posture Aldren, mais aucune parole ne révèle passé guerrier. Aldren ferme volet, pas médaillon. Kael observe à distance, doute naît.",
+      "dialogues": [
+        "GRAAM : Tu avais dit que cette vie était derrière toi.",
+        "ALDREN : Je l’espérais.",
+        "GRAAM : Moi aussi."
+      ]
+    },
+    {
+      "page": 121,
+      "layout": "5cases aérés doux, petits détails eau/Draven, dernière ouverte deux jeunes distance respectueuse.",
+      "scene": "Soir clairement indiqué lumière fenêtre faible. Lyssara sur banquette pansement gauche, Kael apporte bol eau et pain. Elle se nomme, il se présente. Draven chipe petit morceau humour tendre. Aldren et Graam secondaires flous.",
+      "dialogues": [
+        "LYSSARA : Je m’appelle Lyssara.",
+        "KAEL : Kael.",
+        "LYSSARA : Merci, Kael.",
+        "KAEL : Lui aussi, il mange pour trois ?"
+      ]
+    },
+    {
+      "page": 122,
+      "layout": "4cases cadrages intimes et transition lettre",
+      "scene": "Nuit maison Graam lampe allumée, Lyssara dort sous couverture avec Draven; Kael près table avec Aldren. Aldren sort UNE lettre conservée dans poche intérieure manteau, PAS bijou. Kael seul porte médaillon étoile au cou. Graam au fond garde silence.",
+      "dialogues": [
+        "ALDREN : Cette lettre était avec toi.",
+        "KAEL : Avec moi… ?",
+        "ALDREN : Le jour où je t’ai trouvé sur l’eau."
+      ]
+    },
+    {
+      "page": 123,
+      "layout": "3cases émotion sans surcharge: mains lettre, visages grand et petit-fils, bas accolade ouverte.",
+      "scene": "Aldren raconte recueilli bébé en quelques mots, pas flashback montrant faux médaillon. Kael ému regarde pêcheur puis serre sa manche, Aldren pose main sur tête Kael. Pas médaillon Aldren. Lettre reste fermée sur table.",
+      "dialogues": [
+        "KAEL : Tu aurais pu me laisser à quelqu’un d’autre…",
+        "ALDREN : J’aurais pu.",
+        "ALDREN : Mais c’est toi que je voulais voir grandir."
+      ]
+    },
+    {
+      "page": 124,
+      "layout": "5cases transition nuit-aube univoque: lampe, fenêtre lune, bougie consumée, première lueur, table.",
+      "scene": "Une nuit passe dans maison Graam; Kael assoupi près lettre, Aldren veille, Graam garde protections, Lyssara sur banquette. Aube jour suivant clair par petite cartouche. Aldren réveille doucement Kael, ouvre enveloppe ordinaire avec lui. Sur parchemin première ligne seule lisible. Rien n’est encore activé tant que médaillon ne touche pas papier.",
+      "dialogues": [
+        "CARTOUCHE : À l’aube. Le jour de ses dix-sept ans.",
+        "ALDREN : Bon anniversaire, Kael.",
+        "LETTRE LISIBLE : Mon fils,"
+      ]
+    },
+    {
+      "page": 125,
+      "layout": "4cases macro matière; contact médaillon très clairement représenté, grande case fin magie lettrage.",
+      "scene": "Kael désormais17ans se penche sur lettre déployée sur table, SEUL médaillon rose des vents suspendu à sa chaîne autour cou Kael TOUCHE physiquement parchemin. Macro métal posé papier chaîne continue visible vers cou. À cet instant texte caché apparaît lumineux encre, pas avant. Graam observe savait. Aldren pas de bijou.",
+      "dialogues": [
+        "KAEL : Il n’y a que deux mots…",
+        "SFX : TIK…",
+        "KAEL : Attendez…",
+        "GRAAM : Laisse-le au contact."
+      ]
+    },
+    {
+      "page": 126,
+      "layout": "2cases émotion puis grande moitié basse ouverte avec lettre et visage Kael, marge blanche fin.",
+      "scene": "Même table AUBE, Kael17 médaillon toujours à chaîne au cou en contact lettre. Suite texte apparaît exactement. Larmes légères yeux Kael, Aldren main sur épaule, Graam silencieux respect; Lyssara éveillée sur banquette et Draven secondaires. Dernière petite vue fenêtre navire noir toujours en rade menaçant, pas visage géant. Conclusion chapitre1 lettre maternelle.",
+      "dialogues": [
+        "LETTRE : Mon fils, si tu lis ces mots, j’espère que tu as grandi auprès de quelqu’un qui t’aime.",
+        "KAEL (bas) : Oui…",
+        "CARTOUCHE : Fin du chapitre 1"
+      ]
+    }
+  ]
+}
