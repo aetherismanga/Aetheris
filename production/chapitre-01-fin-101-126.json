@@ -5,7 +5,7 @@
     101,
     126
   ],
-  "status": "production",
+  "status": "complete",
   "date": "2026-11-11",
   "continuity": [
     "Suite directe des 100 images officielles. Ignorer les essais antérieurs des chapitres2/3.",
@@ -289,5 +289,11 @@
         "CARTOUCHE : Fin du chapitre 1"
       ]
     }
+  ],
+  "completion_notes": [
+    "126 pages présentes et décodées; 100 originales inchangées.",
+    "Pages124 et125 recréées à partir des références123/126 le11novembre2026.",
+    "Page124: nuit puis aube des17ans; seulement Mon fils, avant contact.",
+    "Page125: unique médaillon au cou de Kael touche le parchemin avant apparition du texte."
   ]
 }
