@@ -798,3 +798,18 @@ body.fullscreen-mode #floating-exit-fullscreen {
         max-width: 100%;
     }
 }
+
+/* Conclusion du chapitre et bornes de navigation. */
+.reader-controls button:disabled {
+    opacity: 0.35;
+    cursor: default;
+}
+.chapter-end {
+    width: 100%;
+    box-sizing: border-box;
+    text-align: center;
+    padding: 28px 16px 40px;
+    color: var(--text-muted);
+}
+.chapter-end p { margin: 0 0 16px; }
+body.fullscreen-mode .chapter-end { display: none; }

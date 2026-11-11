@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="google-site-verification" content="X0K3fGwJBXbKguIKHyJZ-IjHsh-qGJOsPIcD2CqtczI" />
     <title>AETHERIS | Manga Officiel</title>
-    <link rel="stylesheet" href="css/style.css?v=41">
+    <link rel="stylesheet" href="css/style.css?v=42">
 </head>
 <body>
     <div id="loader" class="active">
@@ -51,18 +51,18 @@
                 <!-- Chapitre 1 (Cliquable & Disponible) -->
                 <div class="chapter-card clickable" data-target="reader">
                     <div class="chapter-thumb" style="background: url('chapters/chapitre-01/01.jpg') center/cover;">
-                        <span class="chapter-badge available">Disponible</span>
+                        <span class="chapter-badge available">Complet</span>
                     </div>
                     <div class="chapter-info">
                         <h3>Chapitre 1</h3>
-                        <p>Le Commencement — 100 pages</p>
+                        <p>Le Commencement — 126 pages · Chapitre complet</p>
                     </div>
                 </div>
 
-                <!-- Chapitre 2 (En cours d'encrage) -->
+                <!-- Chapitre 2 (À venir) -->
                 <div class="chapter-card">
                     <div class="chapter-thumb placeholder">
-                        <span class="chapter-badge in-progress">En cours d'encrage</span>
+                        <span class="chapter-badge upcoming">À venir</span>
                     </div>
                     <div class="chapter-info">
                         <h3>Chapitre 2</h3>
@@ -123,7 +123,7 @@
         </section>
 
         <!-- LECTEUR MANGA -->
-        <section id="reader" class="view">
+        <section id="reader" class="view" data-total-pages="126">
             <div class="reader-header">
                 <h2 id="current-chapter-title">Chapitre 1</h2>
                 <div class="reader-controls">
@@ -138,7 +138,7 @@
                     <!-- Sélecteur Pro de page direct (Dropdown) + Total pages -->
                     <div style="display: flex; align-items: center; gap: 4px;">
                         <select id="page-selector" title="Aller directement à la page"></select>
-                        <span style="font-family: var(--font-heading); color: var(--accent-gold); font-size: 14px;">/ 100</span>
+                        <span id="total-pages" style="font-family: var(--font-heading); color: var(--accent-gold); font-size: 14px;">/ 126</span>
                     </div>
 
                     <button id="next-page" class="btn-icon">→</button>
@@ -183,7 +183,7 @@
                     <div class="news-box">
                         <h3>Journal de bord</h3>
                         <p style="color: var(--text-muted); font-size: 1.15rem; line-height: 1.7; margin-bottom: 20px;">Bienvenue dans les actualités d'Aetheris. Retrouvez ici toutes les annonces sur les sorties des prochains chapitres, les croquis des coulisses et l'avancement du projet en vue de l'Ulule.</p>
-                        <p style="color: var(--accent-gold); font-size: 1.1rem; font-weight: 600;"><em>Le Chapitre 1 est disponible en lecture gratuite. Restez connectés pour la suite !</em></p>
+                        <p style="color: var(--accent-gold); font-size: 1.1rem; font-weight: 600;"><em>Le Chapitre 1 est complet : 126 pages en lecture gratuite, dont 26 nouvelles pages pour découvrir sa conclusion.</em></p>
                     
                         <!-- Compteur de vues moderne -->
                         <div class="visitor-counter-wrapper">
@@ -225,6 +225,6 @@
     <!-- Bouton flottant de sortie plein écran -->
     <button id="floating-exit-fullscreen">✕ Quitter</button>
 
-    <script src="js/app.js?v=41"></script>
+    <script src="js/app.js?v=42"></script>
 </body>
 </html>
