@@ -1,0 +1,264 @@
+{
+  "project": "AETHERIS",
+  "chapter": 1,
+  "range": [
+    127,
+    156
+  ],
+  "status": "storyboard_locked",
+  "date": "2026-11-11",
+  "baseline": "ff8fade373e45c2003bbbdac2f6a169f6bd74779",
+  "continuity": [
+    "Un seul médaillon au cou Kael17; contact avecparchemin déclencheencre etprojection. Aldren etGraamaucunbijou.",
+    "Mèreprojectionenregistréepasvivante: femmeoriginalepage11, messageincompletpourKael.",
+    "LyssaracuisseGAUCHEaffaiblie, Dravencattaille bonditmaisnevolepas. Girlcentrequandportée.",
+    "VILLAGE144-151retourquelquesinstantsplus tôt; visageMAÎTREcachétoutleflash; première révélation155.",
+    "Hachedu106restéeàbord; pluslourdeépéedecôtémaîtreavecFOURREAUCRÂNEàterre. Aucunretconimage106.",
+    "Aldrenpêcheurâgéguerrierexceptionnel; Graamsagepuissant; montrerpuissancepaschangerâgeoucostume.",
+    "PapaVaianaforgeronmasse tabliercuirmarteau, pasGraam, vivantinconscientaprès148.",
+    "Conserver126hormiscartoucheFINDUCHAPITREàretirer; ajoutEXACTEMENT30pages127156.",
+    "Lecturegaucheàdroitetdehautenbas, portrait2:3 monochromeencrefinehachures, layoutsvariés etdialoguescourts exacts."
+  ],
+  "pages": [
+    {
+      "page": 127,
+      "title": "L’encre vivante",
+      "layout": "4 cases: parchemin macro en haut, Kael, reflet amulette, bas large table.",
+      "scene": "Dans la maison de Graam à l’aube, suite immédiate126. Seul médaillon de Kael toujours sur sa chaîne au cou TOUCHE papier. De nouveaux mots apparaissent progressivement sous premier paragraphe déjà lu; première étape de la révélation, pas encore projection. Kael suit du doigt l’encre blanche qui devient noire.",
+      "text": "LETTRE: Si tu m’entends, c’est que le sceau s’éveille.||KAEL: L’encre… elle bouge.",
+      "status": "pending"
+    },
+    {
+      "page": 128,
+      "title": "La marque",
+      "layout": "3 bandes inégales: reflet sur front, yeux Aldren/Graam, Kael main suspendue devant son visage.",
+      "scene": "Même pièce et table, lumière surnaturelle issue parchemin. Petite marque QUATRE pointes au FRONT de Kael commence à briller en blanc; médaillonHUITpointes reste unique au cou contactlettre. Aldren et Graam échangent regard inquiet, Lyssara faible se redresse surbanquette, Dravencat-sizedéveillé.",
+      "text": "KAEL: Papi… qu’est-ce qui m’arrive ?||GRAAM: Ne bouge pas.",
+      "status": "pending"
+    },
+    {
+      "page": 129,
+      "title": "Une voix",
+      "layout": "2cases: grande projection verticale ouverte; petit grosplan main Kael.",
+      "scene": "Projection surréaliste transparente de la MÈRE de Kael, visage EXACT femme page11, cheveux longsnoirs libres manteau simple fermé, flotte EN LUMIÈRE AU-DESSUS lettre; pas corps solide ni résurrection. Bibliothèque visible au travers, ourlet se dissout en filaments. Kael17 regarde sidéré. Mèrepasdebijou, pasdecorne.",
+      "text": "PROJECTION MÈRE: Kael… mon fils.",
+      "status": "pending"
+    },
+    {
+      "page": 130,
+      "title": "Presque la toucher",
+      "layout": "5cases intimes irrégulières: Kael, mains traversées, projection, Aldren, Kael.",
+      "scene": "Kael tente toucher joue projection mère; doigts la traversent particules douces. Chaîne au cou sonmédaillon toujours posélettre. Mère même visage11 et129 s’adresse à lui comme enregistrement nonconversation. Aldren retire lentement sa main épaule pour laisserce moment, ému sansjalousie. Graam veille.",
+      "text": "KAEL: Maman… ?||PROJECTION MÈRE: J’aurais voulu te voir grandir.",
+      "status": "pending"
+    },
+    {
+      "page": 131,
+      "title": "L’avertissement",
+      "layout": "3cases: mère douce puis regard inquiet, Kael plein d’espoir, volet au fond menaçant.",
+      "scene": "Projection continue tandisque mots s’écrivent au rythme voix. Une ombre passe dehors mais aucun ennemi encoreprésent danspièce. Graam se fige àbruit lointain. Message maternel personnel et incomplet, pas révélation origineKael.",
+      "text": "PROJECTION MÈRE: Ne laisse personne choisir ce que tu deviendras.||PROJECTION MÈRE: Pour me retrouver, il faut que tu…",
+      "status": "pending"
+    },
+    {
+      "page": 132,
+      "title": "La phrase brisée",
+      "layout": "4cases diagonales: carreau fenêtre fracassé, main reculantlettre, projection brisée, visageKael.",
+      "scene": "Un carreau d’arbalète ennemi traverse FENÊTRE et sefiche bois de table loin descorps. Kael recule parréflexe en arrachant lettre aucontactmédaillon: projection immédiatement se fragmente/disparaît et la phrase s’arrête. Amulette reste àchaîne auCOU Kael. Aucunblessé. Aldren faitécran desoncorps, Graamselève.",
+      "text": "SFX: TAC !||KAEL: Non ! Attends…||ALDREN: Baisse-toi !",
+      "status": "pending"
+    },
+    {
+      "page": 133,
+      "title": "Sous les branches",
+      "layout": "4cases longueforestpanorama, bottes, arme, ligne progression.",
+      "scene": "Extérieur forêt AUTOUR de maisonGraam, aubegrise. CINQ soldats hostiles légers avancent lelongduCHEMINAVANT: deuxarbalétriers et troisépéistes auxarmurescuir/fersimples avecbrassard sombre. Pas de maître ni hommeencapuchonné dansgroupe. Unrechargeaprès premiercarreau. Approcheresserrement menace, maisonvisible auhaut chemin.",
+      "text": "SOLDAT: La maison. Encerclez-la.",
+      "status": "pending"
+    },
+    {
+      "page": 134,
+      "title": "L’autre issue",
+      "layout": "5cases gestesprécis et regards: Aldren verrouilleentrée, Kaellettre, Lyssara, Graam, fenêtrearrière.",
+      "scene": "Aldren vieillesse mêmephysique devient autorité tranchante sans transformer visage. Il pointefenêtre arrière donnant dansforêtOPPOSÉE soldats. Graam traceprotection àporte. Kaelplie LETTRE INCOMPLÈTE et larangedanssac toile; médaillon resteauCOU. Lyssarase lèvedifficilement bandagecuisseGAUCHE sousrobe; DravenauSOL.",
+      "text": "ALDREN: Par derrière. Maintenant.||KAEL: Et vous ?",
+      "status": "pending"
+    },
+    {
+      "page": 135,
+      "title": "Ne pas les laisser",
+      "layout": "4cases émotion: KaelserremancheAldren, Lyssararefuse, vieuxsourire, mainsquisequittent.",
+      "scene": "Kael refusefuir sans grandpère, tendressepeur. LyssarademêmeveutpasabandonnerGraam qui l’a sauvée mais sajambeGAUCHEcède légèrement. AldrensoutientKaelparépaule pasleporter, vieuxpêcheurégalementguerrieridentitésecrètedevientvisibleau regard.",
+      "text": "KAEL: Je ne te laisserai pas !||LYSSARA: On peut encore vous aider…||ALDREN: Alors aide-la à vivre.",
+      "status": "pending"
+    },
+    {
+      "page": 136,
+      "title": "La barrière",
+      "layout": "Grande imageaction ouverte2/3 +2inserts visages protégés.",
+      "scene": "SecondPROJECTILEarbalète lancé depuisavant traverseporte et foncevers Kael etLyssara prèsissuearrière. Graams’interpose paumeouverte, gigantesque BARRIÈREDELU MIÈRE géométrique circulaire arrête et pulvérise projectile surfaceEXTERNE. Jeunes derrière Graam protégés, Aldrenàavanttournesoldats, positionsnettes. Wizardpuissant sansnouveaucostume; lunetteschignonlonguebarbe persist.",
+      "text": "GRAAM: Derrière moi !||SFX: KLANG !",
+      "status": "pending"
+    },
+    {
+      "page": 137,
+      "title": "Le vieux pêcheur",
+      "layout": "5cases rapides diagonales: botte, poignet, Aldrenregard, deuxarmesquitombent, ensemble.",
+      "scene": "AldrensortparporteAVANT entreassaillantsetmaison. Avec couteau utilitaire de pêche àlamecourte, gesteprécis, détourneépée et désarmeDEUX soldats ordinaires, sansgore ni meurtre. Âgémaiscontrôleabsolu, manteautourne. Graammaintientbarrièrelumière derrièrelui. Kaell’aperçoit àtraverspièce, stupéfait.",
+      "text": "SOLDAT: Comment… ?||ALDREN: Vous avez choisi la mauvaise porte.",
+      "status": "pending"
+    },
+    {
+      "page": 138,
+      "title": "Le passager",
+      "layout": "5petitescases souples puis grandbas départ: gouttière, crabemouette, choc, sac, fuite.",
+      "scene": "IssueARRIÈREmaison. PetitCRABE rond bosselé yeux pédoncules DEPAGE53, jadistransportéparMOUETTE, coincémaintenantgouttière. Mouetteblanchesurtoitessaiederécupérerlecrabe; chocbarrière secouetoit; crabetombe danssacTOILE ouvertKael accrochéàépaule. Pasnouveaucrabe. Kaelsoutient Lyssara auMILIEUsiseulàcôté danscourse, Draven courtauSOL. Petitecomédie muettepressée.",
+      "text": "CRABE (petite pensée): Pas encore !||KAEL: Accroche-toi.",
+      "status": "pending"
+    },
+    {
+      "page": 139,
+      "title": "À l’opposé",
+      "layout": "Grande diagonale fuiteforestièredense +3inserts piedsbandage/lettredanssac/regardenarrière.",
+      "scene": "Kael aideLyssara affaiblie àcourir dansforêtARRIÈRE opposécheminsoldats. ElleasbrasautourépauleKael, luidonneappuiàtaille. BlessureGAUCHE bandagée reste douloureuse; pasguérison. Draven court sautepar-dessusbranches SANSVOLER. Maisonetbarrièredeviennentpetitsderrière. Sacferméàmoitiéavecpetitcrabecaché.",
+      "text": "LYSSARA: Je te ralentis…||KAEL: On reste ensemble.",
+      "status": "pending"
+    },
+    {
+      "page": 140,
+      "title": "Une pince de trop",
+      "layout": "6petitescases comiqueslecturefluide, dernièrepanelfuite reprend.",
+      "scene": "Brefderrièretronc horslignevue. Kaelpassemaindanssac pourvérifierlettre, CRABEPAGE53 pincesonDOIGT sansblessure. Ilretientcri, Lyssaramaladive esquissepremiersourire malgrépeur, Dravens’approchecurieux et crabelèveminusculespincesenmenace. Aucun combat cruel d’animaux; emportentcrabecontraint.",
+      "text": "KAEL (chuchote): Aïe !||LYSSARA: Encore un ennemi ?||KAEL: Non… un passager.",
+      "status": "pending"
+    },
+    {
+      "page": 141,
+      "title": "Le lien sombre",
+      "layout": "4cases: bandage àtraversouverturerobelimitée,visageLyssara,mainKael, reprisesilencieuse.",
+      "scene": "Lyssara derrièrearbre pressebandagecuisseGAUCHE nonsexualisé; filetSOMBRE de malédictionpulse sousrunedeGraam. Persuadéeavoi rattiréennemis, culpabilité. Kaelsanscertitudemaiscompatissant. Médaillonunique aucouKael faibleaucuntexteactivé.",
+      "text": "LYSSARA: C’est ma blessure… Ils m’ont retrouvée.||KAEL: Tu n’en sais rien.||LYSSARA: Je vous ai mis en danger.",
+      "status": "pending"
+    },
+    {
+      "page": 142,
+      "title": "Juste la suite",
+      "layout": "3caseslentes: racinescachette,contactsilencieuxlettre,Kaelélanbrisé.",
+      "scene": "Kael etLyssara cachéscreuxracinesàl’opposé soldats; ilsortlettrepliéeessayemédailloncontreparchemin. AUCUNEprojectionniretourdela voix: la marque resteéteinte et messageincomplet, encrefigéeaufragment. Ellemetmain sursonpoignet pourfaireécouterpaslointains. Dravenveille, crabeaubordsac discretaucungag.",
+      "text": "KAEL (bas): S’il te plaît… juste la suite.||LYSSARA (bas): Écoute.",
+      "status": "pending"
+    },
+    {
+      "page": 143,
+      "title": "Deux anciens",
+      "layout": "2grandes cases ouvertes: GraammageverticalpuisAldrenlatéral.",
+      "scene": "RetouravantmaisonGraam. Graampleinementmaître delamagie: grandsceaurunique derrièrelui, lunettesretiréesdélicatementdanspoche,pasbrisées, chignonlonguebarbetoujours, paumes marquées delumière; Aldrenregarddeguerrierbrillant,longmanteaupêcheur mêmevieuxvisage, couteaucourtappuisimpeccables. Soldats reculent facepouvoir. Identitépassé nonexplicitée. NiALDREN niGRAAM nep porteamulette.",
+      "text": "GRAAM: Tu tiens encore la route ?||ALDREN: Toi, garde la porte.",
+      "status": "pending"
+    },
+    {
+      "page": 144,
+      "title": "Quelques instants plus tôt",
+      "layout": "4cases: villagefumée, porte forge, Vaiana derrièrepère, troissoldats.",
+      "scene": "FLASHVILLAGEAVANT révélationvisagemaître. Cartouche temporel. Port-Lysattaqué premièresflammes auquartierforge. Vaiana10longuetresse robevillage et épéeBOIS, père35robustecourtscheveuxnoirsbarbedense tabliercuirmarteleuropérateur de forge. EXACTEMENTTROIS soldatsordinaireslégers devantforge. Pèreseplaceentre euxetfille; civilscachésarrière.",
+      "text": "CARTOUCHE: Quelques instants plus tôt, à Port-Lys…||PÈRE: Vaïana. Derrière moi.",
+      "status": "pending"
+    },
+    {
+      "page": 145,
+      "title": "Le marteau",
+      "layout": "Grandecase action2/3troispetitsinserts lisibles.",
+      "scene": "ForgeronprotègeVaiana et neutraliseDEUX desTROIS soldatsavecmarteaudeFORGE: premierépéedésarmée, deuxièmerepoussécontretonneau assommésanstexturedégâtgore. Troisième reste deboutrecule. Combatphysiquecrédibleartisanfortpasungrandmage. Vaianacachéederrièreenclumeavecépéeboisnotattacking. Attentiondeuxvaincusunrestant.",
+      "text": "PÈRE: Vous n’entrerez pas !||SFX: CLANG !",
+      "status": "pending"
+    },
+    {
+      "page": 146,
+      "title": "L’ombre dans la porte",
+      "layout": "3cases: troisièmesoldatsefige, bottesmassives, ombrecouvreVaiana/père.",
+      "scene": "DEUX soldatsàterreprouvantvictoire, troisième recule enlaissan tpassage. Maîtrearmuremassivedepage106 entreporte forge. SeulementBOTTES,ceinture,fourreauÉPÉEornéCRÂNE ettorse: COUETTÊTEHORS CADRE, AUCUNvisage/reflet. Pasencapuchonnédansforge. Pèrese retourne sanslaisserfilleexpo.",
+      "text": "SOLDAT (bas): Maître…",
+      "status": "pending"
+    },
+    {
+      "page": 147,
+      "title": "Pas elle",
+      "layout": "Grandeverticaletorsemenaçant +2cases père/fille.",
+      "scene": "Flashvillagecontinue. Forgeron s’interposedevantfille surseuilforge enbrasécartésmarteaudansmain. Maître géant sombreARMUREàécailleslamelléescomme106, épée encoreFOURREAUauhipaveccrânegarde, mainlibrese lève lentement. COUETTÊTEENTIÈREduMAÎTRECOUPÉSHORSCADRE mêmeaugrandangle; AUCUNvisageavant155. Vaianaeffrayéeder rièrepère.",
+      "text": "PÈRE: Tu ne la toucheras pas.",
+      "status": "pending"
+    },
+    {
+      "page": 148,
+      "title": "Un seul geste",
+      "layout": "3cases: paumegantée, ondedechocsanslame, impactcontreMUR.",
+      "scene": "Maître massifenarmure faitsimplegesteMAGIQUEdelamainOUVERTE, ondeinvisible rendue distorsionair envoieforgeroncontreMURINTÉRIEUR pierre de forge, marteautombe. Pasd’épéedégainée, pascontactphysique, pasgore. Impactviolentmaisnongraphique adulte; Vaianaépargnée derrièreenclume. COU/TÊTEM AÎTRETOUJOURS HORS CADRE. Uneseuleactioneffrayante.",
+      "text": "SFX: VROUM !||SFX: KRAK !",
+      "status": "pending"
+    },
+    {
+      "page": 149,
+      "title": "Le nom de sa fille",
+      "layout": "5cases rythmequisedélie: marteau, pèrequis’affaisse, maincherchefille, Vaiana, paupièrespère.",
+      "scene": "ForgeronglissecontreMURàterre,paupièresseferment,jusqu’àINCONSCIENCE. PÈREVIVANT poitrinequisoulève, pasmort annoncée, pasblessuregraphiqu e. Sonregarddernièrefoischerchefille puis s’éteint. Vaiana10tresse accourtd’unpassebloquepeur. Maîtremanteauetcrocsarmureseulementbordcadre,visagecaché.",
+      "text": "PÈRE (faible): Vaïana…||VAIANA: Papa… ?",
+      "status": "pending"
+    },
+    {
+      "page": 150,
+      "title": "La peur de Vaïana",
+      "layout": "Unegrandecase visage émotion etdeuxpetits inserts mains/épéebois.",
+      "scene": "GROSPLAN Vaiana10effrayéeyeuxgrands larmessuie, boucheentrouverte, longueTRESSE, mainsserrentépéeBOIS minuscule. Refletsflammesblancsdansyeux, àterre pèreinconscientrespire flou; murforg efumée.Aucunvisagemaître,nimortpère,nienfantattaqué. Effroisansgore, rupture avecenfantespiègle85.",
+      "text": "VAIANA (minuscule): Réveille-toi…",
+      "status": "pending"
+    },
+    {
+      "page": 151,
+      "title": "Port-Lys en feu",
+      "layout": "Grandepanoramiqueouverte3/4 et petitinsertVaianamainpère.",
+      "scene": "VillagePORTLYSENFEU, toitsardoisefumantbatiments pierre, habitantsfuient parruelles, silhouettecolossaleQUITTEforgeversforêthorschamp saTÊTE horsimageetaucunvisage. Vaian ablot tiesousenclume maindansmainpèreinconscient, protégéeprovisoirementdechutepoutre. Mouette s’enfuitfuméeenlointainpascrabeici. Pasfantasmegore. Pasdetexteexplicatif, silenceévocateur.",
+      "text": "",
+      "status": "pending"
+    },
+    {
+      "page": 152,
+      "title": "La fumée au loin",
+      "layout": "4cases arbrescadre, fuméevillage, Kael effroi,paircachette.",
+      "scene": "RETOURPRÉSENTforêtderrièremaison: KaelLyssaraaccroupiscreuxracinesetdravenveillent. KaelaperçoitfuméePORTLYS, comprendVaianadangermaisnevoitpascequis’estpassé. Lettredansmainmédaillon auCOUresteéteint. Lyssarare tientmancheKael pouréviterqu’ilsserévèlent, elleestfaib lepasféeinstantguérie. Crabedanssacmuet.",
+      "text": "CARTOUCHE: Dans la forêt…||KAEL: Le village… Vaïana !||LYSSARA: Si tu sors, ils nous verront.",
+      "status": "pending"
+    },
+    {
+      "page": 153,
+      "title": "Ce qu’ils cachent",
+      "layout": "Grande diagonale résistance vieuxdeuxpluspetits inserts regards.",
+      "scene": "Graam etAldrendevantmaisonsouspression. Graam déploiebarrièreRU N IQUEau-delàporte jusqu’auxarbres pourbloquertrajectoiresversjeunes. Mêmevisage70longuebarbechignon, lunettesmaintenantdanspochecomme143. Aldren avecpetitcouteaupêche arrêteépée etpousseadversairecommetempêteinvisiblevibrationduSOL, gestepuissancemaîtriséepasjeunetransformation. Costumepêcheurconservé, nom/passétoujoursnonrévélés. Aucunbijou sur2anciens. Soldats ordinairescontrastent.",
+      "text": "ALDREN: À deux, alors.||GRAAM: Comme autrefois.",
+      "status": "pending"
+    },
+    {
+      "page": 154,
+      "title": "Le maître approche",
+      "layout": "4cases: bottesnoiresforêt, pairemaître/encapuchonnéde dos, grosplanassassin, maintorse.",
+      "scene": "PRÉSENTFORÊTcheminAVANT, loinjeunesopposé. ImposantmaîtreARMUREidentique106etvillage, ÉPÉEFOURREAUornéCRÂNEceinture. Àsescôtés mêmeassassincapucheSOMBR Eplumescapedepage107 jadisLyssara. Ilsavancentsanshâte. Têtemaîtrecadréededos/coupée pourconserverrévélation155. Hommeencapuchonnéparle respectueusement; absentautrespersonnagespremierplan.",
+      "text": "HOMME ENCAPUCHONNÉ: Elle est proche, maître.",
+      "status": "pending"
+    },
+    {
+      "page": 155,
+      "title": "L’autre présence",
+      "layout": "Grandrévélationverticalemaître entier+2inserts yeux/mainépée.",
+      "scene": "PREMIÈRERÉVÉLATIONcomplètevisageMAÎTRE. Géant2m30 humainouautreindéterminé,massif40-50ans, visageanguleuxlarg e impassiblepeaucendréepâle,cheveuxnoirslissésarrièrelongueurnuque,SANSBARBE, cicatriceverticalefinesurSOURCILGAUCHE, yeuxtrèsclairsinhumainsmaispasspèceannoncée. ArmureÉCAILLESlamestriangulairespauldronsgigantesquesNOIREScomme106, samefourreaud’ÉPÉEornementCRÂNE, gardesanshache. Assassin107àcôtébeaucouppluspetit. MaîtresentAUTREprésenceetposemainGANTÉEsurpoignéeÉPÉEready to draw MAISlameencoreFOURREAU. Mystèreautrepr ésenceKaelouAldrennontranché.",
+      "text": "MAÎTRE: Je sens une autre présence.",
+      "status": "pending"
+    },
+    {
+      "page": 156,
+      "title": "Ce qui reste à entendre",
+      "layout": "3casescontrastées: Kaelcachélettre, mainmaîtresurépée, grandbas KaelLyssaraetfumée.",
+      "scene": "FINDUCHAPITRE1 cliffhanger. Kael17 cachett eracinesSOUTIENTLyssaraépuisée centreprèslui, DravenauSOL etpetitcrabedanssac. KaelregardelettrephraseINACHEVÉE, petitemarqueFRONTscintilleUNEFOIS sansmessage/projection. AmuletteuniquetoujoursCOU sachaînevisible. InsertmainMAÎTREenarmureserrepoignéeÉPÉEcrâneaucunegainagecomplet,silhouett eforêtderrièreancie ns. Fuméevillageàhorizon; espoirmèreréduitfragment etdangerrattrape. Pasdesolutionnirescuereset, mèrepasfinmessage, vieuxvivantspasdéfaitefinale.",
+      "text": "LETTRE (fragment seul): Pour me retrouver, il faut que tu…||KAEL (pensée): Je n’ai pas entendu la suite.||CARTOUCHE BAS: Fin du chapitre 1",
+      "status": "pending"
+    }
+  ]
+}
