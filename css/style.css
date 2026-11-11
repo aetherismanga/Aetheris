@@ -489,6 +489,46 @@ body.fullscreen-mode #floating-exit-fullscreen {
     display: block;
 }
 
+#fullscreen-navigation { display: none; }
+body.fullscreen-mode #fullscreen-navigation {
+    display: flex;
+    position: fixed;
+    left: 50%;
+    bottom: max(8px, env(safe-area-inset-bottom));
+    transform: translateX(-50%);
+    align-items: center;
+    gap: 12px;
+    z-index: 99999;
+    padding: 4px 8px;
+    border: 1px solid rgba(0, 229, 255, 0.45);
+    border-radius: 10px;
+    background: rgba(0, 0, 0, 0.88);
+    color: var(--accent-gold);
+    font-family: var(--font-heading);
+}
+#fullscreen-navigation button {
+    min-width: 44px;
+    min-height: 44px;
+    border: 1px solid var(--accent-glow);
+    border-radius: 6px;
+    color: var(--accent-glow);
+    background: transparent;
+    font-size: 22px;
+    cursor: pointer;
+    touch-action: manipulation;
+}
+#fullscreen-navigation button:disabled { opacity: 0.3; cursor: default; }
+#fullscreen-navigation button:focus-visible { outline: 2px solid white; outline-offset: 2px; }
+#fullscreen-page-position { min-width: 76px; text-align: center; }
+body.fullscreen-mode #manga-container {
+    height: 100dvh;
+    box-sizing: border-box;
+    padding-bottom: calc(68px + env(safe-area-inset-bottom));
+}
+body.fullscreen-mode #manga-container img {
+    max-height: calc(100dvh - 68px - env(safe-area-inset-bottom));
+}
+
 /* --- SECTION PERSONNAGES --- */
 .characters-grid {
     display: flex;

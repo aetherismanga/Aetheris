@@ -94,6 +94,9 @@ document.addEventListener("DOMContentLoaded", () => {
     const mangaContainer = document.getElementById("manga-container");
     const prevPageBtn = document.getElementById("prev-page");
     const nextPageBtn = document.getElementById("next-page");
+    const fullscreenPrevBtn = document.getElementById("fullscreen-prev-page");
+    const fullscreenNextBtn = document.getElementById("fullscreen-next-page");
+    const fullscreenPosition = document.getElementById("fullscreen-page-position");
     const pageSelector = document.getElementById("page-selector");
     const totalPagesLabel = document.getElementById("total-pages");
     const modeToggleBtn = document.getElementById("mode-toggle-btn");
@@ -148,13 +151,17 @@ document.addEventListener("DOMContentLoaded", () => {
     }
 
     function getFilenameForPage(page) {
-        return `chapters/chapitre-01/${String(page).padStart(2, "0")}.jpg`;
+        const revision = page === 107 || page === 115 ? "?v=43" : "";
+        return `chapters/chapitre-01/${String(page).padStart(2, "0")}.jpg${revision}`;
     }
 
     function updatePageControls() {
         if (pageSelector) pageSelector.value = String(currentPage);
         if (prevPageBtn) prevPageBtn.disabled = currentPage === 1;
         if (nextPageBtn) nextPageBtn.disabled = currentPage === totalPages;
+        if (fullscreenPrevBtn) fullscreenPrevBtn.disabled = currentPage === 1;
+        if (fullscreenNextBtn) fullscreenNextBtn.disabled = currentPage === totalPages;
+        if (fullscreenPosition) fullscreenPosition.textContent = `${currentPage} / ${totalPages}`;
     }
 
     function makePageImage(page, eager = false) {
@@ -194,8 +201,16 @@ document.addEventListener("DOMContentLoaded", () => {
         saveCurrentPage(page);
         const img = makePageImage(page, true);
         img.style.cursor = page < totalPages ? "pointer" : "default";
-        img.addEventListener("click", () => {
-            if (!isWebtoonMode && currentPage < totalPages) goToPage(currentPage + 1);
+        img.addEventListener("click", (event) => {
+            if (isWebtoonMode) return;
+            const bounds = img.getBoundingClientRect();
+            const tapOnLeft = document.body.classList.contains("fullscreen-mode") &&
+                event.clientX - bounds.left < bounds.width / 3;
+            if (tapOnLeft) {
+                if (currentPage > 1) goToPage(currentPage - 1);
+            } else if (currentPage < totalPages) {
+                goToPage(currentPage + 1);
+            }
         });
         mangaContainer.appendChild(img);
         if (page === totalPages) appendChapterEnd();
@@ -276,6 +291,11 @@ document.addEventListener("DOMContentLoaded", () => {
         document.body.classList.toggle("fullscreen-mode");
         
         if (document.body.classList.contains("fullscreen-mode")) {
+            // Une page à la fois en immersion, avec des commandes toujours accessibles.
+            if (isWebtoonMode) {
+                isWebtoonMode = false;
+                updateReaderMode();
+            }
             if (document.documentElement.requestFullscreen) {
                 document.documentElement.requestFullscreen().catch(err => console.log(err));
             }
@@ -310,16 +330,16 @@ document.addEventListener("DOMContentLoaded", () => {
         });
     }
 
-    if (prevPageBtn) {
-        prevPageBtn.addEventListener("click", () => {
+    [prevPageBtn, fullscreenPrevBtn].forEach(button => {
+        button?.addEventListener("click", () => {
             if (!isWebtoonMode && currentPage > 1) goToPage(currentPage - 1);
         });
-    }
-    if (nextPageBtn) {
-        nextPageBtn.addEventListener("click", () => {
+    });
+    [nextPageBtn, fullscreenNextBtn].forEach(button => {
+        button?.addEventListener("click", () => {
             if (!isWebtoonMode && currentPage < totalPages) goToPage(currentPage + 1);
         });
-    }
+    });
 
     // Un lien ?page=101 ouvre directement la suite ; l’accueil ne charge pas le manga caché.
     if (requestedPage && mangaContainer) {
