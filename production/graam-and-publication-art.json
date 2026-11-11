@@ -1,0 +1,34 @@
+[
+  {
+    "key": "graam_fiche",
+    "path": "personnages/graam.jpeg",
+    "refs": [
+      "/workspace/scratch/b5a5b11279e2/aetheris/chapters/chapitre-01/118.jpg",
+      "/workspace/scratch/b5a5b11279e2/aetheris/personnages/aldren.jpeg"
+    ],
+    "prompt": "Use case: illustration-story. Create ONE finished portrait2:3 black-and-white AETHERIS CHARACTER PROFILE INFOGRAPHIC titled GRAAM, matching the elegant brushheader, thin panel borders and detailed ink hatching of reference2 Aldrenprofile. Reference1 defines GRAAM's EXACT face/outfit: tall slender elderly sage around70, angularface aquilinenose bushywhitebrows, SMALL ROUND glasses resting on nose, longwhitehair messy HIGH BUN, very LONG whitebeard to sternum, patched dark mage ROBE very wide sleeves and light scarf, twisted woodstaff. Graam is the WHITE LONG-BEARDED MAGE in center-left of image1; NOT capwearing Aldren, no cap, no fisherman outfit. ONLY depict GRAAM on this entire profile, no otherperson or animal. Never necklace or medallion. Composition: large fullbody Graam left with sly kind knowinglook, one hand on crookedstaff and other near delicate circular protective rune. Atmospheric forest cottage and hangingherbs background, no modernobjects. Rightcolumn structured biography boxes, two short bottomsections, smallstaff/runeillustrations. Use amplewhitepaper readable Frenchtext. EXACT TEXT, no additional inventedwriting or Japanese:\nTITLE: GRAAM\nSUBTITLE: LE SAGE DE LA FORÊT\nBOX TITLE: FICHE DU PERSONNAGE\nÂGE : ENVIRON 70 ANS\nORIGINE : INCONNUE\nLIEU DE VIE : FORÊT DE PORT-LYS\nRÔLE : SAGE, GUÉRISSEUR ET MAGICIEN\nSIGNES DISTINCTIFS : LUNETTES RONDES, CHIGNON BLANC ET LONGUE BARBE\nPERSONNALITÉ : EXCENTRIQUE, OBSERVATEUR ET PROTECTEUR\nBOX TITLE: APPARENCE\nUne silhouette élancée, une robe rapiécée, une écharpe claire et un bâton noueux.\nBOX TITLE: SES POUVOIRS\nCercles runiques de protection, barrières magiques et soins qui contiennent les maléfices.\nBOX TITLE: SON HISTOIRE\nIl vit à l’écart, dans une maison emplie de livres et de plantes. Aldren vient lui demander de l’aide pour Lyssara.\nBOX TITLE: SES LIENS\nUne ancienne complicité le lie à Aldren. Kael découvre un grand magicien derrière ses airs fantasques.\nBOX TITLE: CE QU’IL GARDE SECRET\nJusqu’où s’étendent son savoir et ses pouvoirs ?\nBOTTOM QUOTE: « Le vieux fou vous entend très bien. »\nAll text exactly spelled withaccents, uppercasefieldlabels, readablehandlettering. Match infographic style not narrativepage. No age beyondapprox70, no invented backstory/ancestry/order/title/ancientwars, no new plotspoilers. Never windrose jewelry or pendant, no hat. No colors, watermarks, pagenumbers.",
+    "output_hint": "Generated images are saved to /workspace/scratch/b5a5b11279e2/generated_images as /workspace/scratch/b5a5b11279e2/generated_images/exec-33aae289-2658-42df-983d-36edecc41612.png by default.\nIf you need to use a generated image at another path, copy it and leave the original in place unless the user explicitly asks you to delete it.\nThe generated image is already displayed to the user. There is no need to render it in the final response as a Markdown image or file link.",
+    "status": "generated"
+  },
+  {
+    "key": "graam_design",
+    "path": "personnages/graam2.jpeg",
+    "refs": [
+      "/workspace/scratch/b5a5b11279e2/aetheris/chapters/chapitre-01/118.jpg",
+      "/workspace/scratch/b5a5b11279e2/aetheris/personnages/aldren2.jpeg"
+    ],
+    "prompt": "Use case: illustration-story, character model sheet. Create ONE landscape3:2 blackwhite handdrawn character TURNAROUND sheet of GRAAM from AETHERIS. Reference1 Graam is central elderly mage, strict identity: tallthin70 aquilinenose bushywhitebrows, little ROUND spectacles, messy HIGH WHITE HAIR BUN, VERY LONG WHITE BEARD tosternum, dark patched full-length mage robe wide baggysleeves, pale scarf drapedshoulders, wornplainboots, crooked naturalWOODSTAFF. Match faceandcostume EXACTLY to Graam118; do NOT copy youngKael, hornedLyssara or Aldren capwearingman. Reference2 ONLY gives MODEL SHEET LAYOUT: four full-body identical character views across TOP row (front, leftprofile, rightprofile, back), three detailed facecloseups BOTTOM row (front, leftprofile, threequarter). Crisp neutral white background subtleink shading, straightlightpanellines, allproportions consistent acrossviews. Every view depicts SAME Graam atsameage in samerobe andscarf, withstaffoptionalinfrontandprofileviews. Backview bun/scarf/robe repairs match front. No narrative, no text, no lettering, no othercharacters, no eyecolorpaint, no hats, NO NECKLACE or medallion anywhere, no armor, no windrosemotif, no watermarks. Finished professional detailed manga concept sheet consistent with original.",
+    "output_hint": "Generated images are saved to /workspace/scratch/b5a5b11279e2/generated_images as /workspace/scratch/b5a5b11279e2/generated_images/exec-d215e39c-c403-47ef-b22b-75d3c1fac78e.png by default.\nIf you need to use a generated image at another path, copy it and leave the original in place unless the user explicitly asks you to delete it.\nThe generated image is already displayed to the user. There is no need to render it in the final response as a Markdown image or file link.",
+    "status": "generated"
+  },
+  {
+    "key": "page126",
+    "path": "chapters/chapitre-01/126.jpg",
+    "refs": [
+      "/workspace/scratch/b5a5b11279e2/aetheris/chapters/chapitre-01/126.jpg"
+    ],
+    "prompt": "Make one surgical edit to this exact AETHERIS manga page126. Remove ONLY the small rectangular caption 'Fin du chapitre 1' at bottom right including its border. Fill that small area seamlessly with the underlying shaded letter/table ink artwork. The chapter now continues immediately with127. Preserve every other element as closely as possible: top scene Graam/Aldren/Kael/Lyssara/Draven and table, allfaces, panelborders, tears, chain and sole windrosemedallion touchingletter, waxseal and handwrittenletter exact 'Mon fils, si tu lis ces mots, j’espère que tu as grandi auprès de quelqu’un qui t’aime.', balloon 'Oui…', shipwindowinset, allhands and clothes. No new caption, pageheader or othertext, no new characters, no newpendants. Keep same blackwhite portrait proportions and imagequality. Only remove endbox, do not redraw the rest.",
+    "output_hint": "Generated images are saved to /workspace/scratch/b5a5b11279e2/generated_images as /workspace/scratch/b5a5b11279e2/generated_images/exec-1157835b-d15f-4e5c-b5d3-56b55d2fe85f.png by default.\nIf you need to use a generated image at another path, copy it and leave the original in place unless the user explicitly asks you to delete it.\nThe generated image is already displayed to the user. There is no need to render it in the final response as a Markdown image or file link.",
+    "status": "generated"
+  }
+]

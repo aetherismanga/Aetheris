@@ -1,16 +1,17 @@
-# AETHERIS — Chapitre 1
+# AETHERIS — Chapitre 1, fin et fiche de Graam
 
-126 pages complètes. Pages101–126 ajoutées; originaux01–100 préservés.
+Mise à jour du 11 novembre 2026, autorisée par le créateur.
 
-Pages124–125 finalisées et contrôlées visuellement le11novembre2026: passage de la nuit à l’aube des17ans de Kael; lettre limitée à «Mon fils,» avant contact; suite du texte révélée après contact physique du seul médaillon de Kael.
+- Chapitre 1 complet : 156 planches, dont la nouvelle fin127–156.
+- Planches127–156 reprises à l’identique du PDF validé, JPEG extraits sans recompression.
+- Pages1–125 inchangées par rapport à `ff8fade373e45c2003bbbdac2f6a169f6bd74779`.
+- Page126 : ancienne mention de fin retirée ; conclusion déplacée à156.
+- Graam ajouté à Personnages avec sa fiche illustrée et sa planche de référence, dans le format des cinq autres personnages.
+- Lien direct Graam : `?personnage=graam`. Lien direct de la suite : `?page=127`.
+- Script du lecteur en version45 ; image126 versionnée pour renouveler le cache.
 
-Validation: `python production/verify-chapter.py --baseline 363d54e0ff182a3cfc9b9b2bd1b187324de745e8`.
+Continuité : médaillon unique au cou de Kael, message maternel interrompu, Lyssara blessée à la cuisse gauche, Draven ne vole pas, crabe passager clandestin, forgeron inconscient, visage du maître révélé uniquement à156. Graam conserve lunettes rondes, chignon blanc, longue barbe, robe rapiécée et bâton noueux, sans médaillon.
 
-Publication: branchemain; lien direct de la suite https://aetherismanga.github.io/Aetheris/?page=101
+Validation locale : `python3 production/verify-chapter.py --baseline ff8fade373e45c2003bbbdac2f6a169f6bd74779`, contrôle des156 images uniques et des images de Graam, syntaxe JavaScript et navigation dans le navigateur.
 
-## Corrections du11novembre2026
-
-- Page107: Draven agrandi dans son bond sur la main de l’homme encapuchonné.
-- Page115: Lyssara au centre, soutenue par Aldren et Kael dans les vues avant et arrière; petits panneaux raccordés.
-- Lecteur: flèches précédent/suivant et compteur visibles en plein écran; toucher le tiers gauche de l’image recule également.
-- Images107/115 et ressources du lecteur versionnées pour éviter les anciennes versions en cache.
+Provenance : `production/chapitre-01-fin-127-156.json`, `production/ending-page-blobs.json` et `production/graam-and-publication-art.json`.

@@ -1,0 +1,371 @@
+{
+  "project": "AETHERIS",
+  "chapter": 1,
+  "range": [
+    127,
+    156
+  ],
+  "status": "complete",
+  "publication": {
+    "approved_by_creator": true,
+    "date": "2026-11-11",
+    "repository": "aetherismanga/Aetheris",
+    "branch": "main"
+  },
+  "source_pdf": {
+    "name": "AETHERIS_Chapitre_1_Suite_et_fin_127-156.pdf",
+    "sha256": "48523fc4491df0bc85b632a508094d959eb89150bb1bcfe9a2bafcaae58d32fe",
+    "extraction": "JPEG originaux extraits sans recompression du PDF validé"
+  },
+  "continuity": [
+    "Un seul médaillon au cou de Kael17; activation au contact du parchemin.",
+    "Message maternel interrompu; Graam et Aldren restent au combat.",
+    "Lyssara blessée cuisse gauche, Draven reste au sol, crabe dans le sac.",
+    "Flashback village148–154, forgeron inconscient, visage du maître révélé156."
+  ],
+  "pages": [
+    {
+      "page": 127,
+      "bytes": 1169382,
+      "sha256": "e442c493c0dd340d52505b7052db2cc8c6741e2582909aed3385a21ce41cfcf0",
+      "output": "chapters/chapitre-01/127.jpg",
+      "status": "visually_reviewed",
+      "dialogues": [
+        "lettre: Si cette lumière s’éveille, tu as dix-sept ans.",
+        "Kael: Il y a encore quelque chose…"
+      ]
+    },
+    {
+      "page": 128,
+      "bytes": 1076455,
+      "sha256": "8345c4adb1653124f985527b74c7c6803957a547d2b4d922b679a6008366890c",
+      "output": "chapters/chapitre-01/128.jpg",
+      "status": "visually_reviewed",
+      "dialogues": [
+        "mère: Kael…"
+      ]
+    },
+    {
+      "page": 129,
+      "bytes": 972191,
+      "sha256": "14e9d318680175c1f55141ce1259c2751f00b3fe79ce74c36f59516f47414e6d",
+      "output": "chapters/chapitre-01/129.jpg",
+      "status": "visually_reviewed",
+      "dialogues": [
+        "Kael: Maman… ?",
+        "mère: J’aurais voulu être là pour te le dire."
+      ]
+    },
+    {
+      "page": 130,
+      "bytes": 1121689,
+      "sha256": "1c147251f89881fd8a1e800ccaa56fe2c5b7931f0179affee814a6e0402947fc",
+      "output": "chapters/chapitre-01/130.jpg",
+      "status": "visually_reviewed",
+      "dialogues": [
+        "mère: Je ne t’ai pas abandonné.",
+        "mère: J’ai essayé de te garder en vie."
+      ]
+    },
+    {
+      "page": 131,
+      "bytes": 1082566,
+      "sha256": "8d84d8cf605b846d8a336ded24ba38e6edd962e6846f9d1583e1e75e1f9ee5f1",
+      "output": "chapters/chapitre-01/131.jpg",
+      "status": "visually_reviewed",
+      "dialogues": [
+        "mère: Si tu portes cette marque, ne laisse jamais…",
+        "Graam: Aldren."
+      ]
+    },
+    {
+      "page": 132,
+      "bytes": 998610,
+      "sha256": "e6f31e7c5048d1c7eab59cc70b4631aedb08c18ddc18efed6e0a9131aa4f7885",
+      "output": "chapters/chapitre-01/132.jpg",
+      "status": "visually_reviewed",
+      "dialogues": [
+        "SFX: TCHAK !",
+        "Kael: Non ! Attends !",
+        "Graam: Éloigne-toi de la fenêtre !"
+      ]
+    },
+    {
+      "page": 133,
+      "bytes": 1128497,
+      "sha256": "ecdca4c90aafd7ab45b31becc91774a42c683a69909608c8c74061a70b12f715",
+      "output": "chapters/chapitre-01/133.jpg",
+      "status": "visually_reviewed",
+      "dialogues": [
+        "SFX: PLOC.",
+        "soldat: La maison. Là."
+      ]
+    },
+    {
+      "page": 134,
+      "bytes": 1202934,
+      "sha256": "94765ca991cd9b127a2fdb8892e9354d3b87a6a17aef570761c911b87a30c593",
+      "output": "chapters/chapitre-01/134.jpg",
+      "status": "visually_reviewed",
+      "dialogues": [
+        "Aldren: Kael. Prends Lyssara. Le sentier du haut.",
+        "Kael: Et vous ?",
+        "Graam: Nous gagnons du temps."
+      ]
+    },
+    {
+      "page": 135,
+      "bytes": 1131227,
+      "sha256": "e8bb75a2fe20b82cdd82fcc9bd12ace9b7cad773a8eeb7f72d39a9fc0560901c",
+      "output": "chapters/chapitre-01/135.jpg",
+      "status": "visually_reviewed",
+      "dialogues": [
+        "Kael: Je ne te laisse pas !",
+        "Lyssara: Je peux encore me battre.",
+        "Aldren: Alors protège-la. C’est ce que je te demande."
+      ]
+    },
+    {
+      "page": 136,
+      "bytes": 1189274,
+      "sha256": "681236a3cf6cc9ab4b5cfb5b8c46ff8dc0f23019a4bb443169cf2f74adf0b2f7",
+      "output": "chapters/chapitre-01/136.jpg",
+      "status": "visually_reviewed",
+      "dialogues": [
+        "soldat: Ne les laissez pas filer !",
+        "Aldren: À terre !"
+      ]
+    },
+    {
+      "page": 137,
+      "bytes": 1225412,
+      "sha256": "646b6baeca9cec4179083353e09d6fcaa9a10e9b590949f8a0e926a1dc5eba81",
+      "output": "chapters/chapitre-01/137.jpg",
+      "status": "visually_reviewed",
+      "dialogues": [
+        "SFX: KRAAAM !",
+        "Graam: Vous ne passerez pas."
+      ]
+    },
+    {
+      "page": 138,
+      "bytes": 1182859,
+      "sha256": "20ae643f4fab274a742943b3bb1ebe105ba465daaa99231ab10646a9dc5cda40",
+      "output": "chapters/chapitre-01/138.jpg",
+      "status": "visually_reviewed",
+      "dialogues": [
+        "soldat: Un vieux pêcheur… ?",
+        "Aldren: Vous avez mal regardé."
+      ]
+    },
+    {
+      "page": 139,
+      "bytes": 1040505,
+      "sha256": "19bfe639af0444fab092b6fe38f992bd4e95977ff772d4343e47886c730fac5d",
+      "output": "chapters/chapitre-01/139.jpg",
+      "status": "visually_reviewed",
+      "dialogues": [
+        "Graam: Tu boites moins quand personne ne te regarde.",
+        "Aldren: Et toi, tu parles toujours trop."
+      ]
+    },
+    {
+      "page": 140,
+      "bytes": 1143442,
+      "sha256": "f2f76e7919b737132e88c0121f052cd8304cb011c78d8629eb36ea7d90373053",
+      "output": "chapters/chapitre-01/140.jpg",
+      "status": "visually_reviewed",
+      "dialogues": [
+        "Aldren: Je connais le chemin.",
+        "Kael: Tu me rejoins.",
+        "Graam: Maintenant, Kael !"
+      ]
+    },
+    {
+      "page": 141,
+      "bytes": 1217631,
+      "sha256": "8ddecb6b912836ee652948b1dfb2226174a8f06d0c65532967f23c8fd48d5d24",
+      "output": "chapters/chapitre-01/141.jpg",
+      "status": "visually_reviewed",
+      "dialogues": [
+        "Lyssara: Kael… ta main.",
+        "Kael: Je ne te lâche pas."
+      ]
+    },
+    {
+      "page": 142,
+      "bytes": 1199058,
+      "sha256": "61e1f8b918533d38b02626f6110cee7b36027a11cf80a34acaf70ea04994a851",
+      "output": "chapters/chapitre-01/142.jpg",
+      "status": "visually_reviewed",
+      "dialogues": [
+        "Lyssara: Devant toi !",
+        "SFX: CRAC !"
+      ]
+    },
+    {
+      "page": 143,
+      "bytes": 1193536,
+      "sha256": "0a575e0e8f0bbdcfa92fafb74208f716568b5246dff2229a092a7f5c52f7bdfe",
+      "output": "chapters/chapitre-01/143.jpg",
+      "status": "visually_reviewed",
+      "dialogues": [
+        "Kael: Toi aussi, tu t’es perdu ?",
+        "Lyssara: Il a l’air de t’en vouloir."
+      ]
+    },
+    {
+      "page": 144,
+      "bytes": 1090229,
+      "sha256": "4d03947fa1ac5abec09e355813b71f8f8c6779fca315eab57162a7c60b3a95a8",
+      "output": "chapters/chapitre-01/144.jpg",
+      "status": "visually_reviewed",
+      "dialogues": [
+        "Lyssara: C’est ma blessure… Ils nous ont retrouvés à cause de moi.",
+        "Kael: Tu n’as pas choisi ce qu’ils t’ont fait."
+      ]
+    },
+    {
+      "page": 145,
+      "bytes": 1173443,
+      "sha256": "f0644f9f61870d63fa86b457cae9cd45f256a7fed6d90a6a2effe1c5185fe86a",
+      "output": "chapters/chapitre-01/145.jpg",
+      "status": "visually_reviewed",
+      "dialogues": [
+        "Lyssara: Je vais les éloigner de toi.",
+        "Kael: Tu tiens à peine debout.",
+        "Kael: Pour l’instant, on reste ensemble."
+      ]
+    },
+    {
+      "page": 146,
+      "bytes": 1072585,
+      "sha256": "c27ae8d0cb7c537d5a10715883c1dbf0760ec91917c5d48b5f84bd9a90e3d718",
+      "output": "chapters/chapitre-01/146.jpg",
+      "status": "visually_reviewed",
+      "dialogues": [
+        "Kael: Je n’ai même pas entendu la fin…",
+        "Lyssara: Alors garde-la. Pour plus tard."
+      ]
+    },
+    {
+      "page": 147,
+      "bytes": 1091223,
+      "sha256": "3926d70f01649e6957afdbc3f3f3fa139b145209ccc619d6faf14ed8aae07b54",
+      "output": "chapters/chapitre-01/147.jpg",
+      "status": "visually_reviewed",
+      "dialogues": [
+        "Kael: Le village…"
+      ]
+    },
+    {
+      "page": 148,
+      "bytes": 1193809,
+      "sha256": "3b7049aa5080583dda1e1aabd5dce0279efc7fcb65f7e7a8ec0da6887fb470b3",
+      "output": "chapters/chapitre-01/148.jpg",
+      "status": "visually_reviewed",
+      "dialogues": [
+        "cartouche: Un peu plus tôt, à Port-Lys.",
+        "père: Derrière moi, Vaïana."
+      ]
+    },
+    {
+      "page": 149,
+      "bytes": 1191600,
+      "sha256": "19e2a21b85c4d22d23e574fbd1e7a722ecda3d66d81b3de78beb512364306a28",
+      "output": "chapters/chapitre-01/149.jpg",
+      "status": "visually_reviewed",
+      "dialogues": [
+        "Vaïana: Papa !",
+        "père: Reste derrière moi !"
+      ]
+    },
+    {
+      "page": 150,
+      "bytes": 1256739,
+      "sha256": "19b84f51ad2195bf41508d297434265f0587f7d3f1c167f5a0fab474e0cb63a8",
+      "output": "chapters/chapitre-01/150.jpg",
+      "status": "visually_reviewed",
+      "dialogues": [
+        "père: Pas ma fille.",
+        "SFX: KLANG !"
+      ]
+    },
+    {
+      "page": 151,
+      "bytes": 1112471,
+      "sha256": "9a039cec8f4af822b96075c5285987eceb4deefcc83754073b59f23ab9be8154",
+      "output": "chapters/chapitre-01/151.jpg",
+      "status": "visually_reviewed",
+      "dialogues": [
+        "père: Elle n’a rien à voir avec ça."
+      ]
+    },
+    {
+      "page": 152,
+      "bytes": 1135947,
+      "sha256": "889fbe533035b67a3572eb54dd0b80f099f12630269ef22e44bf85e70b235af0",
+      "output": "chapters/chapitre-01/152.jpg",
+      "status": "visually_reviewed",
+      "dialogues": [
+        "SFX: VWOUM !"
+      ]
+    },
+    {
+      "page": 153,
+      "bytes": 1175418,
+      "sha256": "f5469dbe404e4bb2a350a281e1170832c752796c93706c4381e78ee45e958a77",
+      "output": "chapters/chapitre-01/153.jpg",
+      "status": "visually_reviewed",
+      "dialogues": [
+        "SFX: THUD !",
+        "père: Vaïana…",
+        "Vaïana: Papa… ?"
+      ]
+    },
+    {
+      "page": 154,
+      "bytes": 1179323,
+      "sha256": "dd499fe20baf697fea2b3fb3359d30bb63a4952915c0ced865b18297e1ce08f3",
+      "output": "chapters/chapitre-01/154.jpg",
+      "status": "visually_reviewed",
+      "dialogues": [
+        "Vaïana: Réveille-toi… s’il te plaît."
+      ]
+    },
+    {
+      "page": 155,
+      "bytes": 1102465,
+      "sha256": "213386605b5cd5b814e5f98439ec477e72a89a4ff743e3a568b28e751da54e03",
+      "output": "chapters/chapitre-01/155.jpg",
+      "status": "visually_reviewed",
+      "dialogues": [
+        "cartouche: À présent, à la lisière de la forêt.",
+        "encapuchonné: Elle est proche, maître."
+      ]
+    },
+    {
+      "page": 156,
+      "bytes": 1028144,
+      "sha256": "a771333bbf5d71f47b24426a2a5df56f6df0c86405a4dfbd33cafae1c8c1d8fe",
+      "output": "chapters/chapitre-01/156.jpg",
+      "status": "visually_reviewed",
+      "dialogues": [
+        "maître: Je sens une autre présence.",
+        "cartouche fin: Fin du chapitre 1"
+      ]
+    }
+  ],
+  "graam_profile": {
+    "status": "visually_reviewed",
+    "files": [
+      "personnages/graam.jpeg",
+      "personnages/graam2.jpeg"
+    ],
+    "direct_link": "?personnage=graam"
+  },
+  "page126_extension_edit": {
+    "status": "visually_reviewed",
+    "note": "Ancienne mention de fin supprimée pour poursuivre vers127."
+  }
+}

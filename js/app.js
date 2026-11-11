@@ -101,7 +101,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const totalPagesLabel = document.getElementById("total-pages");
     const modeToggleBtn = document.getElementById("mode-toggle-btn");
     const configuredPages = Number(readerView?.dataset.totalPages);
-    const totalPages = Number.isInteger(configuredPages) && configuredPages > 0 ? configuredPages : 126;
+    const totalPages = Number.isInteger(configuredPages) && configuredPages > 0 ? configuredPages : 156;
     let isWebtoonMode = false;
     let pageObserver;
 
@@ -151,7 +151,7 @@ document.addEventListener("DOMContentLoaded", () => {
     }
 
     function getFilenameForPage(page) {
-        const revision = page === 107 || page === 115 ? "?v=43" : "";
+        const revision = page === 126 ? "?v=45" : page === 107 || page === 115 ? "?v=43" : "";
         return `chapters/chapitre-01/${String(page).padStart(2, "0")}.jpg${revision}`;
     }
 
@@ -345,5 +345,14 @@ document.addEventListener("DOMContentLoaded", () => {
     if (requestedPage && mangaContainer) {
         switchView("reader");
         updateReaderMode();
+    } else if (new URLSearchParams(window.location.search).get("personnage") === "graam") {
+        switchView("characters");
+        const characterView = document.getElementById("characters");
+        const graam = document.getElementById("graam");
+        const portraits = Array.from(characterView.querySelectorAll("img"));
+        Promise.all(portraits.map(img => img.decode ? img.decode().catch(() => {}) : Promise.resolve()))
+            .then(() => {
+                if (characterView.classList.contains("active")) graam?.scrollIntoView({ block: "start" });
+            });
     }
 });
